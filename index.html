@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-08-16</title>
+<title>Morning Brief — 2026-08-17</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -54,6 +54,7 @@
   }
   a.src:active { opacity: 0.7; }
   .path { color: var(--muted); font-size: 0.9rem; word-break: break-all; }
+  .count { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
   footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
@@ -61,54 +62,21 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Sunday, 2026-08-16 · about a 5-minute read</p>
+    <p>Monday, 2026-08-17 · about a 2-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>Japan's certification reform is real, but the story moved: the comment window already closed, and the mechanism is "same number," not "no review."</h3>
-    <p>Yesterday's lead pointed at an August 4 ministry package; the follow-up deep dive corrected it — that package is unrelated, and the actual software-update reform finished public comment on June 22 and now waits on promulgation, realistically autumn. What it delivers: a radio-relevant firmware update still gets reviewed, but the device keeps its certification number — no re-labeling, no recall — provided the user can see the firmware version on a screen or app.</p>
-    <p>Two decisions follow now, both free: stay on the pre-certified-module path, where certification transfers whole and the antenna is the only trip-wire, and design in a visible firmware-version readout.</p>
-    <a class="src" href="https://www.soumu.go.jp/menu_news/s-news/01kiban16_02000383.html">総務省 — the reform package ↗</a>
+    <h3>A connectivity outage cost most of today's research — not the research's fault.</h3>
+    <p>A near-total network outage hit today's research run, so most candidate sources across three of four coverage areas couldn't be reached and were correctly dropped rather than published unverified — nothing was debunked, it just couldn't be read. One narrow technical update did clear verification but doesn't carry enough on its own for public detail today.</p>
   </div>
 
-  <div class="item">
-    <h3>Balmuda's Japan revenue fell 25.5% in the half just reported.</h3>
-    <p>H1 FY2026: ¥4.37B total revenue, down 15.8%, with the domestic premium-appliance business taking the real hit as consumers repriced design premiums. The half was saved by one product finding overseas demand — the Sailing Lantern, roughly 70% sold abroad, North America up 68%.</p>
-    <p>The market we're heading toward is contracting at home, and the survivor's lesson is blunt: the export channel belongs in the launch architecture from day one, because it cannot be improvised mid-downturn.</p>
-    <a class="src" href="https://www.seventietwo.com/ja/business/Balmuda_2026Q2_20260807">seventietwo — Balmuda H1 FY2026 ↗</a>
-  </div>
+  <h2>Needs your answer</h2>
 
   <div class="item">
-    <h3>Singapore is the cheap second market: the new three-tier framework routes short-range devices through self-declaration.</h3>
-    <p>IMDA's revised registration regime keeps supplier's declaration of conformity and adds a lightest tier for short-range WiFi/BLE devices — likely reusing existing FCC/CE test data with no new lab work, and even the heavier tier runs 10 working days, not the weeks the trade press claimed. One classification check before hardware lock decides which tier applies.</p>
-    <a class="src" href="https://c-prav.com/2026/04/28/singapore-imda-update-revised-equipment-registration-framework">C-PRAV — IMDA framework update ↗</a>
-  </div>
-
-  <div class="item">
-    <h3>MIT published the recipe for turning sensor streams into trustworthy narrative.</h3>
-    <p>Rico and Larson show language models fail on raw sensor time-series but become reliably grounded when given statistical summaries, sensor metadata, and context — with evaluator models confirming less hallucination and contradiction. That is our sensor platform's core software problem stated and solved at method level: summarize on-device before any model sees the stream, and the narration stops being inventable.</p>
-    <p>It is firmware-only work, prototypable on current bench hardware now.</p>
-    <a class="src" href="https://www.media.mit.edu/publications/making-sense-of-sensors-improving-llm-interpretation-of-time-series-data/">MIT Media Lab — Making Sense of Sensors ↗</a>
-  </div>
-
-  <div class="item">
-    <h3>21_21 opens "Learning from Hōjōki" on August 28 — twelve days out, and worth the walk.</h3>
-    <p>Tsukamoto (Atelier Bow-Wow) takes the thirteenth-century ten-foot-square hut as a lens on minimal dwelling and impermanence — adjacent to questions in our product's form research. Runs to January 11. The following show, "Time" (Okazaki, from late January), sits even closer to a device whose subject is recorded time; calendar both.</p>
-    <a class="src" href="https://www.2121designsight.jp/en/program/">21_21 DESIGN SIGHT — program ↗</a>
-  </div>
-
-  <h2>Yesterday's dossier</h2>
-
-  <div class="item">
-    <p>The certification deep dive corrected its own trigger item and settled the picture: the reform is same-number re-certification (no recall) for WiFi/BT devices with visible firmware versions, promulgation pending — and independently of the reform, the pre-certified-module path needs no product-level Japanese certification at all, while a custom-radio design carries a known, budgetable cost and one to two months at the certifier. One open question touches materials and goes to the certifier directly before the enclosure decision.</p>
-    <p class="path">→ dossiers/2026-08-16-giteki-software-update-reform.md (repo)</p>
-  </div>
-
-  <div class="item">
-    <p>Also new: a teardown of Teenage Engineering — about 90 people and ~$40M at peak per public filings, an FY2025 profit collapse behind its recent discount era, and a flagship killed twice by single-sourced components.</p>
-    <p class="path">→ dossiers/2026-08-16-teenage-engineering-teardown.md (repo)</p>
+    <p class="count">1 open question — about how to handle research items affected by today's connectivity outage.</p>
+    <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub ↗</a>
   </div>
 
   <footer>Derived render. Canonical record lives in the repository.</footer>
