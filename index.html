@@ -62,20 +62,51 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Monday, 2026-08-17 · about a 2-minute read</p>
+    <p>Monday, 2026-08-17 · about a 7-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>A connectivity outage cost most of today's research — not the research's fault.</h3>
-    <p>A near-total network outage hit today's research run, so most candidate sources across three of four coverage areas couldn't be reached and were correctly dropped rather than published unverified — nothing was debunked, it just couldn't be read. One narrow technical update did clear verification but doesn't carry enough on its own for public detail today.</p>
+    <h3>A firmware framework's first beta lands on the release line our platform already targets.</h3>
+    <p>A major open-source embedded framework used widely in this category shipped its first beta past its next major baseline, bringing a security fix, a dependency-management change for one messaging component, and a batch of renamed interface fields — including some touching how a display driver reads color data. None of it is dramatic alone, but it's the kind of pre-release API churn worth absorbing early, before our firmware locks for the prototype build, rather than discovering it mid-integration.</p>
+    <a class="src" href="https://github.com/espressif/esp-idf/releases/tag/v6.1-beta1">Read the source ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>A regional battery-charger safety standard's transition deadline appears to have already passed — one source only.</h3>
+    <p>Per a single blog post, the grace period for an older version of a household battery-charger safety standard in one Asian market ended this past summer, meaning only the newer harmonized version should now be valid for fresh safety filings. If our prototype ends up with onboard battery-charging circuitry, that would be a real design constraint worth confirming before any certification work begins. Two attempts to corroborate against the regulator's own page and a second industry site both failed, and no other source turns up the claim — so this is being treated as unconfirmed and is today's target for deeper follow-up research.</p>
+    <a class="src" href="https://ankatukun.hatenablog.com/entry/2026/07/13/201859">Read the source ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>That same market may loosen self-certification rules for small manufacturers — still just a proposal.</h3>
+    <p>A regulatory-filing site reports that easing the self-certification path for small manufacturers and startups is "under consideration," separate from an OTA/relabeling reform already tracked in an earlier deep-dive. If it happens, it could meaningfully lower a certification cost line item this platform is currently budgeting for. But the source itself flags this as reflecting an earlier point-in-time discussion with no guarantee it matches whatever eventually gets implemented — a watch item, not something to plan around yet.</p>
+    <a class="src" href="https://denpa-shinsei.jp/denpa-hou-kaisei-2026/">Read the source ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>The chip maker behind our platform's current generation just put its next tier into mass production.</h3>
+    <p>The new chip is a substantial step up in compute, memory, and connectivity — well-corroborated across the maker's own announcement and several independent hardware outlets. It sits a tier above what our current platform uses, and only becomes relevant if the roadmap ever needs heavier on-device processing or broader smart-home interoperability than the current chip carries. For now, the existing chip generation remains the right call — this is a future migration watch, not an action item.</p>
+    <a class="src" href="https://www.espressif.com/en/news/ESP32_S31_Mass_Production">Read the source ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>A 3D-printing brand just opened a boutique-style flagship inside Bangkok's top mall — a transferable regional retail template.</h3>
+    <p>The store uses a curved-glass, cosmetics-counter aesthetic to sell a technical hardware category as a lifestyle product rather than a workshop tool, following an earlier flagship elsewhere in Asia; regional sales reportedly more than doubled year over year. It's a concrete, low-capital playbook — a partner-operated boutique inside a premium mall, lifestyle framing over technical framing — that maps directly onto a Southeast Asia retail entry timed around our own prototype window.</p>
+    <a class="src" href="https://aminsightasia.com/news/bambu-lab-thailand-premium-store/">Read the source ↗</a>
+  </div>
+
+  <h2>Yesterday's dossier</h2>
+
+  <div class="item">
+    <p>A deep-dive on a well-known design-led hardware brand found it's far smaller than its cultural footprint suggests, and nearly failed a decade ago before a rescue investment. Its two closest calls since were both tied to relying on a single component supplier, while its biggest recent hit was designed the opposite way — built around parts already available, on a tightly instrumented production line. After years of only-raising prices, the brand has now run two straight years of deep discounting, coinciding with a sharp profit decline in its most recent filed year. The lesson: what breaks at that kind of scale usually isn't the design itself, but sourcing concentration and process details — both fixable with better mechanisms, not just better intentions.</p>
   </div>
 
   <h2>Needs your answer</h2>
 
   <div class="item">
-    <p class="count">1 open question — about how to handle research items affected by today's connectivity outage.</p>
+    <p class="count">3 open questions — about correcting a stale internal cross-reference, whether to start a standing watch on a competitor's regional market presence following a disputed exit report, and a data-accuracy process check after a research error was caught during verification.</p>
     <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub ↗</a>
   </div>
 
