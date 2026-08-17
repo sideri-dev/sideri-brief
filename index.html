@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Morning Brief — 2026-08-16</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --ink: #1f1e1c;
+    --muted: #6b6862;
+    --line: #e3e0da;
+    --btn-bg: #efece7;
+    --btn-ink: #1f1e1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --ink: #e8e6e1;
+      --muted: #97948e;
+      --line: #2b2a28;
+      --btn-bg: #232220;
+      --btn-ink: #e8e6e1;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  header { margin-bottom: 3rem; }
+  header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; }
+  header p { color: var(--muted); font-size: 0.95rem; margin-top: 0.35rem; }
+  h2 {
+    font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--muted); margin: 3rem 0 1.5rem;
+  }
+  .item { padding: 1.75rem 0; border-top: 1px solid var(--line); }
+  .item:first-of-type { border-top: none; padding-top: 0; }
+  .item h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.5; margin-bottom: 0.75rem; }
+  .item p { margin-bottom: 0.9rem; }
+  .item p:last-of-type { margin-bottom: 1.1rem; }
+  a.src {
+    display: block; width: 100%; text-align: center;
+    background: var(--btn-bg); color: var(--btn-ink);
+    text-decoration: none; font-size: 0.92rem; font-weight: 600;
+    padding: 0.8rem 1rem; border-radius: 0.6rem;
+  }
+  a.src:active { opacity: 0.7; }
+  .path { color: var(--muted); font-size: 0.9rem; word-break: break-all; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Morning Brief</h1>
+    <p>Sunday, 2026-08-16 · about a 5-minute read</p>
+  </header>
+
+  <h2>Today</h2>
+
+  <div class="item">
+    <h3>Japan's certification reform is real, but the story moved: the comment window already closed, and the mechanism is "same number," not "no review."</h3>
+    <p>Yesterday's lead pointed at an August 4 ministry package; the follow-up deep dive corrected it — that package is unrelated, and the actual software-update reform finished public comment on June 22 and now waits on promulgation, realistically autumn. What it delivers: a radio-relevant firmware update still gets reviewed, but the device keeps its certification number — no re-labeling, no recall — provided the user can see the firmware version on a screen or app.</p>
+    <p>Two decisions follow now, both free: stay on the pre-certified-module path, where certification transfers whole and the antenna is the only trip-wire, and design in a visible firmware-version readout.</p>
+    <a class="src" href="https://www.soumu.go.jp/menu_news/s-news/01kiban16_02000383.html">総務省 — the reform package ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>Balmuda's Japan revenue fell 25.5% in the half just reported.</h3>
+    <p>H1 FY2026: ¥4.37B total revenue, down 15.8%, with the domestic premium-appliance business taking the real hit as consumers repriced design premiums. The half was saved by one product finding overseas demand — the Sailing Lantern, roughly 70% sold abroad, North America up 68%.</p>
+    <p>The market we're heading toward is contracting at home, and the survivor's lesson is blunt: the export channel belongs in the launch architecture from day one, because it cannot be improvised mid-downturn.</p>
+    <a class="src" href="https://www.seventietwo.com/ja/business/Balmuda_2026Q2_20260807">seventietwo — Balmuda H1 FY2026 ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>Singapore is the cheap second market: the new three-tier framework routes short-range devices through self-declaration.</h3>
+    <p>IMDA's revised registration regime keeps supplier's declaration of conformity and adds a lightest tier for short-range WiFi/BLE devices — likely reusing existing FCC/CE test data with no new lab work, and even the heavier tier runs 10 working days, not the weeks the trade press claimed. One classification check before hardware lock decides which tier applies.</p>
+    <a class="src" href="https://c-prav.com/2026/04/28/singapore-imda-update-revised-equipment-registration-framework">C-PRAV — IMDA framework update ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>MIT published the recipe for turning sensor streams into trustworthy narrative.</h3>
+    <p>Rico and Larson show language models fail on raw sensor time-series but become reliably grounded when given statistical summaries, sensor metadata, and context — with evaluator models confirming less hallucination and contradiction. That is our sensor platform's core software problem stated and solved at method level: summarize on-device before any model sees the stream, and the narration stops being inventable.</p>
+    <p>It is firmware-only work, prototypable on current bench hardware now.</p>
+    <a class="src" href="https://www.media.mit.edu/publications/making-sense-of-sensors-improving-llm-interpretation-of-time-series-data/">MIT Media Lab — Making Sense of Sensors ↗</a>
+  </div>
+
+  <div class="item">
+    <h3>21_21 opens "Learning from Hōjōki" on August 28 — twelve days out, and worth the walk.</h3>
+    <p>Tsukamoto (Atelier Bow-Wow) takes the thirteenth-century ten-foot-square hut as a lens on minimal dwelling and impermanence — adjacent to questions in our product's form research. Runs to January 11. The following show, "Time" (Okazaki, from late January), sits even closer to a device whose subject is recorded time; calendar both.</p>
+    <a class="src" href="https://www.2121designsight.jp/en/program/">21_21 DESIGN SIGHT — program ↗</a>
+  </div>
+
+  <h2>Yesterday's dossier</h2>
+
+  <div class="item">
+    <p>The certification deep dive corrected its own trigger item and settled the picture: the reform is same-number re-certification (no recall) for WiFi/BT devices with visible firmware versions, promulgation pending — and independently of the reform, the pre-certified-module path needs no product-level Japanese certification at all, while a custom-radio design carries a known, budgetable cost and one to two months at the certifier. One open question touches materials and goes to the certifier directly before the enclosure decision.</p>
+    <p class="path">→ dossiers/2026-08-16-giteki-software-update-reform.md (repo)</p>
+  </div>
+
+  <div class="item">
+    <p>Also new: a teardown of Teenage Engineering — about 90 people and ~$40M at peak per public filings, an FY2025 profit collapse behind its recent discount era, and a flagship killed twice by single-sourced components.</p>
+    <p class="path">→ dossiers/2026-08-16-teenage-engineering-teardown.md (repo)</p>
+  </div>
+
+  <footer>Derived render. Canonical record lives in the repository.</footer>
+</main>
+</body>
+</html>
