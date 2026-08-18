@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-08-17</title>
+<title>Morning Brief — 2026-08-18</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,52 +68,51 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Monday, 2026-08-17 · about a 7-minute read</p>
+    <p>Tuesday, 2026-08-18 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>Espressif ships ESP-IDF v6.1-beta1 — the first beta past the v6.0 baseline we build against.</h3>
-    <p>The release brings a JPEG-decoder security fix hardening against malformed-picture attacks, moves ESP-MQTT out of the core repo into the component manager (it's now a separate <code>espressif/mqtt</code> dependency you add yourself), and renames a batch of GPIO and LCD-driver fields — including the <code>color_space</code>/<code>rgb_endian</code> pair, now consolidated into <code>rgb_ele_order</code>. None of it is dramatic alone, but it's exactly the pre-1.0 API churn worth absorbing now, while our firmware is still soft, rather than discovering it mid-integration. Espressif's own roadmap puts rc1 at July 23 and a full rc at July 31, so the v6.1 line is moving quickly.</p>
-    <p><em>Single-source: both the release notes and the roadmap are Espressif's own channels, not independent publishers.</em></p>
-    <a class="src" href="https://github.com/espressif/esp-idf/releases/tag/v6.1-beta1">Read the source ↗</a>
+    <h3>A ¥29,800 Japanese AI earphone just showed what a Makuake-to-retail launch in this price class actually earns.</h3>
+    <p>SB C&amp;S's GLIDiC AI +u Buds — funded past ¥15M by more than 600 Makuake backers — moved to general retail today at ¥29,800 (¥42,048 with a year of the Pro plan), heading into SoftBank shops from September 4. It records conversations three ways, transcribes locally on-device, and leans on an explicit trust pitch: storage on domestic servers that is never used to train AI. It's a close comparable for anyone building a device that captures a moment and hands back an AI interpretation of it — pricing, feature set, and privacy framing all in one place, which is exactly why it's what we're digging into next.</p>
+    <a class="src" href="https://corriente.jp/glidic-ai-plus-u-buds-release-260818/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Japan's PSE battery-charger standard J60335-2-29(2023) has apparently already passed its transition deadline — on one source only.</h3>
-    <p>J60335-2-29 governs PSE safety requirements for household battery chargers, and per this blog post the grace period for the pre-2023 version ended July 31, 2026 — meaning only the fully 2023-harmonized version should now be valid for new PSE filings. For any device carrying onboard battery-charging circuitry, that's a real design constraint: building against the superseded 2019 spec would force rework before certification. The catch is that this rests on a single Japanese blog. Attempts to corroborate against METI's own 別表第十二 page and japan.ul.com both returned 403, and koukusu.com doesn't list the standard at all — so the July 31 date is provisional, not settled, and it's the target for tonight's deeper dig.</p>
-    <a class="src" href="https://ankatukun.hatenablog.com/entry/2026/07/13/201859">Read the source ↗</a>
+    <h3>Samsung wants a 20% DRAM price hike for Q3 — manufacturers say they're out of room to pass it on.</h3>
+    <p>Samsung has verbally notified clients of a roughly 20% contract-price increase; TrendForce's independent forecast lands lower, 13–18% for DRAM generally, with LPDDR5X-class parts most likely to hit the full 20%. This is the third straight quarter of aggressive memory increases, after more than 90% in Q1 and 50–60% in Q2. For anyone sourcing memory-bearing components right now, Q3–Q4 2026 quotes should be treated as a moving negotiation, not a settled baseline.</p>
+    <a class="src" href="https://finance.biggo.com/news/aeae300c-cb80-4642-90b5-d2f07e791b20">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Japan may also loosen 技適 self-certification for small manufacturers — but it's still only a proposal.</h3>
-    <p>A Japanese regulatory-filing site reports that expanding the 自己確認制度 (self-certification system) is 検討されています — "under consideration" — as a way to ease market entry for small manufacturers and startups. This is separate from the OTA/same-number reform an earlier deep-dive already covered; Nikkei's corroboration confirms only the OTA mechanism, not this. If enacted, it would cut into the ¥440,000–550,000 TELEC certification line that same deep-dive established as the realistic cost baseline. But the page itself discloses that its content reflects March 2026 discussion status and may differ from what's implemented — a watch item, not something to plan around.</p>
-    <a class="src" href="https://denpa-shinsei.jp/denpa-hou-kaisei-2026/">Read the source ↗</a>
+    <h3>Fairphone brought its modular, repairable phone to the US for the first time, at $649 — pitched explicitly against today's memory crunch.</h3>
+    <p>The Gen 6+ launch runs a Snapdragon 7s Gen 4 with 12GB of RAM, has 12 owner-replaceable parts (battery, cameras, USB-C port, display) swappable with a single screwdriver, and carries a five-year warranty. TechCrunch frames the whole pitch around the same component-shortage environment as the DRAM story above. It's a live pricing and positioning precedent for any premium device landing in that same environment — repairability as a longevity argument, and a concrete benchmark for how far component-level serviceability can go.</p>
+    <a class="src" href="https://techcrunch.com/2026/08/18/fairphone-is-launching-its-latest-repairable-phone-in-the-us-too/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Espressif's next tier, the ESP32-S31, is now in mass production.</h3>
-    <p>A dual-core 320MHz RISC-V SoC with a SIMD core (~2195 CoreMark), 512KB SRAM, 250MHz DDR PSRAM, up to 60 GPIOs, Wi-Fi 6, Bluetooth 5.4, 802.15.4, a Gigabit Ethernet MAC and native Matter over Wi-Fi/Thread — corroborated across Espressif's own announcement plus Adafruit, LinuxGizmos, CNX-Software and Hackaday, with specs matching exactly. It sits a tier above the ESP32-S3 our platform runs on, and only becomes relevant if the roadmap ever needs smart-home interoperability or heavier on-device inference than the S3 can carry. The S3 stays the right call — file the S31 as a future-generation migration watch, not an action item.</p>
-    <a class="src" href="https://www.espressif.com/en/news/ESP32_S31_Mass_Production">Read the source ↗</a>
+    <h3>Rakuten Mobile just cut the Nothing Phone (3) by up to ¥30,000 in Japan.</h3>
+    <p>The 256GB model drops from ¥119,900 to ¥95,990 and the 512GB from ¥138,900 to ¥108,900, with MNP and installment campaigns pushing effective pricing as low as ¥55,990 — through Nothing's sole Japanese carrier, same-day. It's a concrete demand-softening data point on Nothing's flagship line, and it echoes a pattern already seen elsewhere in Japan's premium-hardware market this year: Balmuda's domestic revenue fell 25.5% in the same half.</p>
+    <a class="src" href="https://www.itmedia.co.jp/mobile/spv/2608/18/news074.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Bambu Lab opened a boutique-style flagship inside Siam Paragon, Bangkok — a transferable SEA retail template.</h3>
-    <p>The "Authorized Premium Store," run through local distributor 3D Studio, uses curved glass and a cosmetics-counter aesthetic to sell 3D printing as a lifestyle and home-decor category rather than a workshop tool, following a September 2025 Shenzhen flagship; Thai sales reportedly more than doubled year over year. It's a concrete, low-capital playbook — a partner-operated boutique inside a top-tier mall, lifestyle framing over technical framing — that maps directly onto a Thailand entry around our own prototype window. Confirmed against Xinhua, Macau Business and bangkok-today.com on location, date, distributor and the sales claim.</p>
-    <a class="src" href="https://aminsightasia.com/news/bambu-lab-thailand-premium-store/">Read the source ↗</a>
+    <h3>Espressif open-sourced its entire device-to-cloud-to-app stack, ESP RainMaker Neo, under Apache 2.0.</h3>
+    <p>The rebuilt stack — cloud backend, firmware SDK, mobile app SDK, dashboard — deploys into a developer's own AWS account instead of Espressif's hosted infrastructure, across three tiers: a public hosted "Neo," an own-AWS "packaged" option, and full build-from-source. It's a plausible backbone for anyone building on the ESP32-S3 who wants to avoid vendor lock-in and keep control of their own data. It's also a week-old release with no migration path from the older, still-supported Classic stack it replaces — worth tracking, not committing to yet.</p>
+    <a class="src" href="https://developer.espressif.com/blog/2026/08/open-sourcing-esp-rainmaker-neo/">Read the source ↗</a>
   </div>
 
-  <h2>Yesterday's dossier — Teenage Engineering</h2>
+  <h2>Yesterday's deep-dive — Balmuda</h2>
 
   <div class="item">
-    <p>Teenage Engineering is far smaller than its cultural footprint suggests — around 90 people, roughly $40M at peak revenue, founder-minority-owned — and nearly died in 2015–16 before a chairman's rescue convertible. Its two near-death product events were both single-vendor component EOL failures, while the product that doubled revenue, the EP-133 K.O. II, was designed procurement-first around parts already in hand, on an in-house-instrumented line in Barcelona. After fourteen years of only-upward pricing, TE has now run two consecutive summers of deep portfolio-wide discounting, coinciding with FY2025 operating profit collapsing from 43.3 to 3.5 MSEK. What actually breaks at that scale isn't the design — it's sourcing concentration and process detail (unpadded packaging, ungloved assembly), both fixed with mechanisms rather than intentions.</p>
+    <p>Balmuda's decline was a sequence, not one mistake: a founder-conviction phone launch in 2021 at flagship price with mid-range hardware, a formal exit 18 months later that founder Gen Terao attributed to "our own insufficient capability," and a five-year revenue slide (¥18.4bn to ¥10.1bn, down 45%) tracking a shrinking Japanese premium-appliance market. The core lesson: a 3–5x category price premium survives where the buyer's comparison is experiential — the toaster — and dies where it's a rigid spec-per-yen comparison, as the phone found out against the smartphone giants. Balmuda's 2025–26 pivot toward limited-run, high-price design objects sold mostly overseas (a ¥550,000 lantern made with Jony Ive's LoveFrom studio, a ¥59,400 bedside clock) is now the only growing line in the business — a real-time case study for anyone building a small-batch, export-led premium hardware product of their own.</p>
   </div>
 
   <h2>Needs your answer</h2>
 
   <div class="item">
-    <p class="count">3 open questions — correcting a stale cross-reference in the research backlog; whether to open a standing watch on Nothing's Japan retail presence after a single-source, officially-denied report that it is exiting the market; and whether to require numeric claims to be double-quoted with page/section, after verification caught a benchmark figure misquoted by roughly 5×.</p>
+    <p class="count">3 open questions — whether to route battery charging through onboard mains circuitry (triggering a mandatory Japanese safety certification) or a detachable, separately-certified USB-C adapter (likely avoiding it); whether to start closely tracking Balmuda's limited-edition product drops and store moves as a competitor rather than only a cautionary tale; and which price-comparison category to design toward — premium kitchen tools/instruments versus kitchen smart-gadgets — since it decides how much of a sensor spec sheet to put in public view.</p>
     <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub ↗</a>
   </div>
 
