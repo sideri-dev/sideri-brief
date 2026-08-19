@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-08-18</title>
+<title>Morning Brief — 2026-08-19</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,52 +68,45 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Tuesday, 2026-08-18 · about a 6-minute read</p>
+    <p>Wednesday, 2026-08-19 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>A ¥29,800 Japanese AI earphone just showed what a Makuake-to-retail launch in this price class actually earns.</h3>
-    <p>SB C&amp;S's GLIDiC AI +u Buds — funded past ¥15M by more than 600 Makuake backers — moved to general retail today at ¥29,800 (¥42,048 with a year of the Pro plan), heading into SoftBank shops from September 4. It records conversations three ways, transcribes locally on-device, and leans on an explicit trust pitch: storage on domestic servers that is never used to train AI. It's a close comparable for anyone building a device that captures a moment and hands back an AI interpretation of it — pricing, feature set, and privacy framing all in one place, which is exactly why it's what we're digging into next.</p>
-    <a class="src" href="https://corriente.jp/glidic-ai-plus-u-buds-release-260818/">Read the source ↗</a>
+    <h3>Espressif's ESP-IDF v6.1-rc1 locks in a set of driver-breaking changes ahead of the stable release.</h3>
+    <p>The release candidate moves flash-driver internals behind private headers (code should call the API, not touch the struct directly), changes the storage format for mbedTLS's PSA persistent keys so they need re-importing, temporarily disables ECDSA Secure Boot V2 on the H2/C5/P4 chip line pending a fix, and drops support for shared interrupt flags in SPI initialization. It's the kind of pre-1.0 API churn worth tracking closely for anyone building new firmware against the v6.x line's non-legacy driver APIs.</p>
+    <a class="src" href="https://github.com/espressif/esp-idf/releases/tag/v6.1-rc1">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Samsung wants a 20% DRAM price hike for Q3 — manufacturers say they're out of room to pass it on.</h3>
-    <p>Samsung has verbally notified clients of a roughly 20% contract-price increase; TrendForce's independent forecast lands lower, 13–18% for DRAM generally, with LPDDR5X-class parts most likely to hit the full 20%. This is the third straight quarter of aggressive memory increases, after more than 90% in Q1 and 50–60% in Q2. For anyone sourcing memory-bearing components right now, Q3–Q4 2026 quotes should be treated as a moving negotiation, not a settled baseline.</p>
-    <a class="src" href="https://finance.biggo.com/news/aeae300c-cb80-4642-90b5-d2f07e791b20">Read the source ↗</a>
+    <h3>Sharp is showing its own design process in public for the first time in roughly 30 years.</h3>
+    <p>"Sharp Design's Gaze Exhibition" runs free through August 28 at GOOD DESIGN Marunouchi in Tokyo: five working products — a quantum-dot miniLED TV, a drum washer, a robot vacuum, a water heater, a stick vacuum — shown alongside prototypes and internal development documents, staged at the actual vantage points Sharp's designers used to observe the products in use. It follows a September 2025 design-philosophy relaunch and a new design center that opened in December. A major appliance maker publicly staging "how we watched the thing get used" as the exhibition's own subject is a rare and useful precedent for framing sensor-driven observation as design language rather than surveillance.</p>
+    <a class="src" href="https://www.axismag.jp/posts/2026/08/720176.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Fairphone brought its modular, repairable phone to the US for the first time, at $649 — pitched explicitly against today's memory crunch.</h3>
-    <p>The Gen 6+ launch runs a Snapdragon 7s Gen 4 with 12GB of RAM, has 12 owner-replaceable parts (battery, cameras, USB-C port, display) swappable with a single screwdriver, and carries a five-year warranty. TechCrunch frames the whole pitch around the same component-shortage environment as the DRAM story above. It's a live pricing and positioning precedent for any premium device landing in that same environment — repairability as a longevity argument, and a concrete benchmark for how far component-level serviceability can go.</p>
-    <a class="src" href="https://techcrunch.com/2026/08/18/fairphone-is-launching-its-latest-repairable-phone-in-the-us-too/">Read the source ↗</a>
+    <h3>A tiny AI model listens for an endangered bumblebee in Patagonia — and runs on 794 microjoules per classification.</h3>
+    <p>MIT Media Lab, working with Kioxia, built a 158,144-parameter INT8-quantized CNN running on a low-power microcontroller with a built-in neural accelerator (Analog Devices' MAX78000), hitting 86.1% three-class accuracy at 10.4 milliseconds per audio segment, purpose-built for unattended field deployment. It's a genuinely useful reference point for anyone sizing a small quantized classifier meant to triage a continuous sensor stream into discrete events entirely on-device, at real microcontroller power budgets rather than cloud-inference assumptions.</p>
+    <a class="src" href="https://www.media.mit.edu/posts/a-tiny-ai-listens-for-patagonia-s-giant-bumblebee/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Rakuten Mobile just cut the Nothing Phone (3) by up to ¥30,000 in Japan.</h3>
-    <p>The 256GB model drops from ¥119,900 to ¥95,990 and the 512GB from ¥138,900 to ¥108,900, with MNP and installment campaigns pushing effective pricing as low as ¥55,990 — through Nothing's sole Japanese carrier, same-day. It's a concrete demand-softening data point on Nothing's flagship line, and it echoes a pattern already seen elsewhere in Japan's premium-hardware market this year: Balmuda's domestic revenue fell 25.5% in the same half.</p>
-    <a class="src" href="https://www.itmedia.co.jp/mobile/spv/2608/18/news074.html">Read the source ↗</a>
+    <h3>A single chip just detected six gases down to parts-per-billion levels on a 3.5-by-4.5-centimeter board.</h3>
+    <p>Researchers at Jinan University, Shanxi University, and the Chinese Academy of Sciences built an on-chip lithium niobate platform combining photoacoustic and thermoelastic spectroscopy with photodetection, co-packaged with a mid-infrared laser: ammonia at roughly 7 parts per billion, nitrogen dioxide at about 2ppb, acetylene at about 3.5ppb, methane at about 2.5ppb, plus carbon dioxide and water vapor, spanning visible to mid-infrared light. It's a meaningfully different gas-sensing architecture from today's typical metal-oxide resistive sensors — parts-per-billion sensitivity, multiple gases, all on one chip. So far the result is published in one peer-reviewed study only, so treat it as an early signal rather than a settled fact.</p>
+    <a class="src" href="https://www.nature.com/articles/s41467-026-69042-7">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Espressif open-sourced its entire device-to-cloud-to-app stack, ESP RainMaker Neo, under Apache 2.0.</h3>
-    <p>The rebuilt stack — cloud backend, firmware SDK, mobile app SDK, dashboard — deploys into a developer's own AWS account instead of Espressif's hosted infrastructure, across three tiers: a public hosted "Neo," an own-AWS "packaged" option, and full build-from-source. It's a plausible backbone for anyone building on the ESP32-S3 who wants to avoid vendor lock-in and keep control of their own data. It's also a week-old release with no migration path from the older, still-supported Classic stack it replaces — worth tracking, not committing to yet.</p>
-    <a class="src" href="https://developer.espressif.com/blog/2026/08/open-sourcing-esp-rainmaker-neo/">Read the source ↗</a>
+    <h3>Teenage Engineering just got its first official distributor in Thailand.</h3>
+    <p>RTB Technology launched as the authorized importer for Teenage Engineering's Field System, EP Series, and Pocket Operator lines, selling through its own headquarters and Music Arms in Bangkok, with prices running from 3,290 baht up to 99,000 baht for the OP-XY (the OP-1 Field at 88,500 baht). It's a live test of how a Southeast Asian market receives premium, instrument-grade hardware sold at those price points through an official local channel — a useful signal for anyone weighing how "instrument, not gadget" positioning travels outside its home markets.</p>
+    <a class="src" href="https://www.telecomlover.com/2026/07/24/rtb-launches-teenage-engineering-thailand/">Read the source ↗</a>
   </div>
 
-  <h2>Yesterday's deep-dive — Balmuda</h2>
+  <h2>Yesterday's deep-dive — smart-kitchen graveyard and survivors</h2>
 
   <div class="item">
-    <p>Balmuda's decline was a sequence, not one mistake: a founder-conviction phone launch in 2021 at flagship price with mid-range hardware, a formal exit 18 months later that founder Gen Terao attributed to "our own insufficient capability," and a five-year revenue slide (¥18.4bn to ¥10.1bn, down 45%) tracking a shrinking Japanese premium-appliance market. The core lesson: a 3–5x category price premium survives where the buyer's comparison is experiential — the toaster — and dies where it's a rigid spec-per-yen comparison, as the phone found out against the smartphone giants. Balmuda's 2025–26 pivot toward limited-run, high-price design objects sold mostly overseas (a ¥550,000 lantern made with Jony Ive's LoveFrom studio, a ¥59,400 bedside clock) is now the only growing line in the business — a real-time case study for anyone building a small-batch, export-led premium hardware product of their own.</p>
-  </div>
-
-  <h2>Needs your answer</h2>
-
-  <div class="item">
-    <p class="count">3 open questions — whether to route battery charging through onboard mains circuitry (triggering a mandatory Japanese safety certification) or a detachable, separately-certified USB-C adapter (likely avoiding it); whether to start closely tracking Balmuda's limited-edition product drops and store moves as a competitor rather than only a cautionary tale; and which price-comparison category to design toward — premium kitchen tools/instruments versus kitchen smart-gadgets — since it decides how much of a sensor spec sheet to put in public view.</p>
-    <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub ↗</a>
+    <p>The 2015–2021 smart-kitchen hardware generation is now largely dead: one CES-era smart oven's cloud services shut off next month, another company backed by a major commercial-kitchen-equipment maker ceased operations in March, and a well-known smart-cooktop brand's app retired last July — all three tracing to the same pattern, cloud-dependent features with no matching recurring revenue and no disclosed support window. The survivors split into two camps: hardware that works fully offline with optional subscriptions, or hardware subsidized by ongoing consumables and content revenue (one direct-sales kitchen-appliance maker just posted a record €2.1 billion year in its culinary division). The newest wave of entrants is dominated by funded camera-vision robotic cookers, while thermal-imaging-first competitors remain underfunded or unverified — and notably, nothing on the market yet pairs true thermal imaging with gas or VOC sensing in one cooking-focused device. Category venture funding collapsed from roughly $169 million in 2021 to about $44 million in 2025. The clearest lesson: any device in this category needs a graceful offline mode and an answer for who pays for the cloud in year four, decided before the first unit ships — because feature advantages here commoditize faster than a hardware company can recoup them.</p>
   </div>
 
   <footer>Derived render. Canonical record lives in the repository.</footer>
