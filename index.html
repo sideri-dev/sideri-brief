@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-08-25</title>
+<title>Morning Brief — 2026-08-26</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,58 +68,62 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Tuesday, 2026-08-25 · about a 6-minute read</p>
+    <p>Wednesday, 2026-08-26 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>MIT and Sumitomo built an excavator controller where novices perform like experts "from the start."</h3>
-    <p>Instead of a joystick operators have to learn to map onto bucket motion, MIT's Hermano Krebs lab and Sumitomo Heavy Industries built a miniature mechanical arm operators physically grasp, with motion mirrored on a six-screen virtual display — removing the mental-mapping step entirely. In a seven-day training study, joystick-trained novices stayed consistently worse than experts throughout, while operators trained on this interface matched expert performance immediately. Two independent outlets, MIT News and Core77, confirm the same figures and quotes. It's a strong precedent for a thesis worth taking seriously in any interface-heavy hardware design: a well-built interface, not machine learning, is what closes a skill gap between novice and expert users.</p>
-    <a class="src" href="https://news.mit.edu/2026/mit-engineers-design-better-controller-operating-construction-diggers-0820">Read the source ↗</a>
+    <h3>The EU's battery-removability law turns out to be stricter than earlier reporting suggested, and now has a firm date.</h3>
+    <p>Reading the actual regulation text (EU 2023/1542) rather than a looser summary of it shows Article 11 bars proprietary tools entirely for removing a portable battery, requires spare batteries to stay available at a non-discriminatory price for five years after the last unit of a product ships, and bans software lock-out against a compatible replacement battery. The article takes effect 18 February 2027. It's directly relevant to any kitchen or consumer hardware being designed with a user-replaceable battery today — this is the bar a design would need to clear if it ever reaches the EU market, even for products not targeting Europe first.</p>
+    <a class="src" href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1542">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Naoto Fukasawa designed Nestlé Japan's new Barista kotone coffee machine, launching October 1 at ¥22,000.</h3>
-    <p>Preorders opened today; Nestlé's own release credits Fukasawa by name and calls it the quietest and slimmest machine in the Barista series, corroborated independently by a food-trade outlet with matching price and date. It's a useful reference point for how far the same design language stretches down into genuinely mass-market pricing, and how much of the premium argument in that lineage rests on lived experience rather than a designer's name alone.</p>
-    <a class="src" href="https://kaden.watch.impress.co.jp/docs/news/2135323.html">Read the source ↗</a>
+    <h3>Balmuda launched a ¥61,600 "Champagne Gold" special edition of its desktop clock, The Clock.</h3>
+    <p>Preorders opened 25 August, wider release follows from 4 September, sold through Balmuda's own online store, its Aoyama flagship, and partner brand shops, with the same colorway following in South Korea in early October and the US in mid-October. It's a live example of how a Japanese premium-hardware brand under real revenue pressure runs a limited-color, higher-margin variant across a mix of direct and curated retail channels — worth watching for anyone building a direct-to-consumer hardware brand, as a case study rather than a template to copy outright.</p>
+    <a class="src" href="https://kaden.watch.impress.co.jp/docs/news/2135378.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Meridian Innovation unveiled a new thermal sensor with over three times the pixel count of a widely used comparable, in a similar package.</h3>
-    <p>The Cheetah packs a 50×50 array (2,500 pixels, versus 768 on Melexis' MLX90640) into a 7×7×7mm module on Meridian's existing SenXor platform, with mass production slated for early 2026 and "smart appliances and IoT" named as a target application. Meridian already has a foothold in thermal-sensor comparisons via an earlier product, the SenXor MI0802 — this is a second line from the same vendor worth tracking. No published price or noise-equivalent temperature figure yet, so it's a watch rather than something to spec against today.</p>
-    <a class="src" href="https://www.prnewswire.com/news-releases/meridian-innovation-unveils-cheetah--a-new-generation-of-high-performance-cost-optimized-50O50-lwir-thermal-imaging-sensor-302645674.html">Read the source ↗</a>
+    <h3>Vermicular's temporary "Sustainable Store" closes in four days.</h3>
+    <p>The cast-iron cookware maker (Aichi Dobby) has been running a pop-up at Mitsui Outlet Park Kisarazu through 30 August, selling cookware refurbished under its own repair program at 15–35% off, in colorways exclusive to the pop-up. It's a live, closing-soon instance of a channel model worth studying closely — a temporary, sales-enabled venue built entirely on a repair and craft narrative rather than a permanent flagship store.</p>
+    <a class="src" href="https://prtimes.jp/main/html/rd/p/000000121.000028491.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>SwitchBot's new ¥19,980 wearable AI recorder routes everything through a cloud LLM the user picks.</h3>
-    <p>The 16.8g clip records up to 20 hours continuously with 64GB onboard storage, launched August 19, and lets the wearer choose which cloud model — ChatGPT, Claude, Gemini — summarizes what it hears, confirmed independently by GIGAZINE. It's a clean real-world example of one architectural path for turning raw sensor data into meaning: routing it through a cloud LLM at inference time, rather than running lighter-weight pattern comparison locally on the device.</p>
-    <a class="src" href="https://kaden.watch.impress.co.jp/docs/news/2134145.html">Read the source ↗</a>
+    <h3>A 28.9-million-parameter language model now runs locally on an ESP32-S3.</h3>
+    <p>A community TinyML project got it generating text at 9 tokens per second on a roughly $8 board with 512KB SRAM, 8MB PSRAM, and 16MB flash, from a 14.9MB 4-bit model file — though it can only produce short, TinyStories-style prose, not answer questions or follow instructions. It's a concrete demonstration of what fits inside this class of chip's memory budget, relevant to anyone evaluating on-device generative text on the same hardware family we're building on, the ESP32-S3.</p>
+    <a class="src" href="https://www.cnx-software.com/2026/08/03/28-9m-parameter-llm-runs-locally-on-esp32-s3-at-9-tokens-s/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Fairphone's newly launched repairable phone ships with a free screwdriver and a full spare-parts price list — but Fairphone's own store and the press coverage of it don't agree on the prices.</h3>
-    <p>Core77 lists a battery at $46, display at $104, and main camera at $81, alongside a bundled T5 Torx screwdriver; Fairphone's own US store, fetched directly today, prices the identical parts lower — $39.95, $89.95, $69.95. Both sources are dated today and credible; the discrepancy is unresolved rather than silently picked one way. Either way it's a costed, launch-day example of what a spare-parts and repair-tools program can look like for a user-repairable device.</p>
-    <a class="src" href="https://www.core77.com/posts/145160/A-User-Repairable-Smartphone-Finally-Comes-to-the-States">Read the source ↗</a>
+    <h3>A research paper visualizes cooking progress in real time on a 5 TOPS edge processor.</h3>
+    <p>The model synthesizes a realistic image of how a dish will look, from a raw photo plus recipe and cooking-state input, cutting image-quality error 30–60% against baselines while running at 8.68 million parameters (45MB) and 1.2 seconds per frame. It's the closest academic precedent to a problem we're working on directly — visualizing how food changes as it cooks — but it's a much heavier deep-learning approach than the lightweight statistical pattern-matching we've chosen for our own device, useful as a contrast case for why that choice still holds. Single-source (preprint, not yet peer-reviewed).</p>
+    <a class="src" href="https://arxiv.org/abs/2511.16965">Read the source ↗</a>
   </div>
 
-  <h2>Yesterday's deep-dive — shipping hardware internationally from Japan</h2>
+  <h2>Yesterday's deep-dives</h2>
 
   <div class="item">
-    <p>Shipping a premium instrument-class device internationally splits into three regimes depending entirely on the installed battery: postal-cheap (Singapore, roughly 4% of retail value to land a parcel, zero duty), postal-encumbered (the US, where the postal lane keeps closing and reopening under shifting customs rules), and postal-impossible (Germany, the UK, Thailand — no lithium-air-mail path exists, forcing a pricier contract courier). A widely cited 15% US duty figure turned out to be a stale screenshot of a rate the Supreme Court had already struck down; the actual current rate is a flat 12.5% under the operative tariff action in force since July. Consumer returns can't physically travel back to Japan by mail in most cases — the US bans it outright for used lithium devices — so returns economics need a destination-side hub or a reserve fund regardless of market. Singapore comes out as the cheapest and simplest lane of every market studied, while Thailand is the structurally hardest despite mattering strategically.</p>
+    <p>One re-examined a widely covered story about an excavator-controller interface that MIT and Sumitomo Heavy Industries built, where press coverage claimed novices performed like experts "from the start." The underlying paper's own abstract says something more modest — 37% faster cycle times at first use, "closely approximating" the performance of *trained* novices, not experts — and the two outlets repeating the stronger claim turned out to be one source restated by the other. The mechanism behind the real result does carry lessons for any interface built to close a skill gap, but only for tasks with a single correct answer; for tasks built on judgment rather than a fixed target, the better precedent is training that teaches perception and sticks even after the aid is removed, not training that spoon-feeds a live answer.</p>
+  </div>
+
+  <div class="item">
+    <p>The other retested the thermal-imaging sensor market: a newer, cheaper sibling to the array we've chosen now exists from the same manufacturer, priced roughly half as much, though it isn't a strict upgrade on every spec. And at real cooking temperatures, a much higher-resolution thermal camera from a different maker turns out to be *less* accurate than our lower-resolution choice, because it has to switch into a coarser measurement mode above 140°C — turning what looked like a resolution disadvantage into an accuracy advantage. No higher-resolution option is coming from the primary manufacturer, so this piece of the design can be considered settled.</p>
   </div>
 
   <h2>Needs your answer</h2>
 
   <p class="count">3 open questions this cycle.</p>
   <div class="item">
-    <p>Whether to formally verify Japanese export-control classification for a thermal-sensing component and the finished device before first shipment into Southeast Asia.</p>
+    <p>Whether to commit to a newer, not-yet-certified processor generation now, or a safer, already-certified one for launch with a migration plan for later.</p>
   </div>
   <div class="item">
-    <p>Whether to order small sample quantities of two backup thermal-sensor suppliers for bench testing, alongside the primary sensor already planned.</p>
+    <p>Whether to submit a certification inquiry to Japan's radio-equipment certifier now, covering a metal enclosure and an antenna question.</p>
   </div>
   <div class="item">
-    <p>Which processor generation to commit to for production, given the newest option lacks Japanese radio certification and stable software support today.</p>
+    <p>Whether an industrial-design brief should stick with a chip module that carries its own built-in antenna, to avoid extra radio-certification cost and complexity.</p>
   </div>
   <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
