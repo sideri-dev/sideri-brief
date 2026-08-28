@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-08-27</title>
+<title>Morning Brief — 2026-08-28</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,62 +68,62 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Thursday, 2026-08-27 · about a 6-minute read</p>
+    <p>Friday, 2026-08-28 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>An on-device sound classifier now runs at under a millijoule per inference.</h3>
-    <p>MIT and Kioxia built a compact 158,144-parameter, 8-bit quantized CNN that runs entirely on an Analog Devices MAX78000 microcontroller and tells a rare Patagonian bumblebee apart from an invasive look-alike and background noise, at 86.1% accuracy in 10.4 milliseconds and 794 microjoules per classification. Both MIT's own writeup and the underlying <em>Scientific Reports</em> paper carry the identical figures. It's a clean existence proof of what a narrow, quantized, fully offline event classifier can cost in compute and energy on cheap hardware — a useful benchmark for anyone sizing a similar on-device classifier.</p>
-    <a class="src" href="https://www.media.mit.edu/posts/a-tiny-ai-listens-for-patagonia-s-giant-bumblebee/">Read the source ↗</a>
+    <h3>ESP-IDF v6.1 shipped stable yesterday — the first release past v6.0.</h3>
+    <p>Espressif's own release notes confirm a storage-format break for a class of cryptographic keys (anything stored under an earlier version needs re-import), the removal of 192-bit curve support in secure boot as part of an MbedTLS 4.1.0 upgrade, a unified LCD color-conversion API, and preview support for the new ESP32-S31 chip. We're building on ESP-IDF v6.0.2 today, so this is the concrete next step on our firmware roadmap — worth planning the migration and the re-provisioning cost before touching display driver code. Two independent Espressif sources confirm the release.</p>
+    <a class="src" href="https://github.com/espressif/esp-idf/releases/tag/v6.1">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>A new transistor design boosts a cheap thermal-imaging material's sensitivity fifteen-fold.</h3>
-    <p>Yale's Xia Group paired a two-terminal transistor with standard microbolometer material and pushed its temperature-coefficient-of-resistance from about 10% to up to 150% per kelvin, without changing the sensing material itself. Uncooled microbolometers are the inexpensive, lower-accuracy end of thermal imaging, well behind cooled photon detectors and higher-end thermopile arrays on accuracy at real-world temperatures. If this materials advance reaches commercial parts, it could meaningfully close that accuracy gap — worth tracking for anyone comparing thermal sensor classes.</p>
-    <a class="src" href="https://engineering.yale.edu/news-and-events/news/better-thermal-imaging-thanks-small-device">Read the source ↗</a>
+    <h3>Iris Ohyama launched a new automation-first kitchen brand, "CHEFBOT," built around a sensor that makes the doneness call for you.</h3>
+    <p>The brand's opening product, the "Chef Chao" stir-fry pot, uses a base-mounted temperature sensor to run an entire cook automatically across more than 120 built-in recipes. It's a clean contrast case for a different bet: rather than automating the decision away, we're building toward making the cooking process visible while the cook stays in control.</p>
+    <a class="src" href="https://kaden.watch.impress.co.jp/docs/news/2135640.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Logitech is being sued for keeping a $61 million tariff refund instead of passing it back to buyers.</h3>
-    <p>The complaint alleges Logitech raised prices on over half its product line by up to 25% (14% average) in April 2025, citing tariffs, then collected the full refund by 30 June 2026 without lowering a single price — prices the suit says remain in place. It's a live cautionary case for any hardware brand that raised prices citing tariffs and now needs to decide what happens when those tariffs are refunded or reduced.</p>
-    <a class="src" href="https://fstoppers.com/legal/logitech-sued-keeping-tariff-refunds-instead-passing-them-buyers-904213">Read the source ↗</a>
+    <h3>Arc'teryx launched a full product-transparency system built around a laser-etched QR "digital product passport."</h3>
+    <p>Scanning the code on the jacket that opens the program surfaces its serial number, materials, factory of origin, and care instructions. It's the same instinct behind a decision we've made for our own device — showing its radio-certification number and firmware version on-screen rather than burying it in a settings menu. Arc'teryx remains the closest verified premium comparable for this kind of transparency-as-craft move, now applied one layer up, at the whole-product level.</p>
+    <a class="src" href="https://www.axismag.jp/posts/2026/08/721592.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>GoPro's sale process has reached its "final stage" as cash runs low.</h3>
-    <p>Q2 2026 shipments fell 38% year-over-year to roughly 291,000 units, cash and equivalents dropped to $27.3 million, and the quarterly loss widened to $51 million — sharper figures than the retail-collapse/direct-to-consumer-growth split reported two weeks earlier. It's the same story accelerating: a design-led hardware brand's traditional retail channel is dying faster than its direct-to-consumer channel can replace it, on a runway now measured in months.</p>
-    <a class="src" href="https://gigazine.net/gsc_news/en/20260813-gopro-sale-process/">Read the source ↗</a>
+    <h3>SharkNinja Japan launched a second sensor-automated cooking device the same week as Iris Ohyama's — an auto soup maker.</h3>
+    <p>Six cooking modes, 600ml capacity, launching late September. Two incumbents converging on cheap, closed-loop kitchen automation in the same seven days is a stronger signal than either alone: the mass-market floor is racing toward "don't think about it," while the instrument we're building keeps the opposite bet — show the process, keep the judgment with the cook.</p>
+    <a class="src" href="https://kaden.watch.impress.co.jp/docs/news/2135437.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>A thermal-plus-depth sensor fusion model hits gesture recognition at 50 milliwatts on a commodity microcontroller.</h3>
-    <p>A preprint fuses an 8×8 thermal array with time-of-flight depth data into a 6,343-parameter model running on STM32 chips, at 92.3% accuracy and millisecond-level latency. It's a useful, quantified reference point for how small and low-power a two-sensor fusion classifier can get on a resource-constrained chip, even on a different platform and task. Single-source (preprint, not yet peer-reviewed).</p>
-    <a class="src" href="https://arxiv.org/abs/2605.13462">Read the source ↗</a>
+    <h3>Shopify's checkout can calculate duty at the point of sale, but only under real conditions — not the blank-check answer we were hoping for.</h3>
+    <p>It won't run in the "Rest of world" shipping zone, requires a shipping carrier that supports DDP labels, and can't work through Shopify's own fulfillment network. A reduced transaction fee on international orders (0.85% or 1.5%, depending on payment provider) has been in effect since February 2025. We're weighing this directly against our own international checkout design, since a landed-cost estimate shown honestly at checkout beats a customer discovering the real duty bill at the door.</p>
+    <a class="src" href="https://help.shopify.com/en/manual/international/duties-and-import-taxes/charging-duties">Read the source ↗</a>
   </div>
 
   <h2>Yesterday's deep-dives</h2>
 
   <div class="item">
-    <p>One re-read the actual text of the EU's battery-removability law and found the corpus's understanding of it was already out of date: Article 11 has nine paragraphs, not eight, and its supporting Commission guidance was quietly revised on 14 July 2026 in a version not yet on the EU's own public legal database. The article sits entirely outside the EU's standard product-certification machinery — there's no certificate or approval process that can ever satisfy it, only after-the-fact market enforcement. A battery-bay design built around swappable commodity cells (rather than a sealed, purpose-built pack) turns out to gain nothing under this specific rule and adds real certification difficulty, while still holding value under several Asian markets' rules for an unrelated reason.</p>
+    <p>One dive re-read the actual text of the EU's battery-removability law and found the working understanding of it was already stale — the article has nine paragraphs, not eight, and its supporting guidance was quietly revised in July in a version not yet on the EU's own public legal database. It sits entirely outside the EU's standard product-certification machinery, so there's no certificate or approval process that can ever satisfy it, only after-the-fact market enforcement. A battery-bay design built around swappable, off-the-shelf commodity cells turns out to gain nothing under this specific rule and adds real certification difficulty, while still holding value under several Asian markets' rules for an unrelated reason.</p>
   </div>
 
   <div class="item">
-    <p>The other examined the same battery/enclosure design against US and EU wireless-certification rules. In the US, a chip module's existing radio approval typically only covers a "mobile" use classification evaluated at 20cm of separation from the body — a handheld or countertop instrument someone reaches for while working is probably the stricter "portable" classification instead, and the practical fix is a few centimeters of physical clearance built into the enclosure design from the start. In the EU, there turns out to be no equivalent certification-inheritance mechanism at all for a pre-certified radio module — a finding not stated anywhere else in the public record, confirmed here by a full-text search of the underlying law. Both point to the same lesson: some of these constraints are nearly free to design in now and very expensive to retrofit once an enclosure is finalized.</p>
+    <p>The other checked the same battery and enclosure design against US and EU wireless-certification rules. In the US, a chip module's existing radio approval typically covers only a "mobile" use classification evaluated at 20cm of separation from the body — a handheld or countertop instrument someone reaches for while working is probably the stricter "portable" classification instead, fixable with a few centimeters of designed-in clearance from the start. The EU turns out to have no equivalent certification-inheritance mechanism at all for a pre-certified radio module — a finding not stated anywhere else in the public record. Both point to the same lesson: some of these constraints are nearly free to design in now and very expensive to retrofit once an enclosure is finalized.</p>
   </div>
 
   <h2>Needs your answer</h2>
 
   <p class="count">3 open questions this cycle.</p>
   <div class="item">
-    <p>Whether to repoint two automated research sessions to a fallback AI model by hand, after today's usage-limit switch — otherwise tonight's and tomorrow's scheduled runs fail the same way.</p>
+    <p>Whether to revise a swappable-commodity-cell battery-bay design toward a sealed, single-cell pack instead — two independent regulatory reviews (one EU, one Japan-domestic) reached the same conclusion from different directions.</p>
   </div>
   <div class="item">
-    <p>Whether a small backup battery belongs in the current board design — cheap to decide now, since including one triggers a tier of US safety certification a design without one avoids entirely.</p>
+    <p>Whether a small backup battery belongs in the current circuit-board design — cheap to decide now, since including one triggers a tier of US safety certification a design without one avoids entirely.</p>
   </div>
   <div class="item">
-    <p>Whether the first enclosure design should reserve a few extra centimeters of clearance around the wireless antenna, to stay safely compliant with US exposure rules a handheld or countertop device likely falls under.</p>
+    <p>Whether the first enclosure design should reserve roughly 7.5cm of clearance around the wireless antenna, to stay safely inside US radio-exposure exemption rules a countertop device likely falls under.</p>
   </div>
   <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
