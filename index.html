@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-09-02</title>
+<title>Morning Brief — 2026-09-03</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,52 +68,57 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Wednesday, 2026-09-02 · about a 6-minute read</p>
+    <p>Thursday, 2026-09-03 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>The EU's own reporting deadline for connected-device vulnerabilities lands in nine days.</h3>
-    <p>The European Commission's Cyber Resilience Act reporting page confirms that from 11 September 2026, manufacturers of "products with digital elements" must report actively exploited vulnerabilities within 24 hours of becoming aware, with a full notification due within 72 hours. This is an early-tranche obligation, arriving well over a year before the Act's full applicability on 11 December 2027 — the vulnerability-monitoring and incident-reporting infrastructure a connected device needs turns out to be a much earlier build item than the regulation's headline date suggests.</p>
-    <a class="src" href="https://digital-strategy.ec.europa.eu/en/policies/cra-reporting">Read the source ↗</a>
+    <h3>Japan's telecom regulator has an unresolved fight on its hands: what happens when a product has no packaging to print a certification mark on.</h3>
+    <p>A March 2026 briefing from Japan's Ministry of Internal Affairs and Communications, prepared for a cabinet-office startup working group, quotes manufacturer testimony that the current workaround — printing the country's radio-certification mark on packaging or in a manual when the device body can't carry it — breaks down entirely for a product shipped with neither. The same document records a consumer-harm account: people turned away at trade-in because the mark couldn't be confirmed. On-device digital display of the mark was legalized back in 2010, but the accompanying rule for software-updated devices was, as of this document, still under deliberation.</p>
+    <p>This bears directly on how we're planning to satisfy that requirement: showing the certification identity and firmware version on-screen from day one rather than burying it inside the device. The consumer-harm evidence in this document makes that look less like a nice-to-have and more like the direction the rule is heading anyway.</p>
+    <a class="src" href="https://www8.cao.go.jp/kisei-kaikaku/kisei/meeting/wg/2501_04startup/260319/startup12_01.pdf">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>The ESP32-S31's DigiKey listing is finally readable — and it isn't in stock yet.</h3>
-    <p>After several cycles of a Cloudflare block on this exact product page, the ESP32-S31-WROOM-3-N16R16V listing came through today: "New Product" status, priced $7.30 at one piece, 16MB flash / 320kB ROM / 544kB SRAM, rated -40°C to 85°C. Stock reads zero today, with DigiKey's own estimate putting 2,500 units in stock by 27 January 2027 — a live read on how close this chip is to being production-buyable in volume.</p>
-    <a class="src" href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S31-WROOM-3-N16R16V/29821761">Read the source ↗</a>
+    <h3>Espressif patched an HTTP request-smuggling bug in the exact firmware line we build on.</h3>
+    <p>ESP-IDF v6.0.3, released September 2, fixes a Content-Length truncation issue in the built-in HTTP server that could enable request smuggling, and adds a new configuration option to cap request body size. The rest of the release is incremental — DMA color-conversion, camera RAW-from-memory support, minor driver additions.</p>
+    <p>Our firmware sits on this same v6.0 line, so the fix lands directly in what we ship, ahead of a planned move to the newer v6.1 line once it clears its own stability bar.</p>
+    <a class="src" href="https://github.com/espressif/esp-idf/releases/tag/v6.0.3">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Japan's next IoT security-label tier just published, and its queue is backing up.</h3>
-    <p>Japan's Information-technology Promotion Agency (IPA) has published ★3-level security criteria for communication equipment and network cameras under its JC-STAR labeling scheme, alongside a notice that a surge in applications is slowing review times. JC-STAR is a voluntary self-declaration security label sitting alongside Japan's existing radio-certification regime — a live data point on both the bar and the timeline for anyone weighing that label for a Japan launch.</p>
-    <a class="src" href="https://www.ipa.go.jp/security/jc-star/index.html">Read the source ↗</a>
+    <h3>Espressif's newest development boards are real; the claim that they already run its machine-learning library is not vendor-confirmed.</h3>
+    <p>Coverage of Espressif's ESP32-S31 Korvo/CoreBoard kits (dual-microphone array, 4.3-inch LCD, 3-megapixel camera) never mentions Espressif's own ESP-DL inference library. That claim traces instead to a community GitHub demo whose last commit predates the actual stable release of the ESP-IDF version it depends on — meaning it ran against a pre-release build — and Espressif's own ESP-DL repository doesn't list this chip among its officially supported targets yet.</p>
+    <p>We're tracking ESP-DL support on this chip as one of the signals for when it becomes viable for on-device machine-learning workloads, so it's worth knowing the current "it works" claim is a community result on preview software, not a vendor guarantee.</p>
+    <a class="src" href="https://www.cnx-software.com/2026/05/22/esp32-s31-development-boards-iot-smart-audio-and-hmi-applications/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Amazon just hiked the Echo Dot 60% overnight and named the memory shortage directly.</h3>
-    <p>Amazon's own statement: the Echo Dot's price "jumped 60% overnight, from $49.99 to $79.99," attributed to "significant increases in memory and storage component costs" after the company says it absorbed the shock as long as it could — press coverage is calling the broader shortage "RAMmageddon," with prices expected to keep climbing through 2027 before potentially stabilizing in 2028. It's the sharpest hardware-retail data point yet for a component shock that's now hit game consoles, laptops and smart speakers within weeks of each other.</p>
-    <a class="src" href="https://techcrunch.com/2026/08/24/amazon-hikes-hardware-prices-by-60-percent-blaming-memory-shortage/">Read the source ↗</a>
+    <h3>Balmuda's losses are shrinking, and its newest hit sells mostly overseas.</h3>
+    <p>Balmuda's first-half 2026 results show revenue down 15.8% year over year to ¥4.365 billion, with a ¥314 million operating loss and a ¥331 million net loss — smaller than the ¥397 million net loss a year earlier. Its newest product, the Sailing Lantern, sells roughly 70% abroad.</p>
+    <p>We continue to watch Balmuda as a case study in how a premium design-led hardware brand behaves under sustained contraction, not as a direct comparable — and an export-heavy newest release is a data point worth keeping in view.</p>
+    <a class="src" href="https://www.seventietwo.com/ja/business/Balmuda_2026Q2_20260807">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>A single sensor module now reads nine different things about the air in one 55mm part.</h3>
-    <p>Sensirion's new SEN68 combines four particulate-matter measurements, temperature, humidity, VOC index, NOx index and formaldehyde sensing into one 55.2×25.6×21.3mm module, drawing about 75mA. It's a useful marker for how much environmental-sensing capability now fits into a single, board-mountable part.</p>
-    <a class="src" href="https://sensirion.com/products/catalog/SEN68">Read the source ↗</a>
+    <h3>Shopify's automated duty-inclusive checkout now explicitly covers Japan.</h3>
+    <p>Shopify Managed Markets bakes duty and import tax into a product's displayed price rather than surfacing it as a separate line at checkout, and Shopify guarantees the amount — it absorbs the difference if a customs authority charges more than calculated. Its published eligible-market list, previously unclear on this point, now explicitly names both Japan and Singapore alongside the UK, EU, Australia and others.</p>
+    <p>For a direct-to-consumer store shipping into these markets, this closes a real question about whether landed-cost checkout is even available where it would be needed.</p>
+    <a class="src" href="https://changelog.shopify.com/posts/drive-international-conversion-with-automated-duties-inclusive-pricing-from-shopify-managed-markets">Read the source ↗</a>
   </div>
 
   <h2>Yesterday's deep-dive</h2>
 
   <div class="item">
-    <p>A closer read of yesterday's chip-security advisory found the opposite of what the headline suggested: the flaw it describes explicitly does not affect the firmware-update verification path most devices actually rely on, and no rule in force anywhere in the launch markets under discussion — European, Japanese, or Southeast Asian — actually requires the specific security feature in question; they require verified updates, a related but different and already-satisfiable bar. The real time-pressure item turned out to be a one-way hardware fuse that gets permanently set at factory test and can never be changed afterward, unlike a related protection that can be hardened later in the field. Whether a newer chip revision is even exposed to the underlying bug in the first place remains an open contradiction in the evidence.</p>
+    <p>A closer read of the EU's Cyber Resilience Act, prompted by the reporting-deadline item covered previously, found the answer splits three ways for an in-development hardware platform. On timing and classification, the news is good: nothing not yet sold on the EU market owes anything under the Act's 11 September reporting deadline, and a new EU implementing regulation confirms that a kitchen-adjacent connected device doesn't fall into the stricter consumer-safety product category, leaving open the cheapest self-assessment compliance route with no third-party testing fee. On support commitments, the news is less good: the European Commission's own guidance explicitly rejects five years as a default support period for hardware meant to last, pointing instead toward roughly a decade — a bar that collides with the underlying firmware toolchain's own multi-year support cycle and implies at least one forced platform migration somewhere in a device's working life. A smaller manufacturer also inherits real, if proportionate, obligations: a vulnerability-disclosure policy, a non-automated way for someone to report a flaw, a software bill of materials, and a secure update mechanism — the last of which existing open-source tooling from the chip vendor already covers. One new date worth remembering: 11 June 2028, after which a device can no longer rely on its wireless-equipment certificate alone to cover cybersecurity and needs the fuller Act-based route instead.</p>
   </div>
 
   <h2>Needs your answer</h2>
 
   <p class="count">1 open question this cycle.</p>
   <div class="item">
-    <p>Whether the onboard chip in an in-development hardware platform needs a larger memory configuration to support on-device media and processing features, or a smaller one is sufficient.</p>
+    <p>Whether the onboard chip in an in-development hardware platform needs a larger memory configuration to support on-device features, or whether a smaller one is sufficient.</p>
   </div>
   <a class="src" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
