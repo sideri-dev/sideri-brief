@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Morning Brief — 2026-09-06</title>
+<title>Morning Brief — 2026-09-07</title>
 <style>
   :root {
     --bg: #faf9f7;
@@ -68,50 +68,50 @@
 <main>
   <header>
     <h1>Morning Brief</h1>
-    <p>Sunday, 2026-09-06 · about a 6-minute read</p>
+    <p>Monday, 2026-09-07 · about a 6-minute read</p>
   </header>
 
   <h2>Today</h2>
 
   <div class="item">
-    <h3>Japan's trade ministry wants to move power banks into a tougher, third-party-inspected certification tier after accident reports nearly quadrupled.</h3>
-    <p>At an August 31 subcommittee meeting, METI laid out a plan to reclassify mobile batteries and power banks from self-certified "round PSE" to third-party-inspected "diamond PSE" — citing accident reports rising from 51 in 2021 to 192 in 2025. Enforcement is targeted for March 2027, with a one-year transition period.</p>
-    <p>For any hardware maker shipping into Japan, it's a reminder that battery-pack accessories specifically are being pulled toward a much stricter, costlier conformity track — worth watching before committing to any battery-pack accessory plan.</p>
-    <a class="src" href="https://www.nikkei.com/article/DGXZQOUA312JN0R30C26A8000000/">Read the source ↗</a>
+    <h3>A new research paper hands hobbyist-hardware builders a concrete, measured way to keep an on-device vision model accurate as conditions drift — for a few milliseconds and a few millijoules per adjustment.</h3>
+    <p>FORGE is a forward-only test-time-adaptation method for int8-quantized CNNs, demonstrated running on Espressif's ESP32-S3 microcontroller. It recovers most of the accuracy gain that full gradient-based retraining (the established TENT method) would get, while touching only 3 of 21 network layers to recover 93% of that benefit, at a measured cost of 8.3 millijoules and 21.9 milliseconds per adaptation.</p>
+    <p>It's a real, quantified answer to a problem every small on-device vision system faces: staying accurate under changing lighting, steam or glare without retraining from scratch or a cloud round-trip.</p>
+    <a class="src" href="https://arxiv.org/abs/2609.01683">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Teenage Engineering's own direct-store numbers show a rebound, not a recovery.</h3>
-    <p>Third-party analytics on the company's direct storefront show revenue down 22% over the last three months. The more telling number sits one layer up: 2025 itself was already down more than 50% year-over-year, so the touted 50%+ growth projected for 2026 is a bounce off a much smaller base, not organic growth against a stable prior year. No methodology is disclosed, so treat the absolute figures as directional.</p>
-    <p>It's a useful reminder for anyone reading a design-led hardware brand's growth headline at face value — the base year matters as much as the percentage.</p>
-    <a class="src" href="https://gripsintelligence.com/insights/retailers/teenage.engineering">Read the source ↗</a>
+    <h3>Panasonic's automated cooking pot "Bistro" carries Japan's new IoT security label — but it isn't the first, and the correction matters more than the label.</h3>
+    <p>Japan's IPA security-labelling registry (JC-STAR) confirms Panasonic's domestic automated cooking pot "Bistro" holds a one-star conformity label issued June 5, 2026. Early reporting framed this as the first cooking appliance in the registry; a full scan of all 338 entries shows that's wrong — an earlier Panasonic oven-range Bistro (April 2026) and two Sharp Healsio water-oven entries (mid-2025) predate it by up to eleven months.</p>
+    <p>It's still a real, current instance of a named connected cooking appliance carrying the label — just one data point in a pattern Sharp already established, not a first.</p>
+    <a class="src" href="https://www.ipa.go.jp/security/jc-star/list/jc-star-product-list/index.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>Balmuda's ¥59,400 sleep clock has shipped 5,000 units.</h3>
-    <p>Cumulative domestic-plus-overseas shipments crossed 5,000 as of August, up from over 1,000 orders at the March pre-order opening.</p>
-    <p>It's a rare concrete volume figure for a Japanese instrument-positioned, direct-to-consumer product in the ¥50,000–60,000 range — useful context for anyone benchmarking premium kitchen-hardware demand in Japan.</p>
-    <a class="src" href="https://news.yahoo.co.jp/articles/c5906b3b991f752bcd052e61124a395c880a4e50">Read the source ↗</a>
+    <h3>Sharp's new Healsio Hot Cook pro ships September 17, extending cloud conversational AI to a new appliance rather than shipping new on-device intelligence.</h3>
+    <p>The KN-HW24K and KN-HW16K models launch at an estimated ¥71,500–82,500, extending Sharp's existing generative-AI cooking assistant "クックトーク" (its persona nicknamed "しおりちゃん") from the brand's water-oven line to a new product rather than debuting anything new. Sharp's own listing leaves the retail price open; two independent Japanese outlets converge on the same estimate.</p>
+    <p>It's a real Japanese cooking-instrument launch betting on cloud conversation over on-device sensing — a live counterpoint for anyone weighing local versus cloud-dependent intelligence in premium kitchen hardware.</p>
+    <a class="src" href="https://corporate.jp.sharp/news/260729-a.html">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>A researcher demonstrated a full vision pipeline — training through inference — running entirely on a thumb-sized microcontroller.</h3>
-    <p>The setup uses a $15-40 Seeed ESP32-S3 XIAO board with 8MB PSRAM, training three-class 64x64 image classification in about 9 minutes per run and running inference in real time at 6.3 frames per second, in roughly 1,750 lines of dependency-free C++ with no external machine-learning framework.</p>
-    <p>It's a working proof that a narrowly-scoped, on-device detection task — the kind of thing we're interested in for sensing physical events, not deep learning — is genuinely achievable on hardware one generation behind the chip we're building on.</p>
-    <a class="src" href="https://arxiv.org/abs/2604.23012">Read the source ↗</a>
+    <h3>Qualcomm just backed Ultrahuman's smart ring pivot from tracker to on-device computer, with real money.</h3>
+    <p>The $70M round ($65M equity, $5M debt) values Ultrahuman at $365M, roughly 3x its 2023 mark. The company's own framing: today's rings are trackers that "measure your heart rate, your movement, your sleep" — the bet is turning the ring into "more like a computer, where programs and algorithms can run on the device itself."</p>
+    <p>It's independent funding-market validation, from an adjacent premium-hardware category, of on-device processing over cloud- and subscription-dependent intelligence as an investable thesis.</p>
+    <a class="src" href="https://techcrunch.com/2026/09/03/qualcomm-backs-ultrahuman-in-70m-round-on-bet-to-turn-smart-rings-into-computers/">Read the source ↗</a>
   </div>
 
   <div class="item">
-    <h3>A century-old Japanese enamelware maker opened its first-ever flagship store, built around watching the product get made.</h3>
-    <p>Noda Horo, founded in 1934 and still the only Japanese enamelware maker running its entire manufacturing process in-house, opened a flagship shop with an attached kitchen and refrigerator so customers can immediately test container sizes and usability against real appliances.</p>
-    <p>It's a second concrete example of a single-category Japanese craft manufacturer choosing a hands-on, story-forward retail format over a conventional showroom — a useful data point for anyone weighing that kind of format for their own retail plans.</p>
-    <a class="src" href="https://www.axismag.jp/posts/2026/07/714951.html">Read the source ↗</a>
+    <h3>Correction: a thermal-cooking crowdfunding campaign widely read as a failure actually closed overfunded at 344%.</h3>
+    <p>Earlier reporting on Gambit Robotics' Kickstarter campaign for its "Never Burn Dinner Again" cooking device recorded it as raising roughly $1,456 of a $10,000 goal — an early-campaign snapshot read as evidence that subscription-gated, thermal-first cooking hardware had no real demand. A fresh check of the campaign's own tracker shows it actually closed at $34,403 from 93 backers — 344% funded.</p>
+    <p>It's a live, now-confirmed-successful example of sub-$500, subscription-gated kitchen-guidance hardware, and a reminder that this category has more real demand behind it than the earlier snapshot suggested.</p>
+    <a class="src" href="http://www.kicktraq.com/projects/gambitcooking/gambit-robotics-never-burn-dinner-again/">Read the source ↗</a>
   </div>
 
   <h2>Yesterday's deep-dive</h2>
 
   <div class="item">
-    <p>A distributor's "estimated restock date" for a newly launched microcontroller module turned out to be a calculated artifact, not real supply information — the site derives it from a fixed lead time plus the day you happen to load the page, and the apparent "slip" reported a day earlier was just calendar drift. Underneath that non-event, three findings held up: the chip's on-package memory is fixed per die rather than a separately configurable module option, with an 8MB floor across every documented variant; its machine-learning toolchain has actually supported the chip since May, correcting an earlier claim that support was only community-demonstrated rather than official; and its path to "stable" software support depends on a release that hasn't shipped yet and isn't expected until year-end. The chip's formal radio-certification status in Japan remains unfiled.</p>
+    <p>Japan's trade ministry's late-August proposal to move mobile power banks onto a tougher, third-party-inspected certification track contains no actual scope definition anywhere in its 36 pages — the Cabinet Order it has to amend has no line item for "mobile battery," only lithium-ion battery packs as a whole, so how broadly the new rule reaches (spare cells included or not) is genuinely undecided in the public record. A "built into the device" exemption some had been leaning on is also weaker than assumed: it was a two-year grace period the ministry itself closed in 2011, and what remains rests on a single sentence of guidance the ministry has already rewritten twice. No honest cost or timeline figure exists yet for battery certification under this track, because the technical standard and inspection requirements it depends on don't exist yet either. The plan targets standalone battery-pack accessories specifically, not batteries built into a finished device, and nothing in it is schedulable to start before 2027 on what's published so far.</p>
   </div>
 
   <footer>
