@@ -1,122 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Morning Brief — 2026-09-07</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Brief — September 8, 2026</title>
 <style>
   :root {
-    --bg: #faf9f7;
-    --ink: #1f1e1c;
-    --muted: #6b6862;
-    --line: #e3e0da;
-    --btn-bg: #efece7;
-    --btn-ink: #1f1e1c;
+    color-scheme: light dark;
+    --bg: #fbfaf8;
+    --fg: #1c1a17;
+    --muted: #6b6660;
+    --accent: #8a5a2b;
+    --divider: #e4dfd7;
+    --btn-bg: #1c1a17;
+    --btn-fg: #fbfaf8;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #141414;
-      --ink: #e8e6e1;
-      --muted: #97948e;
-      --line: #2b2a28;
-      --btn-bg: #232220;
-      --btn-ink: #e8e6e1;
+      --bg: #171614;
+      --fg: #ece8e1;
+      --muted: #9d968c;
+      --accent: #d9a05b;
+      --divider: #322f2a;
+      --btn-bg: #ece8e1;
+      --btn-fg: #171614;
     }
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
     background: var(--bg);
-    color: var(--ink);
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    color: var(--fg);
+  }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
     font-size: 18px;
     line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
   }
-  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
-  header { margin-bottom: 3rem; }
-  header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; }
-  header p { color: var(--muted); font-size: 0.95rem; margin-top: 0.35rem; }
+  header {
+    margin-bottom: 2.5rem;
+  }
+  header .date {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  header .readtime {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+  }
   h2 {
-    font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
-    letter-spacing: 0.12em; color: var(--muted); margin: 3rem 0 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
   }
-  .item { padding: 1.75rem 0; border-top: 1px solid var(--line); }
-  .item:first-of-type { border-top: none; padding-top: 0; }
-  .item h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.5; margin-bottom: 0.75rem; }
-  .item p { margin-bottom: 0.9rem; }
-  .item p:last-of-type { margin-bottom: 1.1rem; }
-  a.src {
-    display: block; width: 100%; text-align: center;
-    background: var(--btn-bg); color: var(--btn-ink);
-    text-decoration: none; font-size: 0.92rem; font-weight: 600;
-    padding: 0.8rem 1rem; border-radius: 0.6rem;
+  .item {
+    margin-bottom: 2.25rem;
   }
-  a.src:active { opacity: 0.7; }
-  .item code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 0.88em; background: var(--btn-bg);
-    padding: 0.1em 0.35em; border-radius: 0.25rem; word-break: break-word;
+  .item p {
+    margin: 0.9rem 0;
   }
-  .item em { color: var(--muted); font-size: 0.92rem; font-style: normal; }
-  .path { color: var(--muted); font-size: 0.9rem; word-break: break-all; }
-  .count { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
-  footer { margin-top: 4rem; color: var(--muted); font-size: 0.85rem; }
+  .item .headline {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    margin-top: 1rem;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .btn:visited { color: var(--btn-fg); }
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 2.25rem 0;
+  }
+  footer {
+    margin-top: 3.5rem;
+  }
+  .muted {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <h1>Morning Brief</h1>
-    <p>Monday, 2026-09-07 · about a 6-minute read</p>
-  </header>
 
+<header>
+  <div class="date">September 8, 2026</div>
+  <div class="readtime">~5 minute read</div>
+</header>
+
+<section>
   <h2>Today</h2>
 
   <div class="item">
-    <h3>A new research paper hands hobbyist-hardware builders a concrete, measured way to keep an on-device vision model accurate as conditions drift — for a few milliseconds and a few millijoules per adjustment.</h3>
-    <p>FORGE is a forward-only test-time-adaptation method for int8-quantized CNNs, demonstrated running on Espressif's ESP32-S3 microcontroller. It recovers most of the accuracy gain that full gradient-based retraining (the established TENT method) would get, while touching only 3 of 21 network layers to recover 93% of that benefit, at a measured cost of 8.3 millijoules and 21.9 milliseconds per adaptation.</p>
-    <p>It's a real, quantified answer to a problem every small on-device vision system faces: staying accurate under changing lighting, steam or glare without retraining from scratch or a cloud round-trip.</p>
-    <a class="src" href="https://arxiv.org/abs/2609.01683">Read the source ↗</a>
+    <span class="headline">Mbed TLS's own advisories page confirms 29 CVE-2026 entries against the crypto library version our firmware line has been pinned to.</span>
+    <p>A running watch on this gap has estimated "at least 18, likely 27–30" unpatched advisories since late August; today's direct count from Mbed TLS's own advisories page lands at exactly 29, including a named remote-buffer-overflow flaw in the TLS 1.2 ECDHE-PSK handshake (CVE-2026-50580). Both the currently pinned ESP-IDF release and the next one queued to ship sit on the same vulnerable Mbed TLS line. The open question is how many of the 29 are actually reachable in a real embedded configuration, not just present in the dependency tree.</p>
+    <a class="btn" href="https://mbed-tls.readthedocs.io/en/latest/security-advisories/">Read the source →</a>
   </div>
 
   <div class="item">
-    <h3>Panasonic's automated cooking pot "Bistro" carries Japan's new IoT security label — but it isn't the first, and the correction matters more than the label.</h3>
-    <p>Japan's IPA security-labelling registry (JC-STAR) confirms Panasonic's domestic automated cooking pot "Bistro" holds a one-star conformity label issued June 5, 2026. Early reporting framed this as the first cooking appliance in the registry; a full scan of all 338 entries shows that's wrong — an earlier Panasonic oven-range Bistro (April 2026) and two Sharp Healsio water-oven entries (mid-2025) predate it by up to eleven months.</p>
-    <p>It's still a real, current instance of a named connected cooking appliance carrying the label — just one data point in a pattern Sharp already established, not a first.</p>
-    <a class="src" href="https://www.ipa.go.jp/security/jc-star/list/jc-star-product-list/index.html">Read the source ↗</a>
+    <span class="headline">Sensirion's SEK-SEN69C evaluation kit adds CO2 to its all-in-one air-quality sensor, reaching 10 environmental parameters in a single module.</span>
+    <p>It extends the SEN68 platform (particulate matter, VOC, NOx, HCHO, temperature, humidity) with CO2 sensing and a new evaluation SKU. It's a useful marker of how much environmental-sensing density a single commercial module now packs into one package, for anyone tracking this class of multi-gas sensor.</p>
+    <a class="btn" href="https://www.machinedesign.com/directory/mechanical-motion-systems/sensors/product/55397008/mouser-mouser-newest-products-sensirion-sek-sen69c-evaluation-kit">Read the source →</a>
   </div>
 
   <div class="item">
-    <h3>Sharp's new Healsio Hot Cook pro ships September 17, extending cloud conversational AI to a new appliance rather than shipping new on-device intelligence.</h3>
-    <p>The KN-HW24K and KN-HW16K models launch at an estimated ¥71,500–82,500, extending Sharp's existing generative-AI cooking assistant "クックトーク" (its persona nicknamed "しおりちゃん") from the brand's water-oven line to a new product rather than debuting anything new. Sharp's own listing leaves the retail price open; two independent Japanese outlets converge on the same estimate.</p>
-    <p>It's a real Japanese cooking-instrument launch betting on cloud conversation over on-device sensing — a live counterpoint for anyone weighing local versus cloud-dependent intelligence in premium kitchen hardware.</p>
-    <a class="src" href="https://corporate.jp.sharp/news/260729-a.html">Read the source ↗</a>
+    <span class="headline">Melexis's MLX90617 reads a pot's base temperature straight through an induction hob's ceramic glass.</span>
+    <p>Unlike the imaging-array thermal sensors (MLX90640/90641) that show up often in cooking-hardware coverage, the MLX90617 is a single-point thermopile: factory-calibrated -0°C to 125°C at the sensor, reading cookware surfaces from 70°C to 250°C through the hob's ceramic glass via optical filtering tuned to that material. It ships in a TO39 package with an SMBus digital interface. Coverage is thin — Melexis's own site is currently unreachable, and the only writeup found is a syndicated mirror, so this stays single-source.</p>
+    <a class="btn" href="https://www.powersystemsdesign.com/articles/mlx90617-infrared-thermometer-revolutionizes-induction-hob-design/29/22426">Read the source →</a>
   </div>
 
   <div class="item">
-    <h3>Qualcomm just backed Ultrahuman's smart ring pivot from tracker to on-device computer, with real money.</h3>
-    <p>The $70M round ($65M equity, $5M debt) values Ultrahuman at $365M, roughly 3x its 2023 mark. The company's own framing: today's rings are trackers that "measure your heart rate, your movement, your sleep" — the bet is turning the ring into "more like a computer, where programs and algorithms can run on the device itself."</p>
-    <p>It's independent funding-market validation, from an adjacent premium-hardware category, of on-device processing over cloud- and subscription-dependent intelligence as an investable thesis.</p>
-    <a class="src" href="https://techcrunch.com/2026/09/03/qualcomm-backs-ultrahuman-in-70m-round-on-bet-to-turn-smart-rings-into-computers/">Read the source ↗</a>
+    <span class="headline">Kengo Kuma's studio, with Nikko, Sugawara Art Glass and Todai, opens a tableware exhibition at Isetan Shinjuku September 9–15 — some pieces five years in development, each boxed in custom Yoshino cedar.</span>
+    <p>The show pairs the architect's studio with three Japanese manufacturers on tableware co-developed over as long as five years, presented at Isetan Shinjuku's Center Park venue with bespoke cedar-wood packaging for individual pieces. It's a concrete, dated example of long-cycle craft-manufacturer collaboration and considered unboxing at a major retail venue, confirmed independently on two Japanese-language sources.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/09/722202.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <h3>Correction: a thermal-cooking crowdfunding campaign widely read as a failure actually closed overfunded at 344%.</h3>
-    <p>Earlier reporting on Gambit Robotics' Kickstarter campaign for its "Never Burn Dinner Again" cooking device recorded it as raising roughly $1,456 of a $10,000 goal — an early-campaign snapshot read as evidence that subscription-gated, thermal-first cooking hardware had no real demand. A fresh check of the campaign's own tracker shows it actually closed at $34,403 from 93 backers — 344% funded.</p>
-    <p>It's a live, now-confirmed-successful example of sub-$500, subscription-gated kitchen-guidance hardware, and a reminder that this category has more real demand behind it than the earlier snapshot suggested.</p>
-    <a class="src" href="http://www.kicktraq.com/projects/gambitcooking/gambit-robotics-never-burn-dinner-again/">Read the source ↗</a>
+    <span class="headline">wan AIChef ultra launched on Indiegogo — a Heimann-thermal-imaging AI cooking device built on an NVIDIA Jetson Orin Nano stack, discounted steeply ahead of its $3,999 list price.</span>
+    <p>Pre-launch pricing ran $1,799 to $2,499 (38–55% off), with first deliveries slated for November 2026. The device pairs a 12-megapixel vision camera with Heimann thermal imaging rated to ±3.2°F accuracy on top of an NVIDIA Jetson Orin Nano and Ampere GA10B processor — a cloud-scale compute approach paired with crowdfunding-style discount tiers. Single-source: PR Newswire is the only coverage found; a Yahoo Finance copy carries identical wire text.</p>
+    <a class="btn" href="https://www.prnewswire.com/news-releases/wan-aichef-ultra-launches-on-indiegogo-the-worlds-first-ai-chef-that-sees-thinks--cooks--powered-by-nvidia-302861248.html">Read the source →</a>
   </div>
+</section>
 
-  <h2>Yesterday's deep-dive</h2>
+<hr class="divider">
 
+<section>
+  <h2>Run notes</h2>
   <div class="item">
-    <p>Japan's trade ministry's late-August proposal to move mobile power banks onto a tougher, third-party-inspected certification track contains no actual scope definition anywhere in its 36 pages — the Cabinet Order it has to amend has no line item for "mobile battery," only lithium-ion battery packs as a whole, so how broadly the new rule reaches (spare cells included or not) is genuinely undecided in the public record. A "built into the device" exemption some had been leaning on is also weaker than assumed: it was a two-year grace period the ministry itself closed in 2011, and what remains rests on a single sentence of guidance the ministry has already rewritten twice. No honest cost or timeline figure exists yet for battery certification under this track, because the technical standard and inspection requirements it depends on don't exist yet either. The plan targets standalone battery-pack accessories specifically, not batteries built into a finished device, and nothing in it is schedulable to start before 2027 on what's published so far.</p>
+    <p>Five additional items cleared verification but didn't make today's five-item cap: Brava, a VC-funded $995–$2,000 "cook with light" smart oven, ceased operations in March 2026 under new ownership after raising $25M over eight years — a second cautionary case study in this space. MIT Media Lab published BioLIG, laser-etched conductive circuits made from bio-based paper, fabric, and lignin/chitosan paints, with conductivity on par with carbon black. Bambu Lab opened a third distinct Japan retail format, a campus-adjacent maker store outside the University of Tokyo's Hongo gate. Mouser began listing Espressif's ESP32-S31-WROOM-3 modules, the first non-DigiKey distributor listing tracked so far. And Homo Faber 2026, "An Island of Light," Es Devlin's craft-versus-algorithm exhibition running in Venice through September 30, was flagged for a correction: a widely-circulated quote attributed to designer Roberto Cavalli ("slave to the algorithm") does not appear anywhere on the cited source page. The real quote frames hand-making as a counterpoint to "exploitative mass production" and "algorithmically-generated design practices" — the exhibition itself was already covered here on September 4, so it isn't republished as a new item, only corrected.</p>
   </div>
+</section>
 
-  <footer>
-    <a class="src" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
-  </footer>
-</main>
+<hr class="divider">
+
+<footer>
+  <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
+</footer>
+
 </body>
 </html>
