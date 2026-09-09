@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 8, 2026</title>
+<title>Research Brief — September 9, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,7 +103,7 @@
 <body>
 
 <header>
-  <div class="date">September 8, 2026</div>
+  <div class="date">September 9, 2026</div>
   <div class="readtime">~5 minute read</div>
 </header>
 
@@ -111,33 +111,42 @@
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Mbed TLS's own advisories page confirms 29 CVE-2026 entries against the crypto library version our firmware line has been pinned to.</span>
-    <p>A running watch on this gap has estimated "at least 18, likely 27–30" unpatched advisories since late August; today's direct count from Mbed TLS's own advisories page lands at exactly 29, including a named remote-buffer-overflow flaw in the TLS 1.2 ECDHE-PSK handshake (CVE-2026-50580). Both the currently pinned ESP-IDF release and the next one queued to ship sit on the same vulnerable Mbed TLS line. The open question is how many of the 29 are actually reachable in a real embedded configuration, not just present in the dependency tree.</p>
-    <a class="btn" href="https://mbed-tls.readthedocs.io/en/latest/security-advisories/">Read the source →</a>
+    <span class="headline">Espressif's own blog spells out exactly how EU vulnerability reporting will work once Article 14 of the Cyber Resilience Act starts applying on September 11.</span>
+    <p>Filing runs through ENISA's Single Reporting Platform, web forms only at launch (no API), and only named "Assigned Representatives" — individuals with personal EU Login accounts and two-factor authentication — can submit on a manufacturer's behalf. Espressif is explicit that the reporting duty is tied to a manufacturer's own finished product: a flaw unreachable in the shipped device isn't the product maker's to report. This adds real operational detail — who files, how, and by when — to the broader CRA compliance picture for anyone shipping a connected product into the EU.</p>
+    <a class="btn" href="https://developer.espressif.com/blog/2026/09/esp32-cra-obligations-and-deadlines/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Sensirion's SEK-SEN69C evaluation kit adds CO2 to its all-in-one air-quality sensor, reaching 10 environmental parameters in a single module.</span>
-    <p>It extends the SEN68 platform (particulate matter, VOC, NOx, HCHO, temperature, humidity) with CO2 sensing and a new evaluation SKU. It's a useful marker of how much environmental-sensing density a single commercial module now packs into one package, for anyone tracking this class of multi-gas sensor.</p>
-    <a class="btn" href="https://www.machinedesign.com/directory/mechanical-motion-systems/sensors/product/55397008/mouser-mouser-newest-products-sensirion-sek-sen69c-evaluation-kit">Read the source →</a>
+    <span class="headline">Panic refunded every tariff dollar it had charged Playdate customers, unprompted.</span>
+    <p>The company charged a 19% import surcharge, stopped charging it in April, and then on August 25 wrote every affected customer a check for the difference. "It's just not our money to keep," founder Cabel Sasser told PC Gamer, "that's an easy way to know you made the wrong call in the first place." It's a clean precedent for showing import duty as its own line at checkout rather than folding it silently into the sticker price.</p>
+    <a class="btn" href="https://help.play.date/orders/tariffs/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Melexis's MLX90617 reads a pot's base temperature straight through an induction hob's ceramic glass.</span>
-    <p>Unlike the imaging-array thermal sensors (MLX90640/90641) that show up often in cooking-hardware coverage, the MLX90617 is a single-point thermopile: factory-calibrated -0°C to 125°C at the sensor, reading cookware surfaces from 70°C to 250°C through the hob's ceramic glass via optical filtering tuned to that material. It ships in a TO39 package with an SMBus digital interface. Coverage is thin — Melexis's own site is currently unreachable, and the only writeup found is a syndicated mirror, so this stays single-source.</p>
-    <a class="btn" href="https://www.powersystemsdesign.com/articles/mlx90617-infrared-thermometer-revolutionizes-induction-hob-design/29/22426">Read the source →</a>
+    <span class="headline">Framework cut its LPCAMM2 memory prices and is automatically refunding everyone who already paid the higher rate.</span>
+    <p>Orders that already shipped at the old price get the difference back automatically; a subset of pending pre-orders gets the lower price outright, with no customer having to ask. It's a real-world instance of turning a component-cost drop into a customer refund rather than a quiet margin gain — a useful posture to watch as memory pricing keeps swinging through 2026.</p>
+    <a class="btn" href="https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Kengo Kuma's studio, with Nikko, Sugawara Art Glass and Todai, opens a tableware exhibition at Isetan Shinjuku September 9–15 — some pieces five years in development, each boxed in custom Yoshino cedar.</span>
-    <p>The show pairs the architect's studio with three Japanese manufacturers on tableware co-developed over as long as five years, presented at Isetan Shinjuku's Center Park venue with bespoke cedar-wood packaging for individual pieces. It's a concrete, dated example of long-cycle craft-manufacturer collaboration and considered unboxing at a major retail venue, confirmed independently on two Japanese-language sources.</p>
-    <a class="btn" href="https://www.axismag.jp/posts/2026/09/722202.html">Read the source →</a>
+    <span class="headline">Designer Noritaka Tatehana opens a 15-year handcraft retrospective at Tokyo's Joshibi Art Museum on September 10, staging his actual shoemaking tools next to the finished work.</span>
+    <p>The exhibition explicitly foregrounds collaboration with traditional-craft artisans across Japan, pairing tools inherited across generations with the ones Tatehana still uses today. It's a live, dated example of a museum-grade show putting process on display alongside the object itself — worth watching for how craft narrative gets staged at that level. Runs through October 6.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/09/720585.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">wan AIChef ultra launched on Indiegogo — a Heimann-thermal-imaging AI cooking device built on an NVIDIA Jetson Orin Nano stack, discounted steeply ahead of its $3,999 list price.</span>
-    <p>Pre-launch pricing ran $1,799 to $2,499 (38–55% off), with first deliveries slated for November 2026. The device pairs a 12-megapixel vision camera with Heimann thermal imaging rated to ±3.2°F accuracy on top of an NVIDIA Jetson Orin Nano and Ampere GA10B processor — a cloud-scale compute approach paired with crowdfunding-style discount tiers. Single-source: PR Newswire is the only coverage found; a Yahoo Finance copy carries identical wire text.</p>
-    <a class="btn" href="https://www.prnewswire.com/news-releases/wan-aichef-ultra-launches-on-indiegogo-the-worlds-first-ai-chef-that-sees-thinks--cooks--powered-by-nvidia-302861248.html">Read the source →</a>
+    <span class="headline">MIT built 3D-printed objects that visually signal correct use with zero electronics, using lenticular lenses baked into the print itself.</span>
+    <p>A bottle cap screwed on properly shows green with a checkmark; loose, it flips to red with an exclamation point — purely from how light bends off a lens layer at different viewing angles, no sensor or circuit involved. It's a striking example of a mechanical, electronics-free state-indicator technique: a way to give an object a tactile, physical confirmation signal without adding any firmware or component cost.</p>
+    <a class="btn" href="https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects">Read the source →</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Yesterday's deep-dive</h2>
+  <div class="item">
+    <p>A follow-up investigation into the previous day's Mbed TLS advisory count found that only 4 of 29 CVE-2026 advisories actually reach a client-only TLS configuration on the pinned crypto library version — the rest are either already fixed in that version or never applied to it. It also corrected the prior day's item directly: the next planned firmware re-pin does not sit on the vulnerable line as first reported, it already carries the fix. Separately, the piece surfaces a real complication: Espressif's own advisory now names the ESP32-S31 chip as carrying a Secure Boot defect involving ECDSA cryptography, reopening an issue an earlier piece had dismissed on other chips in the same family.</p>
   </div>
 </section>
 
@@ -146,7 +155,9 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Five additional items cleared verification but didn't make today's five-item cap: Brava, a VC-funded $995–$2,000 "cook with light" smart oven, ceased operations in March 2026 under new ownership after raising $25M over eight years — a second cautionary case study in this space. MIT Media Lab published BioLIG, laser-etched conductive circuits made from bio-based paper, fabric, and lignin/chitosan paints, with conductivity on par with carbon black. Bambu Lab opened a third distinct Japan retail format, a campus-adjacent maker store outside the University of Tokyo's Hongo gate. Mouser began listing Espressif's ESP32-S31-WROOM-3 modules, the first non-DigiKey distributor listing tracked so far. And Homo Faber 2026, "An Island of Light," Es Devlin's craft-versus-algorithm exhibition running in Venice through September 30, was flagged for a correction: a widely-circulated quote attributed to designer Roberto Cavalli ("slave to the algorithm") does not appear anywhere on the cited source page. The real quote frames hand-making as a counterpoint to "exploitative mass production" and "algorithmically-generated design practices" — the exhibition itself was already covered here on September 4, so it isn't republished as a new item, only corrected.</p>
+    <p>Three additional items cleared verification but didn't make today's five-item cap: Panic launched Playdate Season Three, a $39 non-subscription content season delivering eight games over four weeks, coming October 8. RocXZoom, a robotic extreme-zoom camera from a team of former DJI engineers at FarseerTech, overfunded its crowdfunding campaign at $247,029 pledged against a $9,999 goal, with tiers running $549 to $849. And a Society of Plastics Engineers piece found that recycled plastics in electronics housings hit a hard wall on flame-rating compliance and legacy flame-retardant contamination — not heat performance alone — a genuine sourcing constraint for anyone weighing recycled-content enclosures.</p>
+    <p>One item was killed for generic relevance: a peer-reviewed lightweight neural network for electronic-nose gas classification hit 96.8% accuracy on an eight-channel array, but ran on a workstation CPU with no embedded deployment shown, and tested industrial solvents rather than food or cooking-relevant compounds.</p>
+    <p>One research lane produced no surviving items this cycle for the second cycle running — its only candidate item, on a Singapore regulatory registration scheme, failed verification because the government site in question returns an empty page shell to automated fetching, with two secondary sources also blocked. This is a sourcing-access problem worth fixing rather than a finding about the underlying topic.</p>
   </div>
 </section>
 
