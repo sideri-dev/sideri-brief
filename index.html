@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 9, 2026</title>
+<title>Research Brief — September 10, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,7 +103,7 @@
 <body>
 
 <header>
-  <div class="date">September 9, 2026</div>
+  <div class="date">September 10, 2026</div>
   <div class="readtime">~5 minute read</div>
 </header>
 
@@ -111,33 +111,33 @@
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Espressif's own blog spells out exactly how EU vulnerability reporting will work once Article 14 of the Cyber Resilience Act starts applying on September 11.</span>
-    <p>Filing runs through ENISA's Single Reporting Platform, web forms only at launch (no API), and only named "Assigned Representatives" — individuals with personal EU Login accounts and two-factor authentication — can submit on a manufacturer's behalf. Espressif is explicit that the reporting duty is tied to a manufacturer's own finished product: a flaw unreachable in the shipped device isn't the product maker's to report. This adds real operational detail — who files, how, and by when — to the broader CRA compliance picture for anyone shipping a connected product into the EU.</p>
-    <a class="btn" href="https://developer.espressif.com/blog/2026/09/esp32-cra-obligations-and-deadlines/">Read the source →</a>
+    <span class="headline">Espressif's ESP32-S31 chip now carries a Secure Boot defect on its official, permanent errata page rather than only in a one-off security advisory.</span>
+    <p>The issue itself was already disclosed in July: ECDSA-signed Secure Boot on the chip incorrectly accepts signatures with invalid values, and the only workaround until a future silicon revision is to use RSA-based Secure Boot instead. What's new is where it now lives — Espressif's standing per-chip errata documentation, the kind of page that stays live and gets checked by anyone building on the part, rather than a bulletin that ages out of view.</p>
+    <a class="btn" href="https://docs.espressif.com/projects/esp-chip-errata/en/latest/esp32s31/03-errata-description/index.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Panic refunded every tariff dollar it had charged Playdate customers, unprompted.</span>
-    <p>The company charged a 19% import surcharge, stopped charging it in April, and then on August 25 wrote every affected customer a check for the difference. "It's just not our money to keep," founder Cabel Sasser told PC Gamer, "that's an easy way to know you made the wrong call in the first place." It's a clean precedent for showing import duty as its own line at checkout rather than folding it silently into the sticker price.</p>
-    <a class="btn" href="https://help.play.date/orders/tariffs/">Read the source →</a>
+    <span class="headline">Shopify is ending "pay duty at the door" as an option across its Managed Markets platform — checkout duty collection is now the default everywhere it's supported.</span>
+    <p>As of August 24, any store relying on delivered-duty-unpaid shipping gets automatically converted to delivered-duty-paid: customers see and pay import tax and duty at checkout rather than being billed by a courier on delivery. It's a meaningful shift for any direct-to-consumer hardware brand shipping internationally — the platform itself is increasingly handling landed-cost calculation natively rather than leaving it to the merchant or the customer to sort out at the border.</p>
+    <a class="btn" href="https://changelog.shopify.com/posts/managed-markets-is-ending-delivered-duty-unpaid-ddu-support">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Framework cut its LPCAMM2 memory prices and is automatically refunding everyone who already paid the higher rate.</span>
-    <p>Orders that already shipped at the old price get the difference back automatically; a subset of pending pre-orders gets the lower price outright, with no customer having to ask. It's a real-world instance of turning a component-cost drop into a customer refund rather than a quiet margin gain — a useful posture to watch as memory pricing keeps swinging through 2026.</p>
-    <a class="btn" href="https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market">Read the source →</a>
+    <span class="headline">The ESP32-S31's restock date on DigiKey slipped another three days, now estimated at February 4, 2027.</span>
+    <p>Quantities are unchanged — 3,250 and 2,500 units across the chip's two module variants — with the only movement being the date itself creeping later again. Zero units are in stock today. The chip remains sourceable in volume only through AliExpress channels rather than mainstream Western distribution, a gap that keeps showing up as this specific listing gets checked.</p>
+    <a class="btn" href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S31-WROOM-1-N16R16V/29821762">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Designer Noritaka Tatehana opens a 15-year handcraft retrospective at Tokyo's Joshibi Art Museum on September 10, staging his actual shoemaking tools next to the finished work.</span>
-    <p>The exhibition explicitly foregrounds collaboration with traditional-craft artisans across Japan, pairing tools inherited across generations with the ones Tatehana still uses today. It's a live, dated example of a museum-grade show putting process on display alongside the object itself — worth watching for how craft narrative gets staged at that level. Runs through October 6.</p>
-    <a class="btn" href="https://www.axismag.jp/posts/2026/09/720585.html">Read the source →</a>
+    <span class="headline">Arc'teryx's parent company posted numbers that make the case for owned-channel retail over wholesale.</span>
+    <p>Amer Sports' Q2 2026 filing shows group direct-to-consumer revenue up 39.9% year over year, with the Arc'teryx-led technical apparel segment growing same-store sales 17%. It's a premium outdoor brand growing meaningfully faster through its own stores and site than through third-party retail — a data point for anyone weighing a direct-to-consumer model against wholesale distribution for a premium physical product.</p>
+    <a class="btn" href="https://www.stocktitan.net/sec-filings/AS/6-k-amer-sports-inc-current-report-foreign-issuer-83c3847a657d.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">MIT built 3D-printed objects that visually signal correct use with zero electronics, using lenticular lenses baked into the print itself.</span>
-    <p>A bottle cap screwed on properly shows green with a checkmark; loose, it flips to red with an exclamation point — purely from how light bends off a lens layer at different viewing angles, no sensor or circuit involved. It's a striking example of a mechanical, electronics-free state-indicator technique: a way to give an object a tactile, physical confirmation signal without adding any firmware or component cost.</p>
-    <a class="btn" href="https://www.core77.com/posts/145281/ShiftLens-A-System-for-3D-Printing-Lenticular-Objects">Read the source →</a>
+    <span class="headline">The V&A opened a show pairing six craftspeople from Japan's Tokai region with international designers, for London Design Festival.</span>
+    <p>Running September 12–30 in South Kensington and curated by Maria Cristina Didero, the Craft x Tech Tokai Project frames itself around lacquer, metalwork, woodworking, ceramics, washi paper and textile specialists from the Gifu/Aichi/Mie region "reimagined through a thoughtful dialogue" with contemporary design practice. It's the same craft-producing region that is home to Vermicular, the Nagoya cast-iron cookware maker — a Western design-press stage for the kind of visible-craft storytelling that region is known for.</p>
+    <a class="btn" href="https://www.vam.ac.uk/event/ZA6D9ZJXqee/ldf-sept-2026-craft-x-tech">Read the source →</a>
   </div>
 </section>
 
@@ -146,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>A follow-up investigation into the previous day's Mbed TLS advisory count found that only 4 of 29 CVE-2026 advisories actually reach a client-only TLS configuration on the pinned crypto library version — the rest are either already fixed in that version or never applied to it. It also corrected the prior day's item directly: the next planned firmware re-pin does not sit on the vulnerable line as first reported, it already carries the fix. Separately, the piece surfaces a real complication: Espressif's own advisory now names the ESP32-S31 chip as carrying a Secure Boot defect involving ECDSA cryptography, reopening an issue an earlier piece had dismissed on other chips in the same family.</p>
+    <p>An investigation into the EU's Cyber Resilience Act found that, two days before its vulnerability-reporting rule takes effect, the actual operating rulebook is an ENISA web page rather than the regulation's own text — no formal legal instrument yet exists to govern it. The real cost of compliance turns out to be procedural rather than technical: exactly one named individual per company needs a personal EU Login account with two-factor authentication to file reports, and no backup contact can be added until that person is separately verified by national cybersecurity authorities — a single point of failure by design. The launch version of the reporting platform is also thinner than advertised, with web-form-only submission, no proper API, and at least one required field the platform doesn't yet contain, which is the documented cause of a known bug in the regulator's own 72-hour reporting deadline. Separately, the European Commission's own guidance documents disagree with each other about whether a finished-device maker or the maker of an underlying chip component bears the reporting duty when a vulnerability is found in shared firmware infrastructure — meaning liability for a flaw in third-party crypto code would likely fall on whoever ships the finished product, not the chip vendor.</p>
   </div>
 </section>
 
@@ -155,9 +155,8 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Three additional items cleared verification but didn't make today's five-item cap: Panic launched Playdate Season Three, a $39 non-subscription content season delivering eight games over four weeks, coming October 8. RocXZoom, a robotic extreme-zoom camera from a team of former DJI engineers at FarseerTech, overfunded its crowdfunding campaign at $247,029 pledged against a $9,999 goal, with tiers running $549 to $849. And a Society of Plastics Engineers piece found that recycled plastics in electronics housings hit a hard wall on flame-rating compliance and legacy flame-retardant contamination — not heat performance alone — a genuine sourcing constraint for anyone weighing recycled-content enclosures.</p>
-    <p>One item was killed for generic relevance: a peer-reviewed lightweight neural network for electronic-nose gas classification hit 96.8% accuracy on an eight-channel array, but ran on a workstation CPU with no embedded deployment shown, and tested industrial solvents rather than food or cooking-relevant compounds.</p>
-    <p>One research lane produced no surviving items this cycle for the second cycle running — its only candidate item, on a Singapore regulatory registration scheme, failed verification because the government site in question returns an empty page shell to automated fetching, with two secondary sources also blocked. This is a sourcing-access problem worth fixing rather than a finding about the underlying topic.</p>
+    <p>Three additional items cleared verification but didn't make today's five-item cap: a five-year-discontinued limited-edition kettle colorway was relaunched in Japan at roughly $160; a steam-less gooseneck kettle launching in Japan in October sells a single named precision-pour mechanism as its entire premium argument at roughly $110; and a Japanese kitchen-scissors maker launched a pair of shears engineered with three distinct functional zones for handling sauce packets, priced under $6.</p>
+    <p>One item was killed as a repeat of previously covered ground — an architecture exhibition already reported on with no materially new detail this time.</p>
   </div>
 </section>
 
