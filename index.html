@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 15, 2026</title>
+<title>Research Brief — September 16, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,42 +103,38 @@
 <body>
 
 <header>
-  <div class="date">September 15, 2026</div>
-  <div class="readtime">~4 minute read</div>
+  <div class="date">September 16, 2026</div>
+  <div class="readtime">~5 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Arc'teryx's newest flagship is a repair shop, not a sales floor.</span>
-    <p>The outdoor brand opened a three-level, 9,599-square-foot store on Montréal's Saint-Catherine Street in late August, built around an expanded ReBIRD repair-and-resale centre plus a dedicated community space for run clubs and climbing groups. Its retail VP called it "our continued commitment to the city"; its ReBIRD VP framed the investment explicitly around keeping gear people already own in use longer, not selling more of it. For a design-led hardware brand in a similar price class, it's a live signal that a premium outdoor label's biggest recent retail bet went to repair and community infrastructure over a new-unit sales floor. Confirmed across five independent outlets, not just the press release.</p>
-    <a class="btn" href="https://www.newswire.ca/news-releases/arc-teryx-announces-new-alpha-store-opening-in-montreal-quebec-874437470.html">Read the source →</a>
+    <span class="headline">A cross-platform study finds that quantized AI models don't just run slightly differently on different chips — they can fail completely, with no error.</span>
+    <p>A new arXiv measurement study ran the same ONNX model and quantization settings across seven hardware classes — ARM and x86 CPUs, a discrete GPU, an NVIDIA Jetson AGX Orin's integrated GPU and NVDLA cores, and two vendor NPUs. Full-precision (FP32) predictions matched bit-for-bit everywhere. Reduced-precision INT8 predictions only matched exactly when two chips shared the same integer math kernel, and disagreed on 3.5–4.2% of predictions otherwise — and on one NPU, a bring-your-own quantized model compiled, ran and produced results with no error while its accuracy silently collapsed from 0.75 to 0.005. We're building an on-device cooking-event classifier on the ESP32-S31 using INT8 quantization; this is a strong argument to validate the model's real accuracy on that exact chip rather than trust numbers measured on a devkit or desktop.</p>
+    <a class="btn" href="https://arxiv.org/abs/2609.16085">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">MIT's postage-stamp crypto chip aims squarely at low-power wireless devices.</span>
-    <p>MIT researchers built a post-quantum-cryptography chip 20–60x more energy-efficient than existing approaches, physically "about the size of a very fine needle tip," designed for wireless devices too power-constrained for today's most advanced security — and it runs two separate post-quantum schemes for future-proofing. It's a concrete data point in the slow industry move toward quantum-resistant crypto for small, battery-limited, wireless devices, ahead of the eventual phase-out of today's TLS cipher suites. Single-source (MIT's own release; other coverage is syndicated) and about five months old.</p>
-    <a class="btn" href="https://news.mit.edu/2026/new-chip-can-protect-wireless-biomedical-devices-from-quantum-attacks-0423">Read the source →</a>
+    <span class="headline">A VOC sensor with no battery cold-starts to full power in under nine minutes, running on nothing but vibration.</span>
+    <p>Published in Nature's Microsystems & Nanoengineering, the device pairs a capacitive volatile-organic-compound sensor with a Nordic nRF52832 Bluetooth chip, powered entirely by a triboelectric nanogenerator. It cold-starts from 0V to 4.2V in 525 seconds and then runs on roughly 110 microwatts harvested from 5Hz mechanical excitation, using an energy-extraction technique the authors say harvests five times more power than a conventional rectifier. It's a live benchmark on the same air-quality-sensing territory as chips like Bosch's BME688 — useful power-budget context, even for designs (like ours) that use a conventional replaceable battery instead of energy harvesting.</p>
+    <a class="btn" href="https://www.nature.com/articles/s41378-026-01315-z">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">HEINZ proves personalization doesn't need a chip.</span>
-    <p>HEINZ launched a ketchup cap with a physical three-position dial — "Like," "Love," "crazy Love" — controlling flow, sold direct in the US and UK with zero electronics or app layer. It's a clean example of how much perceived personalization a purely mechanical control can carry at mass-market scale, without any screen or software behind it. Independently corroborated by four outlets.</p>
-    <a class="btn" href="https://www.axismag.jp/posts/2026/09/722773.html">Read the source →</a>
+    <span class="headline">A steel container reinterprets basket-weaving using parts that never actually touch.</span>
+    <p>Designer Erina Caldeira's KŌSA, covered by Core77, is built from two seamlessly-joined pieces of thin sheet steel whose crossing, weave-like elements don't physically contact each other at all — the structure holds itself together purely through the geometry of the material, with zero fasteners. It pre-orders this month at a pop-up at Matsuya Ginza in Tokyo. It's exactly the kind of structural honesty — a craft reference translated into one load-bearing material with no visible mechanism — we want our own instrument's construction to communicate.</p>
+    <a class="btn" href="https://www.core77.com/posts/145380/Industrial-Designer-Erina-Caldeiras-Steel-Twist-on-Woven-Baskets">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A London show makes visible fabrication limits the whole point.</span>
-    <p>"Design Everything With Limitations" opened at London's Aram gallery (through October 10), showing roughly 120-plus objects by emerging UK designers built entirely around the fabrication constraints that shaped them — one piece is deliberately left "crimped" because its maker lacked the right equipment and improvised a DIY jig instead. It's a case for showing rather than hiding process as part of an object's value, though the show is emerging and student work rather than an established-brand showcase. The source itself gives conflicting object and designer counts (131/103 in one passage, 123/102 in another, the latter matching independent coverage); the evidence leans toward the smaller figure.</p>
-    <a class="btn" href="https://disegnojournal.com/newsfeed/a-welcome-limitation-design-everything">Read the source →</a>
+    <span class="headline">Singapore's national design award, built explicitly on Japan's Good Design Award, held its 2026 ceremony last week.</span>
+    <p>SG Mark's own FAQ states it was "first launched in 2013 in collaboration with the prestigious Japan Good Design Mark," and its ceremony organizer's event page confirms winners were honoured across nine categories on September 10. No kitchen or hardware winner turned up in what we could fetch, so this is background rather than a specific product story — but it's a live example of how a Good-Design-style legitimacy channel actually operates in Southeast Asia, a region we're weighing exactly that kind of channel for down the line.</p>
+    <a class="btn" href="https://dbcsingapore.org/singapore-good-design-sg-mark-award-ceremony/">Read the source →</a>
   </div>
 
-  <div class="item">
-    <span class="headline">A Japanese cookware maker prices pure hand-finishing narrative well above typical kitchen tools.</span>
-    <p>ANAORI's Kakugama carbon-graphite cookware — "made after more than 40 processes," fired for over 100 days at 3,000°C, roughly 20 hours of hand-finishing per piece — sells for ¥297,000 on the maker's own site. It sits a tier above Vermicular in the same craft-manufacturer category, a data point for how far a pure hand-finishing and process story can carry a premium Japanese kitchen-instrument price. Third-party coverage cites different prices for the same two sizes; the maker's own live page is treated as current.</p>
-    <a class="btn" href="https://anaori.com/products/anaori-kakugama-3-4">Read the source →</a>
-  </div>
+  <p class="muted">Note: only four stories cleared verification this cycle rather than the usual five — the business-strategy beat produced nothing but repeats of coverage already published in the last two weeks, the second time that's happened at 100%.</p>
 </section>
 
 <hr class="divider">
@@ -146,7 +142,17 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>An EU cybersecurity-standard case study published by a chip vendor turns out to be a report on its own devkit, not a certificate: it names no assessing body, and the vendor's own separate guidance says module certification alone doesn't prove compliance for a finished product built on it. The real checklist behind that standard — EN 18031, covering cybersecurity and privacy under the EU's Radio Equipment Directive — is far bigger than the vendor's own six-row summary table: 43 separate requirements across 14 categories once both parts apply. Whether a connected product can self-certify rather than go through a notified body comes down largely to one firmware choice, never shipping a default or blank password, which costs nothing to get right at the design stage and a five-figure-euro bill to fix later. None of this is confirmed to carry over once the EU's Cyber Resilience Act takes full effect from December 2027 — no official guidance says this earlier standard's self-declaration route transfers automatically. For a Wi-Fi-connected device on this chip family, it's a design-stage firmware decision worth banking now rather than a live compliance obligation today.</p>
+    <p>A closer look at a premium outdoor brand's newest flagship store — announced as built around an expanded repair-and-resale centre — found the store is actually the relocation of an existing shop into the third instance of a two-year-old format, announced 17 days after it opened and never placed on the brand's own newsroom. The same brand publishes detailed investor metrics for its retail floor but zero revenue, cost or KPI figures for its repair-and-resale program in any audited filing — the only numbers live in a voluntary sustainability report, where resale growth there had halved from +48% to +24%. The brand itself co-signed an industry sustainability-foundation statement admitting that, under current economics, producing new clothes is still more profitable than repairing or reselling existing ones. In Japan, the brand's own stores refuse mail-in repair outright, restrict sewing repair to a single location, and state in writing that safety outranks longevity — a damaged garment can be refused repair entirely. The original story's framing, that this was a bet on service infrastructure over a sales floor, doesn't hold up against the evidence, and one of its key cited figures doesn't appear anywhere in the original press release.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Needs your answer</h2>
+  <div class="item">
+    <p>1 open question: whether to keep tracking premium apparel and outdoor brands as a pricing reference, or shift that attention toward makers of creator tools and archive software instead.</p>
+    <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
   </div>
 </section>
 
@@ -155,8 +161,9 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>One more story cleared verification today but didn't make the cut: an Italian bathroom-fixture maker's stainless-steel system that conceals an entire toilet-and-bidet mechanism inside one clean volume, customizable in wood or marble — the underlying product traces back to at least 2022, so it was ranked lowest among today's survivors.</p>
-    <p>No story from Japan or Southeast Asia cleared verification today — its one candidate turned out to be a repeat of an item already covered. A pattern worth flagging: three stories submitted today turned out to be straight repeats of stories already covered 12 to 19 days ago, one of them well inside the window that's supposed to be checked before a story is even drafted.</p>
+    <p>Six stories were dropped this cycle, all repeats or too generic to earn a spot: a corporate refund restatement already covered September 9; a community retail space opening already covered September 4; a pop-up retail event already covered September 1; a Thai electrical-safety filing requirement already covered in depth in an earlier deep-dive (today's framing that it's "newly mandatory" sits in tension with that earlier reporting, flagged rather than resolved); a design-award category addition naming no specific product or winner; and a lab-stage memory device whose named applications were too generic to clear our bar.</p>
+    <p>The business-strategy beat went 0-for-3 today — every story submitted was an exact repeat of something already published 7 to 15 days ago. Worth flagging as a process problem on our end, not a finding about the world.</p>
+    <p>One bookkeeping note: our own closing count this cycle initially read five cleared stories, but only four actually made the final list — we're publishing the four genuinely there rather than inventing a fifth.</p>
   </div>
 </section>
 
