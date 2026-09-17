@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 16, 2026</title>
+<title>Research Brief — September 17, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,38 +103,42 @@
 <body>
 
 <header>
-  <div class="date">September 16, 2026</div>
-  <div class="readtime">~5 minute read</div>
+  <div class="date">September 17, 2026</div>
+  <div class="readtime">~7 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">A cross-platform study finds that quantized AI models don't just run slightly differently on different chips — they can fail completely, with no error.</span>
-    <p>A new arXiv measurement study ran the same ONNX model and quantization settings across seven hardware classes — ARM and x86 CPUs, a discrete GPU, an NVIDIA Jetson AGX Orin's integrated GPU and NVDLA cores, and two vendor NPUs. Full-precision (FP32) predictions matched bit-for-bit everywhere. Reduced-precision INT8 predictions only matched exactly when two chips shared the same integer math kernel, and disagreed on 3.5–4.2% of predictions otherwise — and on one NPU, a bring-your-own quantized model compiled, ran and produced results with no error while its accuracy silently collapsed from 0.75 to 0.005. We're building an on-device cooking-event classifier on the ESP32-S31 using INT8 quantization; this is a strong argument to validate the model's real accuracy on that exact chip rather than trust numbers measured on a devkit or desktop.</p>
-    <a class="btn" href="https://arxiv.org/abs/2609.16085">Read the source →</a>
+    <span class="headline">Raspberry Pi's Compute Module 4/5 radio certification in Japan is locked to one specific antenna part — swap it and the certification is void.</span>
+    <p>A Japanese electronics retailer's own product page states plainly that the module's 技適 (radio type-approval) was obtained using one named antenna, sales code 130246, and warns against substituting any other. That's a real constraint for anyone building a smaller enclosure or a metal-chassis product around this module: changing the antenna for a better mechanical fit throws away the inherited certification and forces an independent filing. No second source confirms this specific lock, so it stays a single-source finding, but it's concrete and verified on the primary page.</p>
+    <a class="btn" href="https://akizukidenshi.com/catalog/g/g131398/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A VOC sensor with no battery cold-starts to full power in under nine minutes, running on nothing but vibration.</span>
-    <p>Published in Nature's Microsystems & Nanoengineering, the device pairs a capacitive volatile-organic-compound sensor with a Nordic nRF52832 Bluetooth chip, powered entirely by a triboelectric nanogenerator. It cold-starts from 0V to 4.2V in 525 seconds and then runs on roughly 110 microwatts harvested from 5Hz mechanical excitation, using an energy-extraction technique the authors say harvests five times more power than a conventional rectifier. It's a live benchmark on the same air-quality-sensing territory as chips like Bosch's BME688 — useful power-budget context, even for designs (like ours) that use a conventional replaceable battery instead of energy harvesting.</p>
-    <a class="btn" href="https://www.nature.com/articles/s41378-026-01315-z">Read the source →</a>
+    <span class="headline">Camera makers are passing the global memory shortage straight through to buyers, and the numbers now have a shape.</span>
+    <p>Sony raised its Cinema Line camera prices in Japan by up to 19% — the FX3 jumped ¥111,100 to ¥693,000, effective September 1 — citing "the recent surge in raw material, manufacturing, and logistics costs." Fujifilm says higher memory costs will cost it an extra ¥25 billion this year over last, and GoPro reports memory hardware costs up 80–110% year-on-year. All three figures are independently confirmed across two trade-press outlets — a concrete, dated benchmark for how much of a camera-class device's retail price memory alone can consume during this shortage.</p>
+    <a class="btn" href="https://www.cined.com/sony-raises-cinema-line-prices-in-japan-fx3-jumps-19-fx6-fx30-and-fr7-also-affected/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A steel container reinterprets basket-weaving using parts that never actually touch.</span>
-    <p>Designer Erina Caldeira's KŌSA, covered by Core77, is built from two seamlessly-joined pieces of thin sheet steel whose crossing, weave-like elements don't physically contact each other at all — the structure holds itself together purely through the geometry of the material, with zero fasteners. It pre-orders this month at a pop-up at Matsuya Ginza in Tokyo. It's exactly the kind of structural honesty — a craft reference translated into one load-bearing material with no visible mechanism — we want our own instrument's construction to communicate.</p>
-    <a class="btn" href="https://www.core77.com/posts/145380/Industrial-Designer-Erina-Caldeiras-Steel-Twist-on-Woven-Baskets">Read the source →</a>
+    <span class="headline">AI-recorder maker Plaud is pouring $16M into a Singapore hub — while its headline $100M revenue claim is disputed.</span>
+    <p>Plaud is investing at least S$20M in a 15,000-square-foot Marina Bay Financial Centre office, growing its Singapore headcount roughly tenfold to about 100 people in nine months, and using the city as its base for twelve Asia-Pacific markets outside Japan and mainland China — all independently confirmed by a second outlet. The oft-repeated claim that Plaud grew from $1 million to $100 million in annual recurring revenue within two years is murkier: another outlet cites a leaked $56 million 2024 revenue figure that both Plaud and Tencent declined to confirm when asked directly. The investment and headcount numbers are solid; the $100M growth story should be read as marketing, not settled fact.</p>
+    <a class="btn" href="https://technode.global/2026/09/16/ai-recorder-maker-plaud-opens-singapore-as-apac-hub-doubles-investment-to-16m/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Singapore's national design award, built explicitly on Japan's Good Design Award, held its 2026 ceremony last week.</span>
-    <p>SG Mark's own FAQ states it was "first launched in 2013 in collaboration with the prestigious Japan Good Design Mark," and its ceremony organizer's event page confirms winners were honoured across nine categories on September 10. No kitchen or hardware winner turned up in what we could fetch, so this is background rather than a specific product story — but it's a live example of how a Good-Design-style legitimacy channel actually operates in Southeast Asia, a region we're weighing exactly that kind of channel for down the line.</p>
-    <a class="btn" href="https://dbcsingapore.org/singapore-good-design-sg-mark-award-ceremony/">Read the source →</a>
+    <span class="headline">A new rendering technique cuts memory use 7x and speeds up city-scale 3D scenes 18.5x on standalone VR headsets.</span>
+    <p>The "Atlas" method combines spatial-block activation — loading only the 3D content near the viewport — with incremental level-of-detail search, letting Gaussian-splat city scenes run on standalone (untethered) VR hardware at a measured 70.9 frames per second, a 7.0x memory reduction and an 18.5x speedup over a GPU baseline. It's a concrete architecture for a problem — always-resident metadata versus on-demand heavy detail at large scale — that's directly relevant to any spatial, zoomable-canvas interface, even though this paper's own testbed is 3D/VR rather than a flat 2D canvas.</p>
+    <a class="btn" href="https://arxiv.org/html/2609.02352">Read the source →</a>
   </div>
 
-  <p class="muted">Note: only four stories cleared verification this cycle rather than the usual five — the business-strategy beat produced nothing but repeats of coverage already published in the last two weeks, the second time that's happened at 100%.</p>
+  <div class="item">
+    <span class="headline">A hand-gesture detector that needs no training data at all can pinpoint the exact moment of a gesture to within 6.7 milliseconds.</span>
+    <p>Instead of a trained classifier, the technique tracks palm rotation across three hand landmarks using pure geometry, catching 95% of gestures with zero false positives across 240 near-miss test sequences and cutting timing error from 23 milliseconds down to 6.7. For any device that needs to know the precise instant a hand gesture happened — not just that one occurred — this is a genuinely new, calibration-free technique.</p>
+    <a class="btn" href="https://arxiv.org/html/2609.13269">Read the source →</a>
+  </div>
 </section>
 
 <hr class="divider">
@@ -142,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>A closer look at a premium outdoor brand's newest flagship store — announced as built around an expanded repair-and-resale centre — found the store is actually the relocation of an existing shop into the third instance of a two-year-old format, announced 17 days after it opened and never placed on the brand's own newsroom. The same brand publishes detailed investor metrics for its retail floor but zero revenue, cost or KPI figures for its repair-and-resale program in any audited filing — the only numbers live in a voluntary sustainability report, where resale growth there had halved from +48% to +24%. The brand itself co-signed an industry sustainability-foundation statement admitting that, under current economics, producing new clothes is still more profitable than repairing or reselling existing ones. In Japan, the brand's own stores refuse mail-in repair outright, restrict sewing repair to a single location, and state in writing that safety outranks longevity — a damaged garment can be refused repair entirely. The original story's framing, that this was a bet on service infrastructure over a sales floor, doesn't hold up against the evidence, and one of its key cited figures doesn't appear anywhere in the original press release.</p>
+    <p>A closer look at a widely-cited AI-hardware-portability paper found the story had been told backwards. The paper tests zero microcontrollers of any kind, but it does directly test the Raspberry Pi 5. Its central finding: reduced-precision (INT8) predictions agree perfectly across chips that share the same integer math kernel, and only 95.8–96.5% of the time when they don't — a distinction the hardware boundary itself doesn't predict. The genuinely open question the paper never answers is whether this kind of cross-chip drift damages an AI embedding or retrieval model specifically, since quantizing a model's weights (which is damaging and hard to recover from) is a completely different problem from quantizing stored data vectors (which is mild and recoverable) — and conflating the two answers the wrong question for a product built around a permanent, searchable record.</p>
   </div>
 </section>
 
@@ -151,7 +155,7 @@
 <section>
   <h2>Needs your answer</h2>
   <div class="item">
-    <p>1 open question: whether to keep tracking premium apparel and outdoor brands as a pricing reference, or shift that attention toward makers of creator tools and archive software instead.</p>
+    <p>1 open question: whether to keep tracking premium apparel and outdoor brands as a comparison set, or shift that attention toward makers of creative tools and archive software instead.</p>
     <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
   </div>
 </section>
@@ -161,9 +165,8 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Six stories were dropped this cycle, all repeats or too generic to earn a spot: a corporate refund restatement already covered September 9; a community retail space opening already covered September 4; a pop-up retail event already covered September 1; a Thai electrical-safety filing requirement already covered in depth in an earlier deep-dive (today's framing that it's "newly mandatory" sits in tension with that earlier reporting, flagged rather than resolved); a design-award category addition naming no specific product or winner; and a lab-stage memory device whose named applications were too generic to clear our bar.</p>
-    <p>The business-strategy beat went 0-for-3 today — every story submitted was an exact repeat of something already published 7 to 15 days ago. Worth flagging as a process problem on our end, not a finding about the world.</p>
-    <p>One bookkeeping note: our own closing count this cycle initially read five cleared stories, but only four actually made the final list — we're publishing the four genuinely there rather than inventing a fifth.</p>
+    <p>Five stories cleared verification but didn't make the cut: a social app for city creators, covered by Disegno, whose only ranking rule is deliberate randomness rather than any algorithm; a three-stage Polaroid × Pokémon camera collaboration (preorder, then shipping, then retail, about six weeks apart) with a one-day discrepancy on the preorder start date across two outlets; a restored-automata exhibition from Swiss watchmaker Parmigiani Fleurier opening in Tokyo September 19–24; confirmation that Raspberry Pi's own EU Cyber Resilience Act reporting duty took effect September 11, ranked low since only the vendor's name was new information; and a weak-background item on a major Tokyo photography museum's retrospective, which pairs physical prints with AI-generated derivative imagery on public city signage.</p>
+    <p>Four stories were dropped as duplicates or too thin: two were exact repeats of ground already covered in depth days earlier; one was a repeat coverage of a gimbal-stabilized zoom-camera product; one was a price-increase note on a Japanese cookware maker that never got written up with proper sourcing.</p>
   </div>
 </section>
 
