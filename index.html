@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 17, 2026</title>
+<title>Research Brief — September 19, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,41 +103,41 @@
 <body>
 
 <header>
-  <div class="date">September 17, 2026</div>
-  <div class="readtime">~7 minute read</div>
+  <div class="date">September 19, 2026</div>
+  <div class="readtime">~6 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Raspberry Pi's Compute Module 4/5 radio certification in Japan is locked to one specific antenna part — swap it and the certification is void.</span>
-    <p>A Japanese electronics retailer's own product page states plainly that the module's 技適 (radio type-approval) was obtained using one named antenna, sales code 130246, and warns against substituting any other. That's a real constraint for anyone building a smaller enclosure or a metal-chassis product around this module: changing the antenna for a better mechanical fit throws away the inherited certification and forces an independent filing. No second source confirms this specific lock, so it stays a single-source finding, but it's concrete and verified on the primary page.</p>
-    <a class="btn" href="https://akizukidenshi.com/catalog/g/g131398/">Read the source →</a>
+    <span class="headline">A Raspberry Pi fallback board's Singapore wireless registration expires in six weeks.</span>
+    <p>Raspberry Pi's own compliance portal shows the Pi Zero 2 W's Singapore wireless registration (IMDA N5648-21) running from 12 November 2021 to 31 October 2026 — six weeks from now. Thailand's matching NBTC filing (S00613-21) is on record too. We're evaluating the Pi Zero 2 W as a fallback board for a Raspberry Pi-class capture device, and Singapore is one of the first markets on our radar, so a lapsing registration is worth tracking closely.</p>
+    <a class="btn" href="https://pip.raspberrypi.com/categories/586-approvals">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Camera makers are passing the global memory shortage straight through to buyers, and the numbers now have a shape.</span>
-    <p>Sony raised its Cinema Line camera prices in Japan by up to 19% — the FX3 jumped ¥111,100 to ¥693,000, effective September 1 — citing "the recent surge in raw material, manufacturing, and logistics costs." Fujifilm says higher memory costs will cost it an extra ¥25 billion this year over last, and GoPro reports memory hardware costs up 80–110% year-on-year. All three figures are independently confirmed across two trade-press outlets — a concrete, dated benchmark for how much of a camera-class device's retail price memory alone can consume during this shortage.</p>
-    <a class="btn" href="https://www.cined.com/sony-raises-cinema-line-prices-in-japan-fx3-jumps-19-fx6-fx30-and-fr7-also-affected/">Read the source →</a>
+    <span class="headline">The primary board's paperwork, by contrast, is already settled for years.</span>
+    <p>The same compliance portal shows the Raspberry Pi 5 — the board we're building on — already holds a Singapore IMDA registration valid to September 2028, plus a Thailand NBTC filing (SD03257-23). Good news alongside the item above: one board is covered well past any near-term window; the other needs attention now.</p>
+    <a class="btn" href="https://pip.raspberrypi.com/categories/894-approvals">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">AI-recorder maker Plaud is pouring $16M into a Singapore hub — while its headline $100M revenue claim is disputed.</span>
-    <p>Plaud is investing at least S$20M in a 15,000-square-foot Marina Bay Financial Centre office, growing its Singapore headcount roughly tenfold to about 100 people in nine months, and using the city as its base for twelve Asia-Pacific markets outside Japan and mainland China — all independently confirmed by a second outlet. The oft-repeated claim that Plaud grew from $1 million to $100 million in annual recurring revenue within two years is murkier: another outlet cites a leaked $56 million 2024 revenue figure that both Plaud and Tencent declined to confirm when asked directly. The investment and headcount numbers are solid; the $100M growth story should be read as marketing, not settled fact.</p>
-    <a class="btn" href="https://technode.global/2026/09/16/ai-recorder-maker-plaud-opens-singapore-as-apac-hub-doubles-investment-to-16m/">Read the source →</a>
+    <span class="headline">A new benchmark shows pure visual-similarity search fails on real personal photo albums.</span>
+    <p>Built from authentic personal photo albums rather than synthetic data, the benchmark finds that "unified embedding models collapse on non-visual constraints" — the best embedding-only model manages just 58% recall at 10, against a system that also reasons over metadata like GPS and timestamps. It's evidence for combining multiple signals rather than relying on image similarity alone in an on-device retrieval system, though the paper's own proposed fix — an agentic system that reasons and selects on the user's behalf — cuts against a design built around retrieval that answers but never selects.</p>
+    <a class="btn" href="https://arxiv.org/abs/2603.01493">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A new rendering technique cuts memory use 7x and speeds up city-scale 3D scenes 18.5x on standalone VR headsets.</span>
-    <p>The "Atlas" method combines spatial-block activation — loading only the 3D content near the viewport — with incremental level-of-detail search, letting Gaussian-splat city scenes run on standalone (untethered) VR hardware at a measured 70.9 frames per second, a 7.0x memory reduction and an 18.5x speedup over a GPU baseline. It's a concrete architecture for a problem — always-resident metadata versus on-demand heavy detail at large scale — that's directly relevant to any spatial, zoomable-canvas interface, even though this paper's own testbed is 3D/VR rather than a flat 2D canvas.</p>
-    <a class="btn" href="https://arxiv.org/html/2609.02352">Read the source →</a>
+    <span class="headline">A $229 accessory untethers a Raspberry Pi 5's camera from the board by up to 10 meters.</span>
+    <p>The HAT carries the identical Sony IMX708 sensor found in the official Raspberry Pi Camera Module 3, tested over 10-meter coaxial cable runs via a MAX96716A deserializer chip, priced $229–$300 depending on the seller. A real, priced option for any design that wants to separate the lens from the compute board by more than a few centimeters.</p>
+    <a class="btn" href="https://www.cnx-software.com/2026/09/17/raspberry-pi-5-gets-dual-gmsl2-camera-hat-based-on-max96716a-deserializer/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A hand-gesture detector that needs no training data at all can pinpoint the exact moment of a gesture to within 6.7 milliseconds.</span>
-    <p>Instead of a trained classifier, the technique tracks palm rotation across three hand landmarks using pure geometry, catching 95% of gestures with zero false positives across 240 near-miss test sequences and cutting timing error from 23 milliseconds down to 6.7. For any device that needs to know the precise instant a hand gesture happened — not just that one occurred — this is a genuinely new, calibration-free technique.</p>
-    <a class="btn" href="https://arxiv.org/html/2609.13269">Read the source →</a>
+    <span class="headline">A well-funded infinite-canvas archive tool for creators just died — and its own postmortem makes the case for local-first.</span>
+    <p>Kosmik raised $3.7 million from investors including Creandum and Betaworks, then reached end of life on 31 May 2026. A third party's retrospective on picking up the pieces: "The reference images, notes, and links you collected are the hard part to recreate. The tool around them is replaceable." That's the local-first, no-lock-in argument, made by someone who just lived the alternative.</p>
+    <a class="btn" href="https://github.com/api-evangelist/kosmik">Read the source →</a>
   </div>
 </section>
 
@@ -146,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>A closer look at a widely-cited AI-hardware-portability paper found the story had been told backwards. The paper tests zero microcontrollers of any kind, but it does directly test the Raspberry Pi 5. Its central finding: reduced-precision (INT8) predictions agree perfectly across chips that share the same integer math kernel, and only 95.8–96.5% of the time when they don't — a distinction the hardware boundary itself doesn't predict. The genuinely open question the paper never answers is whether this kind of cross-chip drift damages an AI embedding or retrieval model specifically, since quantizing a model's weights (which is damaging and hard to recover from) is a completely different problem from quantizing stored data vectors (which is mild and recoverable) — and conflating the two answers the wrong question for a product built around a permanent, searchable record.</p>
+    <p>A deep-dive into 18650 battery holders found that nobody sells the part a battery-bay design would assume exists: a holder with a built-in thermistor for surface temperature sensing. A full sweep of major holder catalogs (Keystone, MPD, Würth) found zero mentions of thermistor or NTC anywhere. The industry's three real answers: sense inside a custom-built bay (rare, and the one example disclaims its own accuracy), seal the cell in permanently, or switch to a proprietary branded cell with the sensor already built in. The actual governing safety standard turned out to be one rarely cited in this context (IEC 62368-1, rather than the more commonly referenced JEITA clause), and the real cell-fit tolerance problem turns out to be diameter, not length.</p>
   </div>
 </section>
 
@@ -165,8 +165,8 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Five stories cleared verification but didn't make the cut: a social app for city creators, covered by Disegno, whose only ranking rule is deliberate randomness rather than any algorithm; a three-stage Polaroid × Pokémon camera collaboration (preorder, then shipping, then retail, about six weeks apart) with a one-day discrepancy on the preorder start date across two outlets; a restored-automata exhibition from Swiss watchmaker Parmigiani Fleurier opening in Tokyo September 19–24; confirmation that Raspberry Pi's own EU Cyber Resilience Act reporting duty took effect September 11, ranked low since only the vendor's name was new information; and a weak-background item on a major Tokyo photography museum's retrospective, which pairs physical prints with AI-generated derivative imagery on public city signage.</p>
-    <p>Four stories were dropped as duplicates or too thin: two were exact repeats of ground already covered in depth days earlier; one was a repeat coverage of a gimbal-stabilized zoom-camera product; one was a price-increase note on a Japanese cookware maker that never got written up with proper sourcing.</p>
+    <p>Six stories cleared verification but didn't make the cut: a wake-on-motion vision chip projecting three months of battery life for always-on capture use cases; an open content-provenance project (C2PA) splitting its cryptography into a dedicated module days before this cycle; a designer's first museum exhibition pairing process material — samples, material studies — alongside finished work, opening October 30; a hackable Raspberry Pi 5 camera funding on Kickstarter at $259–$1,291; a boutique film scanner still unlaunched ten months past its own target date; and a corrected figure on a competitor's funding raise — 35,000 units shipped and $27 million in annual revenue, not the widely repeated 130,000 units.</p>
+    <p>One story was dropped as a duplicate of coverage already published ten days earlier.</p>
   </div>
 </section>
 
