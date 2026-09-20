@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 19, 2026</title>
+<title>Research Brief — September 20, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,41 +103,41 @@
 <body>
 
 <header>
-  <div class="date">September 19, 2026</div>
-  <div class="readtime">~6 minute read</div>
+  <div class="date">September 20, 2026</div>
+  <div class="readtime">~7 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">A Raspberry Pi fallback board's Singapore wireless registration expires in six weeks.</span>
-    <p>Raspberry Pi's own compliance portal shows the Pi Zero 2 W's Singapore wireless registration (IMDA N5648-21) running from 12 November 2021 to 31 October 2026 — six weeks from now. Thailand's matching NBTC filing (S00613-21) is on record too. We're evaluating the Pi Zero 2 W as a fallback board for a Raspberry Pi-class capture device, and Singapore is one of the first markets on our radar, so a lapsing registration is worth tracking closely.</p>
-    <a class="btn" href="https://pip.raspberrypi.com/categories/586-approvals">Read the source →</a>
+    <span class="headline">A Raspberry Pi 5 storage bug silently corrupted data with no error ever logged.</span>
+    <p>A kernel issue on Raspberry Pi's own Linux repository shows NVMe storage returning different results after a kernel update with zero I/O errors surfaced — the reporter's own words: "it never matches what it was on 6.12." The fix is already merged, correcting a DMA-unmap bug in the NVMe driver, but it's exactly the kind of failure a design storing records locally on this same Pi 5 + NVMe combination has to defend against.</p>
+    <a class="btn" href="https://github.com/raspberrypi/linux/issues/7496">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">The primary board's paperwork, by contrast, is already settled for years.</span>
-    <p>The same compliance portal shows the Raspberry Pi 5 — the board we're building on — already holds a Singapore IMDA registration valid to September 2028, plus a Thailand NBTC filing (SD03257-23). Good news alongside the item above: one board is covered well past any near-term window; the other needs attention now.</p>
-    <a class="btn" href="https://pip.raspberrypi.com/categories/894-approvals">Read the source →</a>
+    <span class="headline">A well-funded competitor just bet against passive, always-on capture.</span>
+    <p>Taya raised a $5M seed for an AI pendant built explicitly against "ambient recorder" competitors — mic off by default, capture only on a button press. The founder: "we want to capture your voice, not the room that you're in or the other people." One of its investors drew the line even sharper: passive/ambient capture and Taya's intentional single-player capture are different categories, and the money is backing the intentional one. Real institutional capital cutting directly against a passive-capture design philosophy, worth weighing plainly rather than glossing over.</p>
+    <a class="btn" href="https://techcrunch.com/2026/03/11/former-apple-engineer-raises-5m-for-a-note-taking-pendant-that-only-records-your-voice/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A new benchmark shows pure visual-similarity search fails on real personal photo albums.</span>
-    <p>Built from authentic personal photo albums rather than synthetic data, the benchmark finds that "unified embedding models collapse on non-visual constraints" — the best embedding-only model manages just 58% recall at 10, against a system that also reasons over metadata like GPS and timestamps. It's evidence for combining multiple signals rather than relying on image similarity alone in an on-device retrieval system, though the paper's own proposed fix — an agentic system that reasons and selects on the user's behalf — cuts against a design built around retrieval that answers but never selects.</p>
-    <a class="btn" href="https://arxiv.org/abs/2603.01493">Read the source →</a>
+    <span class="headline">An open content-provenance standard just fixed two real bugs.</span>
+    <p>C2PA's reference implementation (the open standard behind content-authenticity signing, backed by Adobe and others) shipped two release candidates patching a trust-anchor migration bug and a data-hash-exclusion validation bug. Anything built on this standard for signing content at the point of capture needs to sit on a version past both fixes.</p>
+    <a class="btn" href="https://github.com/contentauth/c2pa-rs/releases/tag/c2pa-rc-v0.91.0-rc.2">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A $229 accessory untethers a Raspberry Pi 5's camera from the board by up to 10 meters.</span>
-    <p>The HAT carries the identical Sony IMX708 sensor found in the official Raspberry Pi Camera Module 3, tested over 10-meter coaxial cable runs via a MAX96716A deserializer chip, priced $229–$300 depending on the seller. A real, priced option for any design that wants to separate the lens from the compute board by more than a few centimeters.</p>
-    <a class="btn" href="https://www.cnx-software.com/2026/09/17/raspberry-pi-5-gets-dual-gmsl2-camera-hat-based-on-max96716a-deserializer/">Read the source →</a>
+    <span class="headline">Insta360 just opened its first store outside Asia — in Times Square — after shipping 10 million cameras.</span>
+    <p>The company frames it as "more than just selling into the U.S.; it reflects our long-term commitment to the American creator ecosystem." It's a real comparable for capture hardware aimed at creators, and a sequencing data point worth noting: a physical flagship only arrived after 10 million units shipped, not before.</p>
+    <a class="btn" href="https://www.prnewswire.com/news-releases/insta360-opens-first-flagship-store-outside-asia-in-new-yorks-times-square-amid-global-retail-expansion-302883843.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A well-funded infinite-canvas archive tool for creators just died — and its own postmortem makes the case for local-first.</span>
-    <p>Kosmik raised $3.7 million from investors including Creandum and Betaworks, then reached end of life on 31 May 2026. A third party's retrospective on picking up the pieces: "The reference images, notes, and links you collected are the hard part to recreate. The tool around them is replaceable." That's the local-first, no-lock-in argument, made by someone who just lived the alternative.</p>
-    <a class="btn" href="https://github.com/api-evangelist/kosmik">Read the source →</a>
+    <span class="headline">A Japanese sculptor's retrospective is a direct craft analog for process-as-record.</span>
+    <p>Takasuke Fukahori's "2.5D Painting" show in Nagoya (through October 25) displays goldfish built up in sequential resin layers — the layering process itself becomes the visible, permanent record. It's a clean real-world example of process capture becoming the artifact, rather than a byproduct of one.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/09/723831.html">Read the source →</a>
   </div>
 </section>
 
@@ -146,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>A deep-dive into 18650 battery holders found that nobody sells the part a battery-bay design would assume exists: a holder with a built-in thermistor for surface temperature sensing. A full sweep of major holder catalogs (Keystone, MPD, Würth) found zero mentions of thermistor or NTC anywhere. The industry's three real answers: sense inside a custom-built bay (rare, and the one example disclaims its own accuracy), seal the cell in permanently, or switch to a proprietary branded cell with the sensor already built in. The actual governing safety standard turned out to be one rarely cited in this context (IEC 62368-1, rather than the more commonly referenced JEITA clause), and the real cell-fit tolerance problem turns out to be diameter, not length.</p>
+    <p>A deep-dive into a Singapore wireless-registration expiry headline found the original story's premise wrong: the expiring certificate belongs to a compliance agent, not to Raspberry Pi, and under Singapore's own rules a renewal wouldn't even be a usable credential for a different seller — every supplier has to register independently regardless of who registered first. What expiry actually blocks is new inventory sales, not equipment already in the field, and renewal for this specific board is free and available in a two-month window already open. Thailand's parallel filing has no expiry at all, only revocation for cause. One thread stays open: whether a direct-to-consumer seller shipping into Singapore even triggers this registration regime in the first place.</p>
   </div>
 </section>
 
@@ -165,8 +165,8 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Six stories cleared verification but didn't make the cut: a wake-on-motion vision chip projecting three months of battery life for always-on capture use cases; an open content-provenance project (C2PA) splitting its cryptography into a dedicated module days before this cycle; a designer's first museum exhibition pairing process material — samples, material studies — alongside finished work, opening October 30; a hackable Raspberry Pi 5 camera funding on Kickstarter at $259–$1,291; a boutique film scanner still unlaunched ten months past its own target date; and a corrected figure on a competitor's funding raise — 35,000 units shipped and $27 million in annual revenue, not the widely repeated 130,000 units.</p>
-    <p>One story was dropped as a duplicate of coverage already published ten days earlier.</p>
+    <p>Four stories cleared verification but didn't make the cut: a 912-page, 15-year bibliographic retrospective from Tokyo art-book specialist POST documenting every publisher it has featured since 2011; WLV-01, a hackable Raspberry Pi 5 modular camera that hit 371% of its Kickstarter goal in three weeks; a V&A exhibition pairing international designers with Japanese artisans, with an unresolved conflict between the venue's own listed closing date and design-press coverage; and HeyVigo's "Infinite Canvas," a generation-first AI creative tool that's the philosophical opposite of a retrieval-only design — useful mainly as a contrast case.</p>
+    <p>Three stories were killed: a Raspberry Pi 5 radio-certification claim that duplicated a deep-dive from three days earlier; an always-listening AI pendant's relaunch at roughly double its price, already covered eight days ago; and a solo maker's process-documentation page, too generic to carry any specific comparison.</p>
   </div>
 </section>
 
