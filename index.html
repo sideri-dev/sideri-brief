@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 23, 2026</title>
+<title>Research Brief — September 24, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,41 +103,41 @@
 <body>
 
 <header>
-  <div class="date">September 23, 2026</div>
-  <div class="readtime">~5 minute read</div>
+  <div class="date">September 24, 2026</div>
+  <div class="readtime">~6 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Japan just extended biometric-privacy protection to cover exactly what a passive capture device does.</span>
-    <p>A cabinet-approved amendment to Japan's Personal Information Protection Act, passed by the lower house on May 26, lets anyone request that use of their personal information stop if it contains facial-feature data — even if the handling was otherwise lawful. It bears directly on any device built to passively capture a maker's process on camera: if someone else happens to be in frame, their facial data is now covered regardless of how clean the handling otherwise is. Worth a closer look as a case study of where privacy law is heading for always-on capture hardware.</p>
-    <a class="btn" href="https://www.ppc.go.jp/news/press/2026/260407/">Read the source →</a>
+    <span class="headline">The Raspberry Pi Zero 2 W is substrate-constrained, and nobody has given Europe a restock date.</span>
+    <p>Raspberry Pi's own forum engineer confirms demand is outrunning supply and prices won't fall until RAM costs do. A second, independent source traces the real bottleneck to chip-substrate manufacturing capacity being eaten by the AI-accelerator boom — a second substrate supplier was qualified, expected to help in the second half of 2026, but as of mid-September none of that relief had reached European retailers. We're building on this board, so an open-ended shortage with no restock date is a live supply-chain risk worth watching closely, not a background note.</p>
+    <a class="btn" href="https://forums.raspberrypi.com/viewtopic.php?t=398310">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Raspberry Pi's own blog just proved a real function-calling model runs on a Pi 5 with no accelerator.</span>
-    <p>Needle 2, a 14MB model built on cactus-needle 2.0.7, runs on a Raspberry Pi 5, CPU only, at 488/296 tokens per second prefill/decode — no GPU, no NPU, no cloud round-trip. We're building on the Raspberry Pi 5, so this is direct evidence that a local-first, on-device design can handle real actions without phoning home. (The post's own page carries two conflicting publish dates; treat September 22 as the reliable one.)</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/turn-text-input-into-actions-with-needle-a-14mb-function-calling-llm/">Read the source →</a>
+    <span class="headline">Apple shipped its answer to image provenance, and it's built the opposite way from an on-device approach.</span>
+    <p>Reference Image on the iPhone 18 Pro and Pro Max cryptographically signs raw sensor data immediately at capture, round-trips through Apple's Private Cloud Compute, and was viewable only on Apple's own platforms at launch — confirmed independently by Apple's own security blog and IEEE Spectrum. It's a real, shipping, sign-at-sensor system, and it's cloud-dependent and platform-locked in exactly the ways an on-device, no-cloud-dependency approach to image authenticity isn't. One outside expert's read: it doesn't solve the underlying problem, but it may push other manufacturers to take image authenticity seriously.</p>
+    <a class="btn" href="https://spectrum.ieee.org/apple-reference-image">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">CamScanner shipped its first hardware product, and it's a close comparable.</span>
-    <p>CamScanner — the document-scanning software company, self-described as the world's largest AI product for image-based text processing with 300M+ users — launched the Apex 1 Pro scanner on Kickstarter at $359 early-bird. It flattens pages, removes stray fingers and reduces glare entirely on-device, during capture. Founder Anton Tan's own framing: "People don't want another camera—they want digital documents that are ready to use." A close read on what a capture-first hardware thesis looks like from a software-native company, launching through crowdfunding rather than a direct storefront.</p>
-    <a class="btn" href="https://www.prnewswire.com/news-releases/camscanner-debuts-apex-1-pro-its-first-standalone-scanner-on-kickstarter-302884473.html">Read the source →</a>
+    <span class="headline">Tokyo's design world just named the thing that matters about unfinished work.</span>
+    <p>Featured Projects 2026, opening tomorrow at Shinagawa's THE CAMPUS (Sept 25–27), built its entire theme this year around "the space between" — opening up the trial-and-error, the overlap of people, technology and time, that precede a finished output, rather than showing only the finished thing. Over 35 guests are confirmed, including architect Yuko Nagayama and designer Yuma Harada. A live, visitable articulation of the idea that process itself has standalone value.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/09/723814.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Oura's IPO filing is the clearest public data yet on what a hardware-plus-membership business actually retains.</span>
-    <p>The S-1 filed with the SEC discloses hardware revenue of $973.98M against membership revenue of $240.5M for the nine months to June 30, and a 12-month paid-member retention rate of approximately 85%. The reported $16B+ valuation is press-sourced, not stated in the filing itself, which is normal ahead of pricing. An 85% retention figure on an attached software layer is a useful real-world number for any hardware maker weighing a recurring revenue tier.</p>
-    <a class="btn" href="https://www.sec.gov/Archives/edgar/data/0002133022/000119312526381855/d119865ds1.htm">Read the source →</a>
+    <span class="headline">Fujifilm doubled X100VI production and the waitlist still didn't move — that's a choice, not a failure.</span>
+    <p>Over two years of backorder, Fujifilm doubled output to roughly 15,000 units a month and raised the US price to $1,799, and it still resells above MSRP used. Independent reporting quotes Fujifilm's CEO saying flooding the market would be wasteful, and that he wants brand power "like Leica." A clean camera-industry precedent for treating scarcity as a deliberate margin and desirability lever rather than something to be engineered away.</p>
+    <a class="btn" href="https://www.photoworkout.com/fujifilm-shortage-strategy/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Looki L1 is the sharpest possible mirror for a retrieval-only design philosophy — and it's the exact opposite of it.</span>
-    <p>This $199–249 wearable camera "picks the highlights" of your day and "edits them automatically into a vlog" under what Looki calls "Proactive Intelligence": auto-select, auto-edit, auto-narrate. A retrieval-first design does none of that by philosophy — it answers, it never selects, ranks, or suggests. Worth tracking as the clearest counter-example in the market to that idea. One loose end: Looki's own site prices the device at $249 today, while CES coverage from January quoted $199 — unresolved, most likely a price increase since launch, but neither source says so directly.</p>
-    <a class="btn" href="https://www.looki.ai/products/looki-l1">Read the source →</a>
+    <span class="headline">The closest working comparable to an infinite-canvas archive tool just shipped the one feature that kind of tool usually declines to build.</span>
+    <p>Muse rebranded to Allume and shipped an MCP connection letting Claude, ChatGPT, or a local model browse, search and directly edit a user's private canvas — off by default, with read-only and read-write modes. It's the nearest working comparable in the market, and it just gave AI assistants agentic read/write access to a personal archive, rather than treating retrieval as answer-only. Worth watching how its users actually use that access.</p>
+    <a class="btn" href="https://allume.com/memos/2026-07-allume-v4/">Read the source →</a>
   </div>
 </section>
 
@@ -146,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>A deep-dive into a supplier-shortage story found it had been overstated the first time around: a strainer maker's craftsmanship story, framed as a lost technique reconstructed from scratch, turned out to be an eight-day-old repeat whose own dedupe check falsely claimed it was new, and whose central claims didn't hold up against the very page cited for them — the workshop's loom was rebuilt on-site by a craftsman, not relocated, and the two outlets claimed as corroboration actually contradict the account. The underlying shortage phenomenon is real and officially measured, but the mechanism turns out to be demographic rather than commercial — most closures hit profitable firms with aging owners, which breaks any screening strategy keyed to supplier financial health. The same failure pattern is already live one tier under real hardware: a widely used camera module's own EEPROM chip went end-of-life in a January 2026 change notice, its function silently dropped from the module, with customers told to re-engineer around it. Across five historical reconstruction cases studied, none was ever driven by a record of someone actually performing the process.</p>
+    <p>A deep-dive into Japan's new biometric-privacy amendment found the trigger story overstated on both load-bearing points: it's enacted law, not a bill still moving through parliament, but none of its biometric provisions are actually in force yet — they wait on a cabinet-order date with a legal outer limit years out, so nothing in it binds a device shipping soon. Its real subject is converted facial-feature codes, not photographs, so a device that captures frames without computing a face-authentication template doesn't enter the new regime at all. What already applies, and matters more, is an existing duty that a camera be visibly recognizable as a camera, a rule that a date-searchable-but-not-person-searchable archive doesn't count as a regulated "personal database," and a 2023 advisory that puts the compliance burden on the user, asking the maker only to document capture, storage, review and erasure in the manual. Left open on purpose: whether a non-authentication retrieval embedding counts as identifying data at all, and whether a person-searchable index would change that answer.</p>
   </div>
 </section>
 
@@ -155,8 +155,8 @@
 <section>
   <h2>Run notes</h2>
   <div class="item">
-    <p>Beyond today's five: a preprint on local-first information retrieval reporting that dense retrieval holds over 91% accuracy to 100,000 documents with only 2% degradation at 1 million via approximate indexing — a strong technical signal for on-device search generally. A Tokyo gallery announced "Industrial Romanticism 2," where eight major Japanese manufacturers will show unreleased in-house prototypes alongside process sketches, opening October 30. OpenAI acquired computational-photography startup Glass Imaging for over $300 million, ahead of its own rumored hardware device. The C2PA content-provenance standard shipped a breaking-changes release tightening its trusted-issuer rules. Researchers at KAIST built a $7 smartphone-based rig that detects hidden cameras at 94% accuracy. Nothing's CMF sub-brand brings its Smart-Dial open-ear earbuds to Thailand in late September. Nothing teased its next flagship headphone for reveal September 28–29. A machined-aluminum cap organizer became the occasion for a design critique of a "bifurcated product landscape" — cheap goods on one side, overbuilt premium goods on the other. A new podcast-hardware startup launched its own production kit on Kickstarter at $499. Raspberry Pi's desktop interface update went Trixie-only, mostly confirming a Debian-version split already covered in more depth previously.</p>
-    <p>Three of today's fifteen candidate stories needed a correction before publication rather than being dropped outright — a publish-date mismatch, a date misread that resolved back to the correct year, and an unsupported claim removed from a headline. None serious; all caught by checking primary sources directly rather than trusting a summary.</p>
+    <p>Beyond today's five: Obsidian's local-first, no-VC architecture is still a solid comparable, but its headline revenue and valuation figures are contested by an order of magnitude by an independent analysis tracing them to an unverified viral post — a far smaller estimate reads more defensible. Canva now bundles Affinity's full creative suite free permanently, gating only AI compute behind a paid tier. An arXiv paper on hand-visibility estimation bears on the occlusion problem that capture-triggering computer vision has to solve. A 275-year-old Kyoto pigment house is pairing its craft history with five contemporary painters this week. A new personal-photo benchmark explicitly argues for agentic ranking — the opposite of a retrieval-only approach.</p>
+    <p>Four items were killed this run, all confirmed duplicates or an established weak-relevance pattern from one recurring outlet — no new execution gap. All four research lanes contributed a surviving item this cycle.</p>
   </div>
 </section>
 
