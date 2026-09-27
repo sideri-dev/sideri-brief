@@ -3,177 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — September 26, 2026</title>
+<title>Morning Brief — September 27, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #fbfaf8;
-    --fg: #1c1a17;
-    --muted: #6b6660;
-    --accent: #8a5a2b;
-    --divider: #e4dfd7;
-    --btn-bg: #1c1a17;
-    --btn-fg: #fbfaf8;
+    --bg: #fdfdfb;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2a4d3a;
+    --accent-fg: #ffffff;
+    --divider: #e0ddd6;
+    --card-bg: #f4f2ec;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #171614;
-      --fg: #ece8e1;
-      --muted: #9d968c;
-      --accent: #d9a05b;
-      --divider: #322f2a;
-      --btn-bg: #ece8e1;
-      --btn-fg: #171614;
+      --bg: #14150f;
+      --fg: #ece9e2;
+      --muted: #a9a59b;
+      --accent: #6fae87;
+      --accent-fg: #0c0f0b;
+      --divider: #2c2c24;
+      --card-bg: #1e1f18;
     }
   }
   * { box-sizing: border-box; }
-  html, body {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
     margin: 0;
-    padding: 0;
+    padding: 0 1.25rem 4rem;
     background: var(--bg);
     color: var(--fg);
-  }
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Roboto, sans-serif;
     font-size: 18px;
     line-height: 1.7;
+  }
+  main {
     max-width: 42rem;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 4rem;
   }
-  header {
-    margin-bottom: 2.5rem;
+  header.page-head {
+    padding: 2.5rem 0 1.5rem;
   }
-  header .date {
-    font-size: 1.1rem;
+  header.page-head .date {
+    font-size: 1.05rem;
     font-weight: 600;
+    margin: 0 0 0.25rem;
   }
-  header .readtime {
+  header.page-head .meta {
     color: var(--muted);
     font-size: 0.95rem;
-    margin-top: 0.25rem;
+    margin: 0;
   }
-  h2 {
-    font-size: 1rem;
+  h2.section-title {
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--muted);
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin: 2.5rem 0 1.25rem;
+    border-bottom: 1px solid var(--divider);
+    padding-bottom: 0.5rem;
   }
-  .item {
-    margin-bottom: 2.25rem;
+  article.item {
+    margin: 0 0 2.25rem;
   }
-  .item p {
-    margin: 0.9rem 0;
+  article.item h3 {
+    font-size: 1.15rem;
+    line-height: 1.45;
+    margin: 0 0 0.75rem;
   }
-  .item .headline {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 0.6rem;
+  article.item p {
+    margin: 0 0 0.9rem;
   }
-  .btn {
+  a.source-btn, a.answer-btn, a.full-btn {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 0.9rem 1rem;
-    margin-top: 1rem;
-    background: var(--btn-bg);
-    color: var(--btn-fg);
     text-decoration: none;
-    border-radius: 0.5rem;
+    background: var(--accent);
+    color: var(--accent-fg);
     font-weight: 600;
-    font-size: 0.95rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 0.5rem;
+    word-break: break-word;
   }
-  .btn:visited { color: var(--btn-fg); }
-  hr.divider {
+  a.source-btn { font-size: 0.85rem; font-weight: 500; word-break: break-all; }
+  .divider {
     border: none;
     border-top: 1px solid var(--divider);
-    margin: 2.25rem 0;
+    margin: 2rem 0;
   }
-  footer {
-    margin-top: 3.5rem;
+  .dossier-box {
+    background: var(--card-bg);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.25rem 0.5rem;
   }
-  .muted {
+  .dossier-box p { margin: 0 0 1rem; }
+  footer.page-foot {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--divider);
+  }
+  footer.page-foot p.note {
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 </style>
 </head>
 <body>
+<main>
 
-<header>
-  <div class="date">September 26, 2026</div>
-  <div class="readtime">~7 minute read</div>
+<header class="page-head">
+  <p class="date">Sunday, September 27, 2026</p>
+  <p class="meta">~6 minute read</p>
 </header>
 
 <section>
-  <h2>Today</h2>
+  <h2 class="section-title">Today</h2>
 
-  <div class="item">
-    <span class="headline">Meta's always-on smart glasses are producing real bystander-consent harm in India, days ahead of a sub-$105 rival.</span>
-    <p>Two documented cases: a Delhi protest video shot without consent went viral and triggered abuse against its transfeminine subject, and a public-interest litigation alleges Delhi police used Meta smart glasses to continuously film student demonstrators — including while they ate and rested. Tutorials circulate for defeating the recording-indicator LED, and India's voyeurism law offers only limited protection against covert filming in public. Meta's glasses retail at $420 there; Reliance Jio is readying a sub-$105 rival later this year. It's the sharpest live evidence yet of the bystander-harm mode that always-on capture hardware produces — directly relevant to how we think about capture scope and recording indicators on the device we're building.</p>
-    <a class="btn" href="https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/">Read the source →</a>
-  </div>
+  <article class="item">
+    <h3>A 60x storage-reduction result for vector-embedding indexes lands right on a question central to running an archive fully on-device</h3>
+    <p>A new preprint (SuperKMeans) shows that reducing embeddings to 1-bit codes before clustering keeps quality "within 1% of ideal" while cutting storage 60-fold. That matters for anyone trying to hold a large personal photo/video archive's search index on a small local computer rather than in the cloud — and it lands on a specific open question: earlier internal testing found that naive binary quantization at a typical embedding size loses real search accuracy, so this paper's result either confirms that limit or reveals a cheaper way around it. Worth digging into further.</p>
+    <a class="source-btn" href="https://arxiv.org/abs/2608.14648">https://arxiv.org/abs/2608.14648</a>
+  </article>
 
-  <div class="item">
-    <span class="headline">Raspberry Pi's own blog just built a fully local, zero-cloud personal knowledge system.</span>
-    <p>The post runs Logseq over Syncthing on a Pi 500, a Pi Zero, and a Compute-Module-4-based Uconsole, because "it's a nice challenge to build a system that doesn't store your information on another person's computer." Retrieval is manual tag-and-search only — nothing ranks or recommends. It's a working proof, from the platform vendor itself, of the same local-first, no-ranking approach behind the archive we're building, on the same board family we rely on.</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/build-a-digitally-sovereign-second-brain/">Read the source →</a>
-  </div>
+  <article class="item">
+    <h3>Human Archive raised $8.2M to run fleets of camera-equipped, passive-capture wearables — real money validating a whole hardware category</h3>
+    <p>Over 1,000 headsets deployed across seven-plus device variants, funded by Wing Venture Capital, NVP Capital, Y Combinator and others. The story is about four months old but new to this desk and squarely on-topic: a rare funded data point on what it actually costs to run passive-capture hardware at fleet scale.</p>
+    <a class="source-btn" href="https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/">https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/</a>
+  </article>
 
-  <div class="item">
-    <span class="headline">Raspberry Pi's own Official Magazine profiled a kid-built underwater camera on the exact camera module we're building on.</span>
-    <p>"Sensea," built by three makers aged 10 to 13, runs a Pi 3 and a Camera Module 3 in a sealed tube for about £130. Their design call: manual fixed focus over autofocus, "since autofocus was likely to struggle when encountering suspended particles," logging 10-second clips and timestamped temperature via a clock that keeps time with no internet connection. A small project, but vendor-published validation of the same instinct our own hardware depends on — fixed, unattended capture over live interaction, and a timestamp instead of in-the-moment selection.</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/sensea-underwater-camera-raspberry-pi-official-magazine-170/">Read the source →</a>
-  </div>
+  <article class="item">
+    <h3>A diffusion-based hand-reconstruction paper cuts occlusion errors 30-61% on an ordinary RGB camera, not the event cameras most of this literature targets</h3>
+    <p>ACE-Ego-Hand improves hand-pose reconstruction under heavy occlusion using a standard RGB sensor — the kind found in a Raspberry Pi Camera Module 3 — where most recent occlusion work assumes an event camera instead. The honest caveat: it's an offline, clip-level method, far too heavy to run as a real-time trigger, so it's a signal to watch rather than something to build against today.</p>
+    <a class="source-btn" href="https://arxiv.org/abs/2608.20308">https://arxiv.org/abs/2608.20308</a>
+  </article>
 
-  <div class="item">
-    <span class="headline">VSCO just proved professional creators will pay a real premium for workflow coherence.</span>
-    <p>VSCO One bundles eight previously separate tools — studio management, galleries, sites, an AI lab, presets, freelance education — into one $499.99/year tier, well above its existing $60/year plan. CEO Eric Wittman: "a connected system built around how photographers work." Direct, dated evidence that professional creators will pay to have their workflow fused into one coherent system rather than piecing tools together themselves.</p>
-    <a class="btn" href="https://www.prnewswire.com/news-releases/vsco-launches-vsco-one-the-first-connected-system-for-professional-photographers-302807700.html">Read the source →</a>
-  </div>
+  <article class="item">
+    <h3>Akizuki Denshi, the Tokyo electronics retailer, is now rationing Raspberry Pi 5 8GB boards by store</h3>
+    <p>Its own live product page caps purchases at 25 units per customer at the Akihabara store and just 3 at its Yashio store, with the cap applying to mail orders too. Fresh, dated detail on exactly the board a lot of small hardware projects are currently built around, worth watching as supply tightens further.</p>
+    <a class="source-btn" href="https://akizukidenshi.com/catalog/g/g129326/">https://akizukidenshi.com/catalog/g/g129326/</a>
+  </article>
 
-  <div class="item">
-    <span class="headline">TSUTAYA BOOKSTORE is opening its first Thailand location, a live model for curated retail in Southeast Asia.</span>
-    <p>It opens October 20 at One Bangkok — over 1,000 square metres across two floors, more than 50,000 books and magazines in Thai and English, under a "Waves of Wisdom" concept of "airy, relaxed, Japanese-style design." A dated example of a Japanese brand selling curated culture as a retail experience inside a flagship mall, not a showroom and not a wholesale rack — the kind of channel model worth watching for hardware launches in the region. Single outlet reporting this so far, not yet independently corroborated.</p>
-    <a class="btn" href="https://www.nationthailand.com/thailand/bangkok/40070838">Read the source →</a>
-  </div>
+  <article class="item">
+    <h3>Tanaka Eyewear makes glasses from a compressed-paper composite and repairs cracks with visible kintsugi gold</h3>
+    <p>The London atelier designs its frames to age and be visibly mended into heirlooms rather than replaced — a clean precedent for treating a device as a premium instrument rather than a disposable gadget, and the composite material itself is worth a look for anyone thinking about enclosure materials.</p>
+    <a class="source-btn" href="https://disegnojournal.com/newsfeed/paper-heirlooms">https://disegnojournal.com/newsfeed/paper-heirlooms</a>
+  </article>
 </section>
 
 <hr class="divider">
 
 <section>
-  <h2>Yesterday's deep-dive</h2>
-  <div class="item">
-    <p>A verifier correction on Raspberry Pi Holdings' H1 2026 results turned out only half right: two claims it killed as unsupported are word-for-word in the analyst presentation filed the same day, which wasn't checked the first time. That presentation shows a key memory component's cost per gigabyte nearly quadrupled in six months, driving most of the inventory-value swing, while the company describes moving into a net debt position the following month and doubling its bank facility. The regulated filing and the investor presentation actually disagree on when supply eases — one says next fiscal year, the other says only two of four memory tiers ease by the following quarter. A large commitment figure already in circulation turns out to be an unrelated processor agreement, not memory stockpiling. On the retail shelf in Japan, the exact low-capacity board this build already relies on is now out of stock, and none of the newly-qualified second-source memory vendors cover the higher-capacity tier.</p>
+  <h2 class="section-title">Yesterday's deep-dive</h2>
+  <div class="dossier-box">
+    <p>An earlier deep-dive into the Meta smart-glasses coverage out of India corrected the trigger article on four points: the police device was never confirmed to be Meta's, the underlying court case is still live rather than dismissed, the "luxury litigation" characterization came from opposing counsel rather than the court, and a reported price and launch window were attributed to a company that has published neither.</p>
+    <p>The part that actually matters going forward: Meta has stated on the record that it will not add a capture indicator for continuous AI sensing, arguing that a constantly-lit indicator simply becomes invisible through habituation — a real design question for any continuously-capturing device to answer rather than dismiss. No law anywhere currently requires a capture indicator; the one jurisdiction that will require one (California, under SB 1130) doesn't take effect until 2028 and covers only body-worn devices. And where the glasses failure mode doesn't transfer is instructive: a fixed device turns the "stranger in public" problem into the "assistant in the room" problem, where the research literature finds that non-disclosure, not capture itself, is what people experience as harmful.</p>
   </div>
 </section>
 
-<hr class="divider">
-
-<section>
-  <h2>Gate day</h2>
-  <div class="item">
-    <p>Three internal drafts are queued for a promotion decision this week, each already stress-tested by an internal review pass: one on signing captured images at the point of capture rather than after they're stored, one on what a continuous process record can honestly claim to preserve, and one on tracking upstream platform changes before they hit a build.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section>
-  <h2>Run notes</h2>
-  <div class="item">
-    <p>Cleared verification but didn't make today's five: a profile of a product designer who builds his own circuits and 3D-printed prototypes end to end, three named instruments shown at a June trade fair. A screen-free camera brand's move from crowdfunding fulfillment to its own pre-order storefront, shipping in October. A design studio's medical-tool project that hides an LED light source inside a sterilizable, removable handle assembly. A heritage camera-lens maker's reissue of a 1960s U.S. Navy spy lens as a 660-unit limited edition — a second numbered-scarcity release in two weeks after a rival camera maker's own anniversary edition. A design critique arguing a car's touchscreen-only dashboard is cost-cutting dressed as minimalism. A fuller audio spec sheet for an upcoming headphone release, still at the same price point ahead of its official reveal. A roughly 250-work retrospective of a mid-century Scandinavian designer, open in Tokyo through mid-October. And a research preprint improving two-hand tracking under occlusion — on a different camera sensor type than the one this build uses.</p>
-    <p>Two items were killed this run, both duplicates of stories already covered. No research area came up empty this cycle.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<footer>
-  <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
+<footer class="page-foot">
+  <a class="full-btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
+</main>
 </body>
 </html>
