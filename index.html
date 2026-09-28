@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — September 27, 2026</title>
+<title>Morning Brief — September 28, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -114,7 +114,7 @@
 <main>
 
 <header class="page-head">
-  <p class="date">Sunday, September 27, 2026</p>
+  <p class="date">Monday, September 28, 2026</p>
   <p class="meta">~6 minute read</p>
 </header>
 
@@ -122,33 +122,38 @@
   <h2 class="section-title">Today</h2>
 
   <article class="item">
-    <h3>A 60x storage-reduction result for vector-embedding indexes lands right on a question central to running an archive fully on-device</h3>
-    <p>A new preprint (SuperKMeans) shows that reducing embeddings to 1-bit codes before clustering keeps quality "within 1% of ideal" while cutting storage 60-fold. That matters for anyone trying to hold a large personal photo/video archive's search index on a small local computer rather than in the cloud — and it lands on a specific open question: earlier internal testing found that naive binary quantization at a typical embedding size loses real search accuracy, so this paper's result either confirms that limit or reveals a cheaper way around it. Worth digging into further.</p>
-    <a class="source-btn" href="https://arxiv.org/abs/2608.14648">https://arxiv.org/abs/2608.14648</a>
+    <h3>Raspberry Pi's firmware permanently locks RAM to its factory configuration — and it now provably reaches the standard Pi 5, not just a specialized Compute Module</h3>
+    <p>A Raspberry Pi engineer confirmed it plainly on the company's own forum: devices are locked to their original RAM size "to remove the commercial incentive" for swapping in cheaper chips, and switching parts of the same size may not even work. The complaint that surfaced it was a Compute Module 5 case, but independent testing by hardware reviewer Jeff Geerling closes the gap to the ordinary Pi 5 directly — he traced the same firmware change to late 2024 and found no workaround short of running two-year-old firmware.</p>
+    <p>This sits on the board we're building on, and it rules out board-level RAM repair or upgrade as an option — plus it's a live signal that a resold or relabeled unit with mismatched RAM attributes simply won't boot.</p>
+    <a class="source-btn" href="https://forums.raspberrypi.com/viewtopic.php?t=399212">https://forums.raspberrypi.com/viewtopic.php?t=399212</a>
   </article>
 
   <article class="item">
-    <h3>Human Archive raised $8.2M to run fleets of camera-equipped, passive-capture wearables — real money validating a whole hardware category</h3>
-    <p>Over 1,000 headsets deployed across seven-plus device variants, funded by Wing Venture Capital, NVP Capital, Y Combinator and others. The story is about four months old but new to this desk and squarely on-topic: a rare funded data point on what it actually costs to run passive-capture hardware at fleet scale.</p>
-    <a class="source-btn" href="https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/">https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/</a>
+    <h3>A new foundation model (MINT) predicts hand visibility frame-by-frame from ordinary RGB video — the closest match yet to an RGB camera's sensor type</h3>
+    <p>Trained on ego-centric footage, it jointly tracks camera trajectory and per-frame hand observability from a single video representation, hitting 94.5% frame accuracy and a 3.67x speedup over the offline pipeline used to label its own training data; model, code and a 1,021-hour dataset are all released.</p>
+    <p>It's a genuinely different sensor path from most recent hand-tracking work, which assumes an event camera rather than a standard RGB one like our Camera Module 3 — architecture evidence toward an on-device trigger for "when to notice hands," not yet a deployable one (the speedup is against an offline labeling process, not a real-time number on small hardware).</p>
+    <a class="source-btn" href="https://arxiv.org/abs/2609.04958">https://arxiv.org/abs/2609.04958</a>
   </article>
 
   <article class="item">
-    <h3>A diffusion-based hand-reconstruction paper cuts occlusion errors 30-61% on an ordinary RGB camera, not the event cameras most of this literature targets</h3>
-    <p>ACE-Ego-Hand improves hand-pose reconstruction under heavy occlusion using a standard RGB sensor — the kind found in a Raspberry Pi Camera Module 3 — where most recent occlusion work assumes an event camera instead. The honest caveat: it's an offline, clip-level method, far too heavy to run as a real-time trigger, so it's a signal to watch rather than something to build against today.</p>
-    <a class="source-btn" href="https://arxiv.org/abs/2608.20308">https://arxiv.org/abs/2608.20308</a>
+    <h3>HP and Lenovo both raised prices in mid-September, and the reason is the same memory squeeze already hitting Raspberry Pi</h3>
+    <p>HP lifted client-device prices 10-15%, Lenovo about 6% on average (4-10% by configuration), both citing memory and storage supply constrained by AI-datacenter demand, with guidance pointing to volatility "through the end of 2026 and into 2027." Independent industry coverage backs the underlying mechanism — DRAM contract prices rose 13-18% quarter-on-quarter in Q3, driven by the same AI-server demand.</p>
+    <p>Two PC-scale vendors absorbing double-digit cost increases, with no relief signaled until well into next year, is a strong argument that single-board-computer sourcing exposure right now is a structural cost shift, not a temporary spike to wait out.</p>
+    <a class="source-btn" href="https://www.mcpc.com/insights/device-price-watch/september-2026-device-price-increases/">https://www.mcpc.com/insights/device-price-watch/september-2026-device-price-increases/</a>
   </article>
 
   <article class="item">
-    <h3>Akizuki Denshi, the Tokyo electronics retailer, is now rationing Raspberry Pi 5 8GB boards by store</h3>
-    <p>Its own live product page caps purchases at 25 units per customer at the Akihabara store and just 3 at its Yashio store, with the cap applying to mail orders too. Fresh, dated detail on exactly the board a lot of small hardware projects are currently built around, worth watching as supply tightens further.</p>
-    <a class="source-btn" href="https://akizukidenshi.com/catalog/g/g129326/">https://akizukidenshi.com/catalog/g/g129326/</a>
+    <h3>Capture One raised prices 6% across its entire lineup, and said so plainly rather than hiding it in a relaunch</h3>
+    <p>The photo-editing software's Pro, All-in-One and Studio tiers all went up — monthly, annual and perpetual licenses alike — starting in June, with the company's own line: "costs more now than it did a year ago... we're continuing to invest in the platform."</p>
+    <p>It's a clean, named precedent for how a premium creative tool talks about a cost-driven price increase to its own user base without discounting the brand.</p>
+    <a class="source-btn" href="https://petapixel.com/2026/05/27/capture-one-to-increase-all-product-prices-by-6/">https://petapixel.com/2026/05/27/capture-one-to-increase-all-product-prices-by-6/</a>
   </article>
 
   <article class="item">
-    <h3>Tanaka Eyewear makes glasses from a compressed-paper composite and repairs cracks with visible kintsugi gold</h3>
-    <p>The London atelier designs its frames to age and be visibly mended into heirlooms rather than replaced — a clean precedent for treating a device as a premium instrument rather than a disposable gadget, and the composite material itself is worth a look for anyone thinking about enclosure materials.</p>
-    <a class="source-btn" href="https://disegnojournal.com/newsfeed/paper-heirlooms">https://disegnojournal.com/newsfeed/paper-heirlooms</a>
+    <h3>A Japanese stationery brand's ¥770 sketchbook marks the very bottom of a price ladder worth watching</h3>
+    <p>MUCU's sketchbook uses two pieces of recycled paperboard for covers, a canvas spine, and 60 pages of the recycled paper Japanese manga is printed on — sold in Japan only, since "tariffs and shipping would eat up any cost savings" for export.</p>
+    <p>It's thin on its own, but it's a specific, dated data point at the floor of the Japanese creator-stationery price range — a marker, not a serious competitor.</p>
+    <a class="source-btn" href="https://www.core77.com/posts/145448">https://www.core77.com/posts/145448</a>
   </article>
 </section>
 
@@ -157,8 +162,8 @@
 <section>
   <h2 class="section-title">Yesterday's deep-dive</h2>
   <div class="dossier-box">
-    <p>An earlier deep-dive into the Meta smart-glasses coverage out of India corrected the trigger article on four points: the police device was never confirmed to be Meta's, the underlying court case is still live rather than dismissed, the "luxury litigation" characterization came from opposing counsel rather than the court, and a reported price and launch window were attributed to a company that has published neither.</p>
-    <p>The part that actually matters going forward: Meta has stated on the record that it will not add a capture indicator for continuous AI sensing, arguing that a constantly-lit indicator simply becomes invisible through habituation — a real design question for any continuously-capturing device to answer rather than dismiss. No law anywhere currently requires a capture indicator; the one jurisdiction that will require one (California, under SB 1130) doesn't take effect until 2028 and covers only body-worn devices. And where the glasses failure mode doesn't transfer is instructive: a fixed device turns the "stranger in public" problem into the "assistant in the room" problem, where the research literature finds that non-disclosure, not capture itself, is what people experience as harmful.</p>
+    <p>An earlier deep-dive corrected an item from the day before: the paper's headline storage-reduction number turns out to measure a transient, build-time training buffer, not the archive index actually served — the served centroids ship as plain float32 — so it doesn't answer whether a full personal capture archive's search index fits on a small on-device computer. The real constraint is far bigger than anything this paper touches: raw capture data dwarfs the index by roughly 900:1.</p>
+    <p>On the upside, the digging surfaced a live open-source candidate for on-device vector search worth tracking — SQLite Vec1, a dependency-free single-file library with ARM NEON support and active commits as recently as September 25 — against a comparable but dormant alternative that hasn't shipped a stable release in over four months. One more correction worth noting: the paper is properly a companion to, not the same work as, the "SuperKMeans" project named in the original item.</p>
   </div>
 </section>
 
