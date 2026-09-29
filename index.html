@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — September 28, 2026</title>
+<title>Morning Brief — September 29, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -114,7 +114,7 @@
 <main>
 
 <header class="page-head">
-  <p class="date">Monday, September 28, 2026</p>
+  <p class="date">Tuesday, September 29, 2026</p>
   <p class="meta">~6 minute read</p>
 </header>
 
@@ -122,38 +122,38 @@
   <h2 class="section-title">Today</h2>
 
   <article class="item">
-    <h3>Raspberry Pi's firmware permanently locks RAM to its factory configuration — and it now provably reaches the standard Pi 5, not just a specialized Compute Module</h3>
-    <p>A Raspberry Pi engineer confirmed it plainly on the company's own forum: devices are locked to their original RAM size "to remove the commercial incentive" for swapping in cheaper chips, and switching parts of the same size may not even work. The complaint that surfaced it was a Compute Module 5 case, but independent testing by hardware reviewer Jeff Geerling closes the gap to the ordinary Pi 5 directly — he traced the same firmware change to late 2024 and found no workaround short of running two-year-old firmware.</p>
-    <p>This sits on the board we're building on, and it rules out board-level RAM repair or upgrade as an option — plus it's a live signal that a resold or relabeled unit with mismatched RAM attributes simply won't boot.</p>
-    <a class="source-btn" href="https://forums.raspberrypi.com/viewtopic.php?t=399212">https://forums.raspberrypi.com/viewtopic.php?t=399212</a>
+    <h3>Raspberry Pi OS's September update adds an icon dock — but a widely cited "kernel 6.18.50 LTS" figure traces to only one outlet, not Raspberry Pi's own post</h3>
+    <p>Raspberry Pi's own blog confirms a new icon dock that can replace or sit alongside the taskbar, plus a combined icon-based launcher and task list. A kernel version number and a "moves to Debian 13 Trixie" framing that circulated alongside the dock news don't appear on Raspberry Pi's own page at all — they trace to a single outlet, and the "Trixie migration" claim is flat wrong: this is a desktop update on the OS's existing Trixie base, not a new migration.</p>
+    <p>We're building a background process for this exact OS, so the real kernel and support-window state matters to us more than the headline feature — worth a closer look before anything gets built against it.</p>
+    <a class="source-btn" href="https://www.raspberrypi.com/news/an-updated-look-for-the-raspberry-pi-desktop/">https://www.raspberrypi.com/news/an-updated-look-for-the-raspberry-pi-desktop/</a>
   </article>
 
   <article class="item">
-    <h3>A new foundation model (MINT) predicts hand visibility frame-by-frame from ordinary RGB video — the closest match yet to an RGB camera's sensor type</h3>
-    <p>Trained on ego-centric footage, it jointly tracks camera trajectory and per-frame hand observability from a single video representation, hitting 94.5% frame accuracy and a 3.67x speedup over the offline pipeline used to label its own training data; model, code and a 1,021-hour dataset are all released.</p>
-    <p>It's a genuinely different sensor path from most recent hand-tracking work, which assumes an event camera rather than a standard RGB one like our Camera Module 3 — architecture evidence toward an on-device trigger for "when to notice hands," not yet a deployable one (the speedup is against an offline labeling process, not a real-time number on small hardware).</p>
-    <a class="source-btn" href="https://arxiv.org/abs/2609.04958">https://arxiv.org/abs/2609.04958</a>
+    <h3>Framework paired a retroactive memory-price cut with a public pledge not to profiteer off the DRAM shortage</h3>
+    <p>Framework secured Micron LPCAMM2 memory modules at a lower cost, cut its DIY and pre-built pricing accordingly, and is refunding the difference to customers who already ordered. The line worth keeping: "We won't use this as an excuse to be extractive. We'll only increase pricing to cover increases in our costs, and where possible, we'll absorb costs to maintain stability."</p>
+    <p>It's a clean example of a premium, repairable-by-design hardware brand narrating a component-cost shock to direct buyers without eroding trust — the same memory squeeze that's been showing up in HP, Lenovo and Raspberry Pi's own numbers all year, and worth studying for how we'd talk about the same kind of squeeze ourselves.</p>
+    <a class="source-btn" href="https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market">https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market</a>
   </article>
 
   <article class="item">
-    <h3>HP and Lenovo both raised prices in mid-September, and the reason is the same memory squeeze already hitting Raspberry Pi</h3>
-    <p>HP lifted client-device prices 10-15%, Lenovo about 6% on average (4-10% by configuration), both citing memory and storage supply constrained by AI-datacenter demand, with guidance pointing to volatility "through the end of 2026 and into 2027." Independent industry coverage backs the underlying mechanism — DRAM contract prices rose 13-18% quarter-on-quarter in Q3, driven by the same AI-server demand.</p>
-    <p>Two PC-scale vendors absorbing double-digit cost increases, with no relief signaled until well into next year, is a strong argument that single-board-computer sourcing exposure right now is a structural cost shift, not a temporary spike to wait out.</p>
-    <a class="source-btn" href="https://www.mcpc.com/insights/device-price-watch/september-2026-device-price-increases/">https://www.mcpc.com/insights/device-price-watch/september-2026-device-price-increases/</a>
+    <h3>A new paper puts real numbers on how far local, on-device search can scale before it degrades</h3>
+    <p>"As We May Search" reports dense retrieval holding above 91% accuracy (nDCG@10) out to 100,000 documents, with approximate indexing stretching that to a million documents at only a 2% quality loss — a 7-billion-parameter local language model lands within 4 points of a cloud-based baseline on answer quality.</p>
+    <p>That's real support for a bet we're making: keeping search entirely on-device rather than routing it through a cloud service. An index built this way doesn't quietly degrade well past the size a personal archive built over years would realistically reach.</p>
+    <a class="source-btn" href="https://arxiv.org/abs/2606.29652">https://arxiv.org/abs/2606.29652</a>
   </article>
 
   <article class="item">
-    <h3>Capture One raised prices 6% across its entire lineup, and said so plainly rather than hiding it in a relaunch</h3>
-    <p>The photo-editing software's Pro, All-in-One and Studio tiers all went up — monthly, annual and perpetual licenses alike — starting in June, with the company's own line: "costs more now than it did a year ago... we're continuing to invest in the platform."</p>
-    <p>It's a clean, named precedent for how a premium creative tool talks about a cost-driven price increase to its own user base without discounting the brand.</p>
-    <a class="source-btn" href="https://petapixel.com/2026/05/27/capture-one-to-increase-all-product-prices-by-6/">https://petapixel.com/2026/05/27/capture-one-to-increase-all-product-prices-by-6/</a>
+    <h3>Nothing's Headphone (1) Pro is officially out in Japan at ¥64,800, with a confirmed 68-hour battery figure beating the earlier leak</h3>
+    <p>Nothing's Japan press release confirms an aluminum-and-titanium chassis at 327 grams, and GIGAZINE adds that the headband arm is CNC-machined from a single block of aluminum, 45% lighter than the original Headphone (1). The official battery figure — 68 hours with noise cancelling off — replaces the 60-hour number that had been circulating as a leak just three days earlier.</p>
+    <p>We keep a close eye on Nothing's Japan business as a bellwether for premium consumer hardware in that market, and this is a live example of how a design-forward brand talks about materials and weight reduction at launch.</p>
+    <a class="source-btn" href="https://prtimes.jp/main/html/rd/p/000000067.000082566.html">https://prtimes.jp/main/html/rd/p/000000067.000082566.html</a>
   </article>
 
   <article class="item">
-    <h3>A Japanese stationery brand's ¥770 sketchbook marks the very bottom of a price ladder worth watching</h3>
-    <p>MUCU's sketchbook uses two pieces of recycled paperboard for covers, a canvas spine, and 60 pages of the recycled paper Japanese manga is printed on — sold in Japan only, since "tariffs and shipping would eat up any cost savings" for export.</p>
-    <p>It's thin on its own, but it's a specific, dated data point at the floor of the Japanese creator-stationery price range — a marker, not a serious competitor.</p>
-    <a class="source-btn" href="https://www.core77.com/posts/145448">https://www.core77.com/posts/145448</a>
+    <h3>The same headphone launched globally at $399 through three channels at once — Nothing's own store, Amazon and Best Buy, same day</h3>
+    <p>That's about as far from an exclusive direct-to-consumer strategy as a premium launch gets: maximum distribution breadth paired with a premium price, rather than owning the customer relationship.</p>
+    <p>Worth reading next to the Japan launch above — the same company running two different channel strategies in two different markets at once, which is exactly the kind of contrast we watch for as we think about our own distribution approach.</p>
+    <a class="source-btn" href="https://9to5google.com/2026/09/28/nothing-headphone-1-pro-upgrades-price/">https://9to5google.com/2026/09/28/nothing-headphone-1-pro-upgrades-price/</a>
   </article>
 </section>
 
@@ -162,8 +162,8 @@
 <section>
   <h2 class="section-title">Yesterday's deep-dive</h2>
   <div class="dossier-box">
-    <p>An earlier deep-dive corrected an item from the day before: the paper's headline storage-reduction number turns out to measure a transient, build-time training buffer, not the archive index actually served — the served centroids ship as plain float32 — so it doesn't answer whether a full personal capture archive's search index fits on a small on-device computer. The real constraint is far bigger than anything this paper touches: raw capture data dwarfs the index by roughly 900:1.</p>
-    <p>On the upside, the digging surfaced a live open-source candidate for on-device vector search worth tracking — SQLite Vec1, a dependency-free single-file library with ARM NEON support and active commits as recently as September 25 — against a comparable but dormant alternative that hasn't shipped a stable release in over four months. One more correction worth noting: the paper is properly a companion to, not the same work as, the "SuperKMeans" project named in the original item.</p>
+    <p>A Raspberry Pi engineer confirmed on the company's own forum that boards lock to their factory RAM size, with additional undisclosed "device attributes" now programmed in — and that statement is the entire vendor record; it appears in no product-change notice, datasheet, release note or register page. The corroborating sources behind the original story collapse to roughly one, since a widely cited follow-up post is a transcript of its own video pointing back at the same forum thread, and three of the original claims turned out wrong: the actual failure mode is a board that boots normally and reports the factory size, not one that won't boot at all; an early-generation-board claim is unestablished; and our own fallback board is a clean negative on three independent grounds.</p>
+    <p>The finding that actually matters for what we're building isn't the lock itself but its collision with the supply channel — two RAM tiers of the board we're targeting are simultaneously unbuyable at every authorised Japanese reseller right now, and the only channel with a stocked, certified board is the unauthorised one, at a 13–19% premium.</p>
   </div>
 </section>
 
