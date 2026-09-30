@@ -3,174 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — September 29, 2026</title>
+<title>Morning Brief — September 30, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
     --bg: #fdfdfb;
     --fg: #1a1a1a;
     --muted: #5a5a5a;
-    --accent: #2a4d3a;
+    --accent: #0a5c36;
     --accent-fg: #ffffff;
-    --divider: #e0ddd6;
-    --card-bg: #f4f2ec;
+    --divider: #e2e2de;
+    --card-bg: #f4f4f0;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14150f;
-      --fg: #ece9e2;
-      --muted: #a9a59b;
-      --accent: #6fae87;
-      --accent-fg: #0c0f0b;
-      --divider: #2c2c24;
-      --card-bg: #1e1f18;
+      --bg: #14161a;
+      --fg: #eceae4;
+      --muted: #a8a8a0;
+      --accent: #3ecf8e;
+      --accent-fg: #0a1410;
+      --divider: #2c2f34;
+      --card-bg: #1c1f24;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
+  html, body {
     margin: 0;
-    padding: 0 1.25rem 4rem;
+    padding: 0;
     background: var(--bg);
     color: var(--fg);
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Roboto, sans-serif;
+  }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
     font-size: 18px;
     line-height: 1.7;
-  }
-  main {
     max-width: 42rem;
     margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
   }
-  header.page-head {
-    padding: 2.5rem 0 1.5rem;
+  header.top {
+    margin-bottom: 2.5rem;
   }
-  header.page-head .date {
+  header.top .date {
     font-size: 1.05rem;
     font-weight: 600;
-    margin: 0 0 0.25rem;
-  }
-  header.page-head .meta {
-    color: var(--muted);
-    font-size: 0.95rem;
     margin: 0;
   }
-  h2.section-title {
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  header.top .readtime {
     color: var(--muted);
-    margin: 2.5rem 0 1.25rem;
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0;
+  }
+  h2.section {
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 3rem 0 1.5rem;
     border-bottom: 1px solid var(--divider);
     padding-bottom: 0.5rem;
   }
   article.item {
-    margin: 0 0 2.25rem;
+    margin-bottom: 2.75rem;
   }
   article.item h3 {
     font-size: 1.15rem;
     line-height: 1.45;
-    margin: 0 0 0.75rem;
-  }
-  article.item p {
     margin: 0 0 0.9rem;
   }
-  a.source-btn, a.answer-btn, a.full-btn {
+  article.item p {
+    margin: 0 0 1rem;
+  }
+  .btn {
     display: block;
     width: 100%;
     text-align: center;
-    text-decoration: none;
     background: var(--accent);
     color: var(--accent-fg);
+    text-decoration: none;
     font-weight: 600;
+    font-size: 0.98rem;
     padding: 0.9rem 1rem;
     border-radius: 0.6rem;
-    margin-top: 0.5rem;
-    word-break: break-word;
+    margin-top: 0.75rem;
   }
-  a.source-btn { font-size: 0.85rem; font-weight: 500; word-break: break-all; }
-  .divider {
+  .btn:active { opacity: 0.85; }
+  hr.divider {
     border: none;
     border-top: 1px solid var(--divider);
-    margin: 2rem 0;
+    margin: 2.5rem 0;
   }
   .dossier-box {
     background: var(--card-bg);
-    border-radius: 0.75rem;
-    padding: 1.25rem 1.25rem 0.5rem;
+    border-radius: 0.8rem;
+    padding: 1.25rem 1.25rem 1.5rem;
   }
   .dossier-box p { margin: 0 0 1rem; }
-  footer.page-foot {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--divider);
-  }
-  footer.page-foot p.note {
-    color: var(--muted);
-    font-size: 0.9rem;
+  .dossier-box p:last-of-type { margin-bottom: 0; }
+  footer.page {
+    margin-top: 3.5rem;
   }
 </style>
 </head>
 <body>
-<main>
 
-<header class="page-head">
-  <p class="date">Tuesday, September 29, 2026</p>
-  <p class="meta">~6 minute read</p>
+<header class="top">
+  <p class="date">September 30, 2026</p>
+  <p class="readtime">~6 minute read</p>
 </header>
 
-<section>
-  <h2 class="section-title">Today</h2>
+<h2 class="section">Today</h2>
 
-  <article class="item">
-    <h3>Raspberry Pi OS's September update adds an icon dock — but a widely cited "kernel 6.18.50 LTS" figure traces to only one outlet, not Raspberry Pi's own post</h3>
-    <p>Raspberry Pi's own blog confirms a new icon dock that can replace or sit alongside the taskbar, plus a combined icon-based launcher and task list. A kernel version number and a "moves to Debian 13 Trixie" framing that circulated alongside the dock news don't appear on Raspberry Pi's own page at all — they trace to a single outlet, and the "Trixie migration" claim is flat wrong: this is a desktop update on the OS's existing Trixie base, not a new migration.</p>
-    <p>We're building a background process for this exact OS, so the real kernel and support-window state matters to us more than the headline feature — worth a closer look before anything gets built against it.</p>
-    <a class="source-btn" href="https://www.raspberrypi.com/news/an-updated-look-for-the-raspberry-pi-desktop/">https://www.raspberrypi.com/news/an-updated-look-for-the-raspberry-pi-desktop/</a>
-  </article>
+<article class="item">
+  <h3>Raspberry Pi 6 is delayed to 2028 at the earliest — and it will ship with no NPU.</h3>
+  <p>Eben Upton's own Reddit AMA, confirmed across two English outlets and independently framed by Japanese tech press, makes clear this isn't a stopgap: the next Pi generation deliberately skips dedicated AI silicon in favor of raw CPU performance, Upton arguing fast, affordable CPUs beat a bolted-on accelerator as the path to democratized AI.</p>
+  <p>That closes an open question for us — the Pi 5 isn't a placeholder while we wait for a faster NPU-equipped board, it's the platform we're building on for the foreseeable future, and on-device inference needs to be designed around CPU-only compute as a permanent constraint, not a near-term gap.</p>
+  <a class="btn" href="https://itsfoss.com/news/raspberry-pi-6-delayed/">Read the source →</a>
+</article>
 
-  <article class="item">
-    <h3>Framework paired a retroactive memory-price cut with a public pledge not to profiteer off the DRAM shortage</h3>
-    <p>Framework secured Micron LPCAMM2 memory modules at a lower cost, cut its DIY and pre-built pricing accordingly, and is refunding the difference to customers who already ordered. The line worth keeping: "We won't use this as an excuse to be extractive. We'll only increase pricing to cover increases in our costs, and where possible, we'll absorb costs to maintain stability."</p>
-    <p>It's a clean example of a premium, repairable-by-design hardware brand narrating a component-cost shock to direct buyers without eroding trust — the same memory squeeze that's been showing up in HP, Lenovo and Raspberry Pi's own numbers all year, and worth studying for how we'd talk about the same kind of squeeze ourselves.</p>
-    <a class="source-btn" href="https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market">https://frame.work/blog/updates-on-memory-pricing-and-navigating-the-volatile-memory-market</a>
-  </article>
+<article class="item">
+  <h3>A well-funded rival is building exactly what we refuse to build: an AI that ranks and retrieves your visual memories.</h3>
+  <p>Memories.ai just closed an $8M seed extension (total $16M) led by Susa Ventures, with Samsung Next and NVIDIA's Cosmos-Reason/Metropolis teams as partners, to build a cloud "Large Visual Memory Model" that actively searches and surfaces moments from a personal capture archive.</p>
+  <p>It's the sharpest funded counter-example yet to our own approach — search that never ranks, staying entirely on-device — real capital chasing the opposite bet. The founders come out of Meta's Ray-Ban glasses AI team, which says something about where that talent pool thinks the opportunity is.</p>
+  <a class="btn" href="https://dealroom.co/news/135651-memories-ai-raises-8m-seed-extension-for-visual-memory-ai">Read the source →</a>
+</article>
 
-  <article class="item">
-    <h3>A new paper puts real numbers on how far local, on-device search can scale before it degrades</h3>
-    <p>"As We May Search" reports dense retrieval holding above 91% accuracy (nDCG@10) out to 100,000 documents, with approximate indexing stretching that to a million documents at only a 2% quality loss — a 7-billion-parameter local language model lands within 4 points of a cloud-based baseline on answer quality.</p>
-    <p>That's real support for a bet we're making: keeping search entirely on-device rather than routing it through a cloud service. An index built this way doesn't quietly degrade well past the size a personal archive built over years would realistically reach.</p>
-    <a class="source-btn" href="https://arxiv.org/abs/2606.29652">https://arxiv.org/abs/2606.29652</a>
-  </article>
+<article class="item">
+  <h3>Meta's 2025 purchase of Limitless (formerly Rewind) is the clearest sign yet that standalone passive-capture wearables don't survive as independent businesses.</h3>
+  <p>Limitless has stopped selling its hardware outright, moved existing customers to a free plan, and wound down a company that had raised $33M from a16z, First Round and NEA.</p>
+  <p>It's direct precedent for our own device category — two of the most visible funded entrants in passive-capture wearables, Limitless and Amazon's Bee, have both had their hardware businesses either discontinued or absorbed into a platform owner within about a year of raising real money.</p>
+  <a class="btn" href="https://techcrunch.com/2025/12/05/meta-acquires-ai-device-startup-limitless/">Read the source →</a>
+</article>
 
-  <article class="item">
-    <h3>Nothing's Headphone (1) Pro is officially out in Japan at ¥64,800, with a confirmed 68-hour battery figure beating the earlier leak</h3>
-    <p>Nothing's Japan press release confirms an aluminum-and-titanium chassis at 327 grams, and GIGAZINE adds that the headband arm is CNC-machined from a single block of aluminum, 45% lighter than the original Headphone (1). The official battery figure — 68 hours with noise cancelling off — replaces the 60-hour number that had been circulating as a leak just three days earlier.</p>
-    <p>We keep a close eye on Nothing's Japan business as a bellwether for premium consumer hardware in that market, and this is a live example of how a design-forward brand talks about materials and weight reduction at launch.</p>
-    <a class="source-btn" href="https://prtimes.jp/main/html/rd/p/000000067.000082566.html">https://prtimes.jp/main/html/rd/p/000000067.000082566.html</a>
-  </article>
+<article class="item">
+  <h3>A new zero-knowledge scheme lets a photo prove facts about itself without revealing the photo.</h3>
+  <p>A single arXiv preprint describes "soft redaction" — zero-knowledge proofs that certify properties of a capture (proximity to a location, similarity to a known identity) without exposing the underlying sensitive data, constructed in seconds and verified in milliseconds.</p>
+  <p>It's new ground against our existing work on capture provenance, and speaks directly to the unresolved tension in always-capturing hardware: proving something happened without handing over everything that happened. Single-author preprint, unreplicated — a design-space pointer, not a shipping technique yet.</p>
+  <a class="btn" href="https://arxiv.org/abs/2608.07063">Read the source →</a>
+</article>
 
-  <article class="item">
-    <h3>The same headphone launched globally at $399 through three channels at once — Nothing's own store, Amazon and Best Buy, same day</h3>
-    <p>That's about as far from an exclusive direct-to-consumer strategy as a premium launch gets: maximum distribution breadth paired with a premium price, rather than owning the customer relationship.</p>
-    <p>Worth reading next to the Japan launch above — the same company running two different channel strategies in two different markets at once, which is exactly the kind of contrast we watch for as we think about our own distribution approach.</p>
-    <a class="source-btn" href="https://9to5google.com/2026/09/28/nothing-headphone-1-pro-upgrades-price/">https://9to5google.com/2026/09/28/nothing-headphone-1-pro-upgrades-price/</a>
-  </article>
-</section>
+<article class="item">
+  <h3>Nothing's Japan managing director went on the record to deny the company is pulling out of the market.</h3>
+  <p>Kuroumi told ITmedia the situation is "not at the level of a management crisis" and reaffirmed the company will "fundamentally not withdraw" from Japan, framing recent price increases as ordinary model-change-timing pricing in line with Sharp and FCNT's practice.</p>
+  <p>Worth flagging honestly: an earlier draft of this item misquoted two of three lines before it was checked against the original page — the version above is what actually survives a direct read of the source. The underlying story holds regardless: first on-the-record Japan-specific response since July, on a story we've been following since Balmuda's own sales started sliding.</p>
+  <a class="btn" href="https://www.itmedia.co.jp/mobile/articles/2609/29/news026.html">Read the source →</a>
+</article>
 
-<hr class="divider">
+<h2 class="section">Yesterday's deep-dive</h2>
 
-<section>
-  <h2 class="section-title">Yesterday's deep-dive</h2>
-  <div class="dossier-box">
-    <p>A Raspberry Pi engineer confirmed on the company's own forum that boards lock to their factory RAM size, with additional undisclosed "device attributes" now programmed in — and that statement is the entire vendor record; it appears in no product-change notice, datasheet, release note or register page. The corroborating sources behind the original story collapse to roughly one, since a widely cited follow-up post is a transcript of its own video pointing back at the same forum thread, and three of the original claims turned out wrong: the actual failure mode is a board that boots normally and reports the factory size, not one that won't boot at all; an early-generation-board claim is unestablished; and our own fallback board is a clean negative on three independent grounds.</p>
-    <p>The finding that actually matters for what we're building isn't the lock itself but its collision with the supply channel — two RAM tiers of the board we're targeting are simultaneously unbuyable at every authorised Japanese reseller right now, and the only channel with a stocked, certified board is the unauthorised one, at a 13–19% premium.</p>
-  </div>
-</section>
+<div class="dossier-box">
+  <p>An earlier deep-dive corrected an earlier read of Raspberry Pi OS's September release rather than confirming it: a claim about the release's reported kernel version turned out to sit at primary in Raspberry Pi's own release notes, not single-sourced as first thought. The September update turned out to be a desktop-layer release almost entirely — a minimal, headless build gets almost none of its headline changes, while the handful of changes that do reach that kind of build appear in no release note at all.</p>
+  <p>The kernel's projected end-of-life rests on a page stamped seven months stale, though independent signals agree no successor base is imminent. Two candidate Debian bases turn out closer than assumed in supported lifespan — about six weeks apart, not years — but the older option's underlying software froze over a year ago, which for a camera-driven product means an outdated camera-stack pairing not previously flagged. Net effect: the platform base is stable and well-supported well into next year, but an appliance-versus-desktop distinction in Raspberry Pi's own release process had been read incorrectly until now.</p>
+</div>
 
-<footer class="page-foot">
-  <a class="full-btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
+<footer class="page">
+  <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
-</main>
 </body>
 </html>
