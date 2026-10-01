@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — September 30, 2026</title>
+<title>Morning Brief — October 1, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -100,6 +100,13 @@
   }
   .dossier-box p { margin: 0 0 1rem; }
   .dossier-box p:last-of-type { margin-bottom: 0; }
+  .notes-box {
+    background: var(--card-bg);
+    border-radius: 0.8rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+  .notes-box p { margin: 0 0 0.9rem; }
+  .notes-box p:last-of-type { margin-bottom: 0; }
   footer.page {
     margin-top: 3.5rem;
   }
@@ -108,52 +115,52 @@
 <body>
 
 <header class="top">
-  <p class="date">September 30, 2026</p>
+  <p class="date">October 1, 2026</p>
   <p class="readtime">~6 minute read</p>
 </header>
 
 <h2 class="section">Today</h2>
 
 <article class="item">
-  <h3>Raspberry Pi 6 is delayed to 2028 at the earliest — and it will ship with no NPU.</h3>
-  <p>Eben Upton's own Reddit AMA, confirmed across two English outlets and independently framed by Japanese tech press, makes clear this isn't a stopgap: the next Pi generation deliberately skips dedicated AI silicon in favor of raw CPU performance, Upton arguing fast, affordable CPUs beat a bolted-on accelerator as the path to democratized AI.</p>
-  <p>That closes an open question for us — the Pi 5 isn't a placeholder while we wait for a faster NPU-equipped board, it's the platform we're building on for the foreseeable future, and on-device inference needs to be designed around CPU-only compute as a permanent constraint, not a near-term gap.</p>
-  <a class="btn" href="https://itsfoss.com/news/raspberry-pi-6-delayed/">Read the source →</a>
+  <h3>Raspberry Pi raised prices again on the board family our capture hardware is built on.</h3>
+  <p>The company's own blog confirms a $12.50 rise on the 2GB Raspberry Pi 4 and Pi 5, to $67.50 and $77.50, citing memory costs that "have risen very steeply over the past two years and continue to increase." The 1GB variants and the Compute Module 4/5 2GB tier are explicitly spared — this is a memory-cost move, not a general repricing, and two independent outlets corroborate the figures the same day.</p>
+  <p>It extends a pattern already logged against HP, Lenovo and Framework onto this specific platform vendor: the DRAM shortage isn't abstract, it's landing on the exact board this project ships on. We declined to carry a researcher's "third hike since launch" framing — the vendor's own post doesn't make that claim, so it goes in flagged as an unverified lead rather than fact.</p>
+  <a class="btn" href="https://www.raspberrypi.com/news/price-increases-for-2gb-raspberry-pi-4-and-raspberry-pi-5/">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>A well-funded rival is building exactly what we refuse to build: an AI that ranks and retrieves your visual memories.</h3>
-  <p>Memories.ai just closed an $8M seed extension (total $16M) led by Susa Ventures, with Samsung Next and NVIDIA's Cosmos-Reason/Metropolis teams as partners, to build a cloud "Large Visual Memory Model" that actively searches and surfaces moments from a personal capture archive.</p>
-  <p>It's the sharpest funded counter-example yet to our own approach — search that never ranks, staying entirely on-device — real capital chasing the opposite bet. The founders come out of Meta's Ray-Ban glasses AI team, which says something about where that talent pool thinks the opportunity is.</p>
-  <a class="btn" href="https://dealroom.co/news/135651-memories-ai-raises-8m-seed-extension-for-visual-memory-ai">Read the source →</a>
+  <h3>Polaroid's new instant camera puts its creative controls on physical dials, and stages its launch in exactly the sequence we've been debating for our own.</h3>
+  <p>Mod ships today direct from Polaroid.com at $169.99, reaches selected US retail October 6, and goes global "from early 2027" — a clean, dated precedent for staging a direct-to-consumer launch ahead of retail and international rollout. The chief product officer's framing lands close to home too: "we wanted the creative experience to be built into the physical design of the camera... That's why the four shooting modes sit directly on the dial rather than behind menus or settings."</p>
+  <p>Single-sourced today — Polaroid's own site returned a rate-limit error when we tried to corroborate directly — but the reporting is solid and dated.</p>
+  <a class="btn" href="https://petapixel.com/2026/09/29/the-new-polaroid-mod-is-for-photographers-who-want-to-get-creative-with-analog/">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>Meta's 2025 purchase of Limitless (formerly Rewind) is the clearest sign yet that standalone passive-capture wearables don't survive as independent businesses.</h3>
-  <p>Limitless has stopped selling its hardware outright, moved existing customers to a free plan, and wound down a company that had raised $33M from a16z, First Round and NEA.</p>
-  <p>It's direct precedent for our own device category — two of the most visible funded entrants in passive-capture wearables, Limitless and Amazon's Bee, have both had their hardware businesses either discontinued or absorbed into a platform owner within about a year of raising real money.</p>
-  <a class="btn" href="https://techcrunch.com/2025/12/05/meta-acquires-ai-device-startup-limitless/">Read the source →</a>
+  <h3>A competitor's chief designer just walked through the exact battery trade-off our own hardware has to make.</h3>
+  <p>Strutt's ev¹ powered wheelchair chose LFP cells over higher energy density for safety and longevity, accepting a physically larger pack as the cost — the same safety-over-density logic behind our own user-replaceable, locally-sourceable battery approach. The piece is unusually candid about iteration: drop tests cracked the carrying handle, so the team softened the corner radius and changed the internal structure; the button and LEDs were later cut entirely "for better waterproofing and reduced complexity."</p>
+  <p>Worth reading end to end as a template for how to talk publicly about a battery decision once a device built this way ships.</p>
+  <a class="btn" href="https://www.core77.com/posts/145530/Strutts-Chief-Designer-Covers-the-Development-of-Their-Powered-Wheelchair-Battery">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>A new zero-knowledge scheme lets a photo prove facts about itself without revealing the photo.</h3>
-  <p>A single arXiv preprint describes "soft redaction" — zero-knowledge proofs that certify properties of a capture (proximity to a location, similarity to a known identity) without exposing the underlying sensitive data, constructed in seconds and verified in milliseconds.</p>
-  <p>It's new ground against our existing work on capture provenance, and speaks directly to the unresolved tension in always-capturing hardware: proving something happened without handing over everything that happened. Single-author preprint, unreplicated — a design-space pointer, not a shipping technique yet.</p>
-  <a class="btn" href="https://arxiv.org/abs/2608.07063">Read the source →</a>
+  <h3>New research finds an AI "organizing" an infinite canvas doesn't stay neutral — it starts curating, whether it was meant to or not.</h3>
+  <p>A CHI conference field study tracked eight professional designers across 5,838 design actions and found an AI organizing agent's role shifts "from a divergent catalyst in early stages to a convergent curator in later phases," pulling cognitive effort away from spatial management and into content curation.</p>
+  <p>That's a direct empirical challenge to the idea that a retrieval tool can stay neutral and never curate — not a theoretical worry, a measured behavioral drift in the identical canvas-based interaction model we're building around. Single academic study, not yet replicated, but exactly the kind of evidence that should prompt a hard look at how firm that boundary actually holds under real use.</p>
+  <a class="btn" href="https://arxiv.org/abs/2603.11569">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>Nothing's Japan managing director went on the record to deny the company is pulling out of the market.</h3>
-  <p>Kuroumi told ITmedia the situation is "not at the level of a management crisis" and reaffirmed the company will "fundamentally not withdraw" from Japan, framing recent price increases as ordinary model-change-timing pricing in line with Sharp and FCNT's practice.</p>
-  <p>Worth flagging honestly: an earlier draft of this item misquoted two of three lines before it was checked against the original page — the version above is what actually survives a direct read of the source. The underlying story holds regardless: first on-the-record Japan-specific response since July, on a story we've been following since Balmuda's own sales started sliding.</p>
-  <a class="btn" href="https://www.itmedia.co.jp/mobile/articles/2609/29/news026.html">Read the source →</a>
+  <h3>Someone already open-sourced a cheap reference design for the reliability problem this kind of hardware still has to solve.</h3>
+  <p>Ego-OSCAR pairs an embedded Linux board handling on-device video encoding with a separate real-time microcontroller handling watchdog and user-feedback duties — the same board-plus-watchdog split an always-on capture device needs for unattended reliability — at a stated bill-of-materials under $200 using off-the-shelf parts and 3D-printed components. The team has already logged roughly 550 hours of synchronized stereo-video-plus-motion-sensor capture on it.</p>
+  <p>Worth a close read as a concrete cost and architecture anchor, even though it's a single preprint with no independent replication yet.</p>
+  <a class="btn" href="https://arxiv.org/abs/2608.08285">Read the source →</a>
 </article>
 
 <h2 class="section">Yesterday's deep-dive</h2>
 
 <div class="dossier-box">
-  <p>An earlier deep-dive corrected an earlier read of Raspberry Pi OS's September release rather than confirming it: a claim about the release's reported kernel version turned out to sit at primary in Raspberry Pi's own release notes, not single-sourced as first thought. The September update turned out to be a desktop-layer release almost entirely — a minimal, headless build gets almost none of its headline changes, while the handful of changes that do reach that kind of build appear in no release note at all.</p>
-  <p>The kernel's projected end-of-life rests on a page stamped seven months stale, though independent signals agree no successor base is imminent. Two candidate Debian bases turn out closer than assumed in supported lifespan — about six weeks apart, not years — but the older option's underlying software froze over a year ago, which for a camera-driven product means an outdated camera-stack pairing not previously flagged. Net effect: the platform base is stable and well-supported well into next year, but an appliance-versus-desktop distinction in Raspberry Pi's own release process had been read incorrectly until now.</p>
+  <p>An earlier deep-dive went back to recover the actual primary source behind a widely-reported claim that Raspberry Pi's next hardware generation will ship with no onboard AI accelerator — and found the primary source doesn't support it. The word "NPU" appears zero times across the full 115-comment thread it supposedly came from; the chain of outlets that produced the claim runs through six intermediate re-reportings over 110 days, each one adding confidence the original source never had.</p>
+  <p>The company's own regulated financial filing, by contrast, explicitly names a new AI accelerator product as a strategic release. Net effect: the underlying platform choice is still well-supported, but for different and better reasons than the original claim gave — and it's a sharp reminder of how fast a thin secondary-source chain can calcify into treated-as-fact.</p>
 </div>
 
 <footer class="page">
