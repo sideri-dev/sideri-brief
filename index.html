@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — October 1, 2026</title>
+<title>Morning Brief — October 2, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -107,6 +107,8 @@
   }
   .notes-box p { margin: 0 0 0.9rem; }
   .notes-box p:last-of-type { margin-bottom: 0; }
+  .notes-box ul { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+  .notes-box li { margin-bottom: 0.4rem; }
   footer.page {
     margin-top: 3.5rem;
   }
@@ -115,52 +117,59 @@
 <body>
 
 <header class="top">
-  <p class="date">October 1, 2026</p>
+  <p class="date">October 2, 2026</p>
   <p class="readtime">~6 minute read</p>
 </header>
 
 <h2 class="section">Today</h2>
 
 <article class="item">
-  <h3>Raspberry Pi raised prices again on the board family our capture hardware is built on.</h3>
-  <p>The company's own blog confirms a $12.50 rise on the 2GB Raspberry Pi 4 and Pi 5, to $67.50 and $77.50, citing memory costs that "have risen very steeply over the past two years and continue to increase." The 1GB variants and the Compute Module 4/5 2GB tier are explicitly spared — this is a memory-cost move, not a general repricing, and two independent outlets corroborate the figures the same day.</p>
-  <p>It extends a pattern already logged against HP, Lenovo and Framework onto this specific platform vendor: the DRAM shortage isn't abstract, it's landing on the exact board this project ships on. We declined to carry a researcher's "third hike since launch" framing — the vendor's own post doesn't make that claim, so it goes in flagged as an unverified lead rather than fact.</p>
-  <a class="btn" href="https://www.raspberrypi.com/news/price-increases-for-2gb-raspberry-pi-4-and-raspberry-pi-5/">Read the source →</a>
+  <h3>Raspberry Pi's own Japanese retail channel moved on memory pricing before the company did.</h3>
+  <p>Akizuki Denshi's price-history log for the Pi 5 2GB board shows a jump from ¥14,780 to ¥15,180 on September 25 — six days before Raspberry Pi's own global $12.50 hike landed on October 1. The board is currently unorderable there, stock status reading "lead time being confirmed, arrival date undetermined."</p>
+  <p>It's the clearest sign yet that Japan's distributor channel is pricing in the DRAM shock ahead of the vendor's own announcements, on a board family widely used in single-board-computer projects.</p>
+  <a class="btn" href="https://akizukidenshi.com/catalog/g/g129606/">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>Polaroid's new instant camera puts its creative controls on physical dials, and stages its launch in exactly the sequence we've been debating for our own.</h3>
-  <p>Mod ships today direct from Polaroid.com at $169.99, reaches selected US retail October 6, and goes global "from early 2027" — a clean, dated precedent for staging a direct-to-consumer launch ahead of retail and international rollout. The chief product officer's framing lands close to home too: "we wanted the creative experience to be built into the physical design of the camera... That's why the four shooting modes sit directly on the dial rather than behind menus or settings."</p>
-  <p>Single-sourced today — Polaroid's own site returned a rate-limit error when we tried to corroborate directly — but the reporting is solid and dated.</p>
-  <a class="btn" href="https://petapixel.com/2026/09/29/the-new-polaroid-mod-is-for-photographers-who-want-to-get-creative-with-analog/">Read the source →</a>
+  <h3>ISSEY MIYAKE and JAXA are staging process itself as the exhibit, and it's worth seeing in person.</h3>
+  <p>A-POC ABLE's new show at 21_21 DESIGN SIGHT in Tokyo (October 21–November 19) takes climate-observation imagery from the GCOM-C "Shikisai" satellite and turns it directly into jacquard-woven denim, alongside a material-prototyping collaboration with the University of Tokyo's Origami Engineering Lab.</p>
+  <p>The whole premise is making an invisible capture process visible through a crafted object — a framing worth sitting with for anyone thinking about how process and craft intersect.</p>
+  <a class="btn" href="https://www.isseymiyake.com/blogs/news/18802">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>A competitor's chief designer just walked through the exact battery trade-off our own hardware has to make.</h3>
-  <p>Strutt's ev¹ powered wheelchair chose LFP cells over higher energy density for safety and longevity, accepting a physically larger pack as the cost — the same safety-over-density logic behind our own user-replaceable, locally-sourceable battery approach. The piece is unusually candid about iteration: drop tests cracked the carrying handle, so the team softened the corner radius and changed the internal structure; the button and LEDs were later cut entirely "for better waterproofing and reduced complexity."</p>
-  <p>Worth reading end to end as a template for how to talk publicly about a battery decision once a device built this way ships.</p>
-  <a class="btn" href="https://www.core77.com/posts/145530/Strutts-Chief-Designer-Covers-the-Development-of-Their-Powered-Wheelchair-Battery">Read the source →</a>
+  <h3>Fujifilm just raised Japan-only camera and instax prices up to 23%, echoing the same memory-cost language as past DRAM pass-throughs.</h3>
+  <p>Effective October 1, the GFX100 II/S II/RF line and select X-series bodies rose 6–15%, a 500mm lens rose about 12%, and the instax line rose 6–23%, with Fujifilm citing "the recent surge in the cost of parts and materials, manufacturing and logistics costs." Five independent outlets confirm the same figures same-day.</p>
+  <p>A live, dated template for how a premium Japanese hardware maker explains and sizes a domestic cost pass-through.</p>
+  <a class="btn" href="https://petapixel.com/2026/10/01/fujifilm-increases-japanese-camera-prices-by-up-to-23/">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>New research finds an AI "organizing" an infinite canvas doesn't stay neutral — it starts curating, whether it was meant to or not.</h3>
-  <p>A CHI conference field study tracked eight professional designers across 5,838 design actions and found an AI organizing agent's role shifts "from a divergent catalyst in early stages to a convergent curator in later phases," pulling cognitive effort away from spatial management and into content curation.</p>
-  <p>That's a direct empirical challenge to the idea that a retrieval tool can stay neutral and never curate — not a theoretical worry, a measured behavioral drift in the identical canvas-based interaction model we're building around. Single academic study, not yet replicated, but exactly the kind of evidence that should prompt a hard look at how firm that boundary actually holds under real use.</p>
-  <a class="btn" href="https://arxiv.org/abs/2603.11569">Read the source →</a>
+  <h3>A new paper does, in one pass, roughly the on-device signal a camera-based hand-tracking system needs.</h3>
+  <p>EgoFound3R reconstructs egocentric hand geometry while also outputting point-wise visibility, contact, and distance in the same pass, claiming accuracy gains of 11–43% over prior benchmarks and about 6x the throughput.</p>
+  <p>It's architecture evidence, not a shipped benchmark — the throughput figure is an offline-processing claim, not a number measured on a Raspberry Pi — but it names the right shape of signal for detecting when a hand occludes the frame.</p>
+  <a class="btn" href="https://arxiv.org/abs/2610.01210">Read the source →</a>
 </article>
 
 <article class="item">
-  <h3>Someone already open-sourced a cheap reference design for the reliability problem this kind of hardware still has to solve.</h3>
-  <p>Ego-OSCAR pairs an embedded Linux board handling on-device video encoding with a separate real-time microcontroller handling watchdog and user-feedback duties — the same board-plus-watchdog split an always-on capture device needs for unattended reliability — at a stated bill-of-materials under $200 using off-the-shelf parts and 3D-printed components. The team has already logged roughly 550 hours of synchronized stereo-video-plus-motion-sensor capture on it.</p>
-  <p>Worth a close read as a concrete cost and architecture anchor, even though it's a single preprint with no independent replication yet.</p>
-  <a class="btn" href="https://arxiv.org/abs/2608.08285">Read the source →</a>
+  <h3>An amateur has already run an unattended camera-capture project for five years and 2,000-plus days.</h3>
+  <p>Takako Kansai, founder of the finance app Zaim, built a doorway rig pairing a Raspberry Pi and a camera that photographs her full outfit on the way out and lets AI classify the clothing — exhibited at Maker Faire Tokyo in September, multi-year dataset on display.</p>
+  <p>About as close as it gets to someone else already proving that unattended Pi-plus-camera capture, sustained for years, builds something worth having afterward.</p>
+  <a class="btn" href="https://edu.watch.impress.co.jp/docs/news/2132075.html">Read the source →</a>
 </article>
 
 <h2 class="section">Yesterday's deep-dive</h2>
 
 <div class="dossier-box">
-  <p>An earlier deep-dive went back to recover the actual primary source behind a widely-reported claim that Raspberry Pi's next hardware generation will ship with no onboard AI accelerator — and found the primary source doesn't support it. The word "NPU" appears zero times across the full 115-comment thread it supposedly came from; the chain of outlets that produced the claim runs through six intermediate re-reportings over 110 days, each one adding confidence the original source never had.</p>
-  <p>The company's own regulated financial filing, by contrast, explicitly names a new AI accelerator product as a strategic release. Net effect: the underlying platform choice is still well-supported, but for different and better reasons than the original claim gave — and it's a sharp reminder of how fast a thin secondary-source chain can calcify into treated-as-fact.</p>
+  <p>An earlier deep-dive went back to Raspberry Pi's own regulated financial filing — released seven days before its public price-hike blog post — and found the filing states the cause more plainly: the cheap FY2025 memory inventory that funded the old 2GB price protection has been consumed, gross margin fell to 23%, and meaningful new supply isn't expected until 2028.</p>
+  <p>The hike also moves the 2GB tier onto the same $16.25-per-GB line as every denser option, leaving only the 1GB board subsidized — and that one is nearly impossible to buy anywhere. One method finding stands out above the price move itself: a "third hike since launch" claim that had been circulating was traced to a fabrication introduced by a search-summarization layer, not by any outlet or primary source.</p>
+</div>
+
+<h2 class="section">This week</h2>
+
+<div class="notes-box">
+  <p><strong>Memory density on a Raspberry Pi-class capture board has become an irreversible purchase against a moving, lock-protected shelf, and this week's research gave three different buying answers because nobody has actually benchmarked the workload yet.</strong> One read favored a mid-size tier based on a stock snapshot that turned out to be a temporary gap; another made the power-and-price case for the smallest tier on paper; a third pointed out the vision encoder has never been benchmarked on this board's CPU at all. The real gating step is running that benchmark before committing to a size.</p>
+  <p><strong>A week of close tracking on Raspberry Pi's pricing moves produced four lead stories and four same-day corrections — not on the facts quoted, but on how many independent sources actually stood behind each claim.</strong> Three stories over-counted corroboration (chains of outlets citing each other back to one forum post or one vendor announcement), one under-counted a primary-sourced claim, and one fabricated detail turned out to originate in a search-summarization layer sitting upstream of the reporting entirely.</p>
 </div>
 
 <footer class="page">
