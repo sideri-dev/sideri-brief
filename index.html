@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — October 2, 2026</title>
+<title>Research Brief — October 3, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
-    --bg: #fdfdfb;
-    --fg: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #0a5c36;
-    --accent-fg: #ffffff;
-    --divider: #e2e2de;
-    --card-bg: #f4f4f0;
+    --bg: #fbfaf8;
+    --fg: #1c1a17;
+    --muted: #6b6660;
+    --accent: #8a5a2b;
+    --divider: #e4dfd7;
+    --btn-bg: #1c1a17;
+    --btn-fg: #fbfaf8;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14161a;
-      --fg: #eceae4;
-      --muted: #a8a8a0;
-      --accent: #3ecf8e;
-      --accent-fg: #0a1410;
-      --divider: #2c2f34;
-      --card-bg: #1c1f24;
+      --bg: #171614;
+      --fg: #ece8e1;
+      --muted: #9d968c;
+      --accent: #d9a05b;
+      --divider: #322f2a;
+      --btn-bg: #ece8e1;
+      --btn-fg: #171614;
     }
   }
   * { box-sizing: border-box; }
@@ -34,145 +34,144 @@
     color: var(--fg);
   }
   body {
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
     font-size: 18px;
     line-height: 1.7;
     max-width: 42rem;
     margin: 0 auto;
     padding: 2.5rem 1.25rem 4rem;
   }
-  header.top {
+  header {
     margin-bottom: 2.5rem;
   }
-  header.top .date {
-    font-size: 1.05rem;
+  header .date {
+    font-size: 1.1rem;
     font-weight: 600;
-    margin: 0;
   }
-  header.top .readtime {
+  header .readtime {
     color: var(--muted);
     font-size: 0.95rem;
-    margin: 0.25rem 0 0;
+    margin-top: 0.25rem;
   }
-  h2.section {
-    font-size: 1.1rem;
-    letter-spacing: 0.02em;
+  h2 {
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--muted);
-    margin: 3rem 0 1.5rem;
-    border-bottom: 1px solid var(--divider);
-    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
   }
-  article.item {
-    margin-bottom: 2.75rem;
+  .item {
+    margin-bottom: 2.25rem;
   }
-  article.item h3 {
-    font-size: 1.15rem;
-    line-height: 1.45;
-    margin: 0 0 0.9rem;
+  .item p {
+    margin: 0.9rem 0;
   }
-  article.item p {
-    margin: 0 0 1rem;
+  .item .headline {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.6rem;
   }
   .btn {
     display: block;
     width: 100%;
     text-align: center;
-    background: var(--accent);
-    color: var(--accent-fg);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.98rem;
     padding: 0.9rem 1rem;
-    border-radius: 0.6rem;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
   }
-  .btn:active { opacity: 0.85; }
+  .btn:visited { color: var(--btn-fg); }
   hr.divider {
     border: none;
     border-top: 1px solid var(--divider);
-    margin: 2.5rem 0;
+    margin: 2.25rem 0;
   }
-  .dossier-box {
-    background: var(--card-bg);
-    border-radius: 0.8rem;
-    padding: 1.25rem 1.25rem 1.5rem;
-  }
-  .dossier-box p { margin: 0 0 1rem; }
-  .dossier-box p:last-of-type { margin-bottom: 0; }
-  .notes-box {
-    background: var(--card-bg);
-    border-radius: 0.8rem;
-    padding: 1.25rem 1.25rem 1.5rem;
-  }
-  .notes-box p { margin: 0 0 0.9rem; }
-  .notes-box p:last-of-type { margin-bottom: 0; }
-  .notes-box ul { margin: 0 0 0.9rem; padding-left: 1.25rem; }
-  .notes-box li { margin-bottom: 0.4rem; }
-  footer.page {
+  footer {
     margin-top: 3.5rem;
+  }
+  .muted {
+    color: var(--muted);
+    font-size: 0.95rem;
   }
 </style>
 </head>
 <body>
 
-<header class="top">
-  <p class="date">October 2, 2026</p>
-  <p class="readtime">~6 minute read</p>
+<header>
+  <div class="date">October 3, 2026</div>
+  <div class="readtime">~7 minute read</div>
 </header>
 
-<h2 class="section">Today</h2>
+<section>
+  <h2>Today</h2>
 
-<article class="item">
-  <h3>Raspberry Pi's own Japanese retail channel moved on memory pricing before the company did.</h3>
-  <p>Akizuki Denshi's price-history log for the Pi 5 2GB board shows a jump from ¥14,780 to ¥15,180 on September 25 — six days before Raspberry Pi's own global $12.50 hike landed on October 1. The board is currently unorderable there, stock status reading "lead time being confirmed, arrival date undetermined."</p>
-  <p>It's the clearest sign yet that Japan's distributor channel is pricing in the DRAM shock ahead of the vendor's own announcements, on a board family widely used in single-board-computer projects.</p>
-  <a class="btn" href="https://akizukidenshi.com/catalog/g/g129606/">Read the source →</a>
-</article>
+  <div class="item">
+    <span class="headline">Oura just pulled its $2.2 billion Nasdaq IPO, and the market is the reason given, not the company.</span>
+    <p>Oura had marketed 50 million shares at $40–44 apiece, implying a $15.62 billion valuation, before postponing days ahead of pricing — a spike in bond yields, fears of more Federal Reserve rate hikes, and geopolitical turmoil all cited. Mergermarket's Samuel Kerr: "even strong businesses with spectacular economics will face greater scrutiny." It extends an S-1 disclosure from a couple of weeks ago (85% twelve-month paid-member retention) with the outcome: public markets are now repricing hardware-plus-subscription valuations downward — relevant to how we think about subscription models on our own hardware.</p>
+    <a class="btn" href="https://www.bnnbloomberg.ca/business/technology/2026/09/29/oura-becomes-latest-us-ipo-hopeful-to-delay-listing-as-market-jitters-deepen/">Read the source →</a>
+  </div>
 
-<article class="item">
-  <h3>ISSEY MIYAKE and JAXA are staging process itself as the exhibit, and it's worth seeing in person.</h3>
-  <p>A-POC ABLE's new show at 21_21 DESIGN SIGHT in Tokyo (October 21–November 19) takes climate-observation imagery from the GCOM-C "Shikisai" satellite and turns it directly into jacquard-woven denim, alongside a material-prototyping collaboration with the University of Tokyo's Origami Engineering Lab.</p>
-  <p>The whole premise is making an invisible capture process visible through a crafted object — a framing worth sitting with for anyone thinking about how process and craft intersect.</p>
-  <a class="btn" href="https://www.isseymiyake.com/blogs/news/18802">Read the source →</a>
-</article>
+  <div class="item">
+    <span class="headline">Chiang Mai Design Week just confirmed its 12th edition — December 5–13, with a market track built around makers, not wholesale.</span>
+    <p>Themed "Local Thunders, Global Transformation," it runs a dedicated "Pop Market" for sustainable-process makers plus a "Homecoming Creator Integration" track connecting returning creators with local communities. It's a named, dated pop-up-style venue in Thailand, distinct from the trade fairs already on our radar — exactly the kind of event a hardware launch built around pop-ups rather than retail showrooms would use.</p>
+    <a class="btn" href="https://www.chiangmaidesignweek.com/en/cmdw2026">Read the source →</a>
+  </div>
 
-<article class="item">
-  <h3>Fujifilm just raised Japan-only camera and instax prices up to 23%, echoing the same memory-cost language as past DRAM pass-throughs.</h3>
-  <p>Effective October 1, the GFX100 II/S II/RF line and select X-series bodies rose 6–15%, a 500mm lens rose about 12%, and the instax line rose 6–23%, with Fujifilm citing "the recent surge in the cost of parts and materials, manufacturing and logistics costs." Five independent outlets confirm the same figures same-day.</p>
-  <p>A live, dated template for how a premium Japanese hardware maker explains and sizes a domestic cost pass-through.</p>
-  <a class="btn" href="https://petapixel.com/2026/10/01/fujifilm-increases-japanese-camera-prices-by-up-to-23/">Read the source →</a>
-</article>
+  <div class="item">
+    <span class="headline">A new nacre-inspired composite does two jobs our always-on hardware needs, in one material layer.</span>
+    <p>Published in Nature Communications, it delivers passive cooling of up to 20.5 K with no fan, dissipates 97.9% of kinetic impact force (shrugging off a 50 m/s projectile hit), and keeps its performance through closed-loop recycling. For an unattended device that has to survive drops and run fanless without compromising a repairable, recyclable build, this is a concrete candidate worth tracking — single-source and dated to June, but nothing like it is elsewhere in our notes.</p>
+    <a class="btn" href="https://www.nature.com/articles/s41467-026-74755-w">Read the source →</a>
+  </div>
 
-<article class="item">
-  <h3>A new paper does, in one pass, roughly the on-device signal a camera-based hand-tracking system needs.</h3>
-  <p>EgoFound3R reconstructs egocentric hand geometry while also outputting point-wise visibility, contact, and distance in the same pass, claiming accuracy gains of 11–43% over prior benchmarks and about 6x the throughput.</p>
-  <p>It's architecture evidence, not a shipped benchmark — the throughput figure is an offline-processing claim, not a number measured on a Raspberry Pi — but it names the right shape of signal for detecting when a hand occludes the frame.</p>
-  <a class="btn" href="https://arxiv.org/abs/2610.01210">Read the source →</a>
-</article>
+  <div class="item">
+    <span class="headline">A sub-1-billion-parameter model now does what used to need many billions: one embedding space for text, speech, image and video together.</span>
+    <p>Omni-Embed-Mini, just posted to arXiv, binds all those modalities into a shared space without degrading text retrieval, at 2.7–9.5x fewer parameters than existing omni-modal embedders. Our own on-device, offline-only search architecture needs exactly this — a lightweight way to search a personal image archive by text query — so this is a real candidate, though single-source and worth re-checking before it goes any further.</p>
+    <a class="btn" href="https://arxiv.org/abs/2610.02148">Read the source →</a>
+  </div>
 
-<article class="item">
-  <h3>An amateur has already run an unattended camera-capture project for five years and 2,000-plus days.</h3>
-  <p>Takako Kansai, founder of the finance app Zaim, built a doorway rig pairing a Raspberry Pi and a camera that photographs her full outfit on the way out and lets AI classify the clothing — exhibited at Maker Faire Tokyo in September, multi-year dataset on display.</p>
-  <p>About as close as it gets to someone else already proving that unattended Pi-plus-camera capture, sustained for years, builds something worth having afterward.</p>
-  <a class="btn" href="https://edu.watch.impress.co.jp/docs/news/2132075.html">Read the source →</a>
-</article>
+  <div class="item">
+    <span class="headline">A London designer just built the clearest precedent yet for "the record is the object."</span>
+    <p>Kiran Scott de Martinville's "Sky Vase," shown at London Design Festival, uses a custom anodising rig to turn the sky at a specific place and date, chosen by its owner, into a permanent titanium colour gradient — literally encoding a capture event into the material itself. It's a sharp outside validation of the instinct behind our own passive-capture-into-an-owned-record thesis.</p>
+    <a class="btn" href="https://www.core77.com/gallery/145405/London-Design-Festival-2026">Read the source →</a>
+  </div>
+</section>
 
-<h2 class="section">Yesterday's deep-dive</h2>
+<hr class="divider">
 
-<div class="dossier-box">
-  <p>An earlier deep-dive went back to Raspberry Pi's own regulated financial filing — released seven days before its public price-hike blog post — and found the filing states the cause more plainly: the cheap FY2025 memory inventory that funded the old 2GB price protection has been consumed, gross margin fell to 23%, and meaningful new supply isn't expected until 2028.</p>
-  <p>The hike also moves the 2GB tier onto the same $16.25-per-GB line as every denser option, leaving only the 1GB board subsidized — and that one is nearly impossible to buy anywhere. One method finding stands out above the price move itself: a "third hike since launch" claim that had been circulating was traced to a fabrication introduced by a search-summarization layer, not by any outlet or primary source.</p>
-</div>
+<section>
+  <h2>Yesterday's deep-dive</h2>
+  <div class="item">
+    <p>Yesterday's target — the A-POC ABLE ISSEY MIYAKE × JAXA show — turned out to be a correction job, not a confirmation. The exhibition hasn't opened yet (it starts October 21, not "now," as first reported), and its two cited sources turned out to share identical organizer copy rather than being independent corroboration. What the deeper look found instead is more useful: the gallery slot is a leasable, rate-carded launch space with retail rights built in, and the garment encodes its own cutting pattern and a satellite image pre-woven into the cloth itself — the record built into the substrate, not printed on it. Tested against our own framework for telling a captured working process apart from a finished artefact, this sits on the artefact side, not the process-record side; the one case in the whole sweep that does the latter is an artist's process film and dataset held in a major museum's permanent collection.</p>
+  </div>
+</section>
 
-<h2 class="section">This week</h2>
+<hr class="divider">
 
-<div class="notes-box">
-  <p><strong>Memory density on a Raspberry Pi-class capture board has become an irreversible purchase against a moving, lock-protected shelf, and this week's research gave three different buying answers because nobody has actually benchmarked the workload yet.</strong> One read favored a mid-size tier based on a stock snapshot that turned out to be a temporary gap; another made the power-and-price case for the smallest tier on paper; a third pointed out the vision encoder has never been benchmarked on this board's CPU at all. The real gating step is running that benchmark before committing to a size.</p>
-  <p><strong>A week of close tracking on Raspberry Pi's pricing moves produced four lead stories and four same-day corrections — not on the facts quoted, but on how many independent sources actually stood behind each claim.</strong> Three stories over-counted corroboration (chains of outlets citing each other back to one forum post or one vendor announcement), one under-counted a primary-sourced claim, and one fabricated detail turned out to originate in a search-summarization layer sitting upstream of the reporting entirely.</p>
-</div>
+<section>
+  <h2>Needs an answer</h2>
+  <div class="item">
+    <p>One open question: whether our research sweep should also watch artist practices whose process records enter museum collections — a deep-dive this week found its closest analogue there, not among creator-tool or archive-software makers.</p>
+    <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+  </div>
+</section>
 
-<footer class="page">
+<hr class="divider">
+
+<section>
+  <h2>Gate day</h2>
+  <div class="item">
+    <p>Two internal drafts are queued for a promotion decision this week: one on an unresolved memory-sizing question for the build that still needs a hardware benchmark run, and one examining how much of our hardware-platform tracking rests on a single vendor's own announcements.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<footer>
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
