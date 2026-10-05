@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — October 4, 2026</title>
+<title>Research Brief — October 5, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,41 +103,41 @@
 <body>
 
 <header>
-  <div class="date">October 4, 2026</div>
-  <div class="readtime">~5 minute read</div>
+  <div class="date">October 5, 2026</div>
+  <div class="readtime">~6 minute read</div>
 </header>
 
 <section>
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">A newly disclosed batch of Electron vulnerabilities gives an open software-framework decision a concrete number to weigh.</span>
-    <p>Six CVEs disclosed together in April, with CVSS scores as high as 9.2, describe a use-after-free in Electron's offscreen-rendering path: a parent window destroyed while a child window stays open can leave memory corrupted or the app crashed, triggered simply by painting frames on that child window. The flaw only fires when offscreen rendering is combined with pop-out child windows — close to the architecture a GPU-heavy, infinite-canvas-style app with floating panels would use. It's patched as of Electron versions 39.8.1, 40.7.0 and 41.0.0, but it's new, dated evidence on a live framework question.</p>
-    <a class="btn" href="https://security.snyk.io/vuln/SNYK-JS-ELECTRON-15875869">Read the source →</a>
+    <span class="headline">Raspberry Pi's own blog just documented a concrete hardware path from "demo" to always-on local vision triggering on the Raspberry Pi 5.</span>
+    <p>A third-party add-on board, Sixfab's AI HAT+, built around DEEPX's DX-M1M chip, adds 25 TOPS of dedicated AI acceleration at roughly 3 watts, while leaving the Pi 5's own CPU completely free for camera handling, application logic, connectivity and device control. The posted benchmarks are concrete: 2,361 frames per second on a lightweight image classifier, 155 fps on a heavier segmentation model, and a small language model answering in under 600 milliseconds. This is Raspberry Pi's own documentation, not a rumor — a real, dated answer for how continuous camera-triggered capture can run entirely on-device, with zero cloud inference, on hardware already shipping today.</p>
+    <a class="btn" href="https://www.raspberrypi.com/news/seeing-understanding-and-responding-low-power-cnn-vlm-and-slm-workloads-on-raspberry-pi-5/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">OpenAI's $300 million purchase of a computational-photography startup sharpens a pattern already in view.</span>
-    <p>Glass Imaging, built by Apple's former Portrait Mode engineers, sold for three times its valuation from a year ago; its "GlassAI Neural ISP" works directly from RAW sensor data and lens characteristics rather than finished images. It's the sharpest recent instance of a frontier-AI company buying straight into image-pipeline IP rather than licensing or building it in-house — a concrete price tag on how scarce that expertise has become.</p>
-    <a class="btn" href="https://petapixel.com/2026/09/17/openai-reportedly-buys-photo-processing-company-glass-imaging-for-300-million/">Read the source →</a>
+    <span class="headline">A new benchmark puts a hard number on how far even the best AI models are from matching a human watching continuous first-person video.</span>
+    <p>The S-EMBER benchmark built 388 hours of real first-person footage, captured on smart glasses, into 9,448 question-answer pairs, each requiring a model to both answer correctly and pinpoint exactly when in the footage the answer came from. The strongest model tested manages both at once at less than half the rate a human does. It's a sobering, directly measured ceiling on exactly the kind of query that on-device retrieval systems over continuous personal video are being built to answer.</p>
+    <a class="btn" href="https://arxiv.org/abs/2607.02689">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A profitable AI-hardware company just drew a hard line for when it's willing to go public.</span>
-    <p>Plaud, maker of an AI note-taking recorder, says it won't pursue a US listing until annual revenue clears $1 billion — it's already near $100 million in annual recurring revenue, with a $500 million 2026 global sales target and a private valuation over $1 billion. Its CEO frames the whole product around the anxiety of not being able to keep up with your own ideas. It's a useful data point for how far a hardware-plus-AI company can scale on private capital before the kind of public-market scrutiny that just sank Oura's own listing attempt kicks in.</p>
-    <a class="btn" href="https://techfundingnews.com/plaud-eyes-2028-us-ipo-after-crossing-1b-valuation/">Read the source →</a>
+    <span class="headline">Are.na opened its own books, and the number worth sitting with is that a well-known infinite-canvas archive tool runs entirely on its members, with no outside investment since a 2018 crowdfund.</span>
+    <p>Its own live dashboard shows just over 20,500 paying members generating roughly $125,000 a month, against a year-end target of $135,000 — all subscription revenue, nothing else. It's a rare, current, first-party data point for whether a niche creative-archive tool can sustain itself on subscriptions alone without chasing venture-scale growth.</p>
+    <a class="btn" href="https://www.are.na/about">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Singapore's flagship design event didn't just pause for the year — it skipped 2026 completely.</span>
-    <p>The city's design council confirms, from its own current events listing, that there was no Singapore Design Week in 2026 at all; the event is being replaced by a biennial "Singapore Design Biennale" that doesn't launch until May–June 2027. That's a longer and more complete gap than the original biennale announcement implied back in April, and worth tracking for anyone planning around Singapore's design-week-class calendar.</p>
-    <a class="btn" href="https://www.dezeen.com/2026/04/07/singapore-design-biennale-2027-launch-design-week/">Read the source →</a>
+    <span class="headline">The Design Museum London just built an entire flagship exhibition around a working creator's raw process archive, not her finished work.</span>
+    <p>Set designer Es Devlin's new show, "Other Worlds," open now through April 2027, centers on a detailed replica of her actual studio — her books, maquettes and objects — plus a dedicated wall installation of thirty years of sketches, diaries and prints going back to her schooldays. It's the sharpest version yet of a pattern worth watching: major design institutions choosing to exhibit a maker's unfiltered process record rather than only the polished output.</p>
+    <a class="btn" href="https://designmuseum.org/exhibitions/es-devlin-other-worlds">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A new academic paper shows private images can be pulled straight out of a retrieval system's memory, just by walking its embedding space.</span>
-    <p>Researchers demonstrate an attack that steers successive queries toward unexplored regions of a multimodal retrieval index, reconstructing over 600 distinct images from radiology scans, documents and general photos in a single 2,500-query run — up to 5.6 times more than a naive approach manages. It's a single-source finding and doesn't establish whether the technique reaches a fully offline, on-device index, but it's a concrete threat model against exactly the kind of personal-image embedding index on-device retrieval systems are being built around.</p>
-    <a class="btn" href="https://arxiv.org/abs/2610.01871">Read the source →</a>
+    <span class="headline">A materials-science paper puts a real number on how much a self-healing coating can protect electronics from the kind of punishment an always-on device takes over years.</span>
+    <p>A liquid-metal-coordination polymer restores over 90% of its original mechanical properties after damage, and in direct CPU-cooling tests kept a chip running about 20°C cooler than a standard non-healing thermal paste after 500 cycles of extreme thermal shock (−10°C to 100°C, 16 hours accumulated). For any fanless, passively-cooled device meant to run unattended for years, that's a concrete answer to a real degradation risk. One caveat: this is a single academic source, and a submitted cycle-count figure needed correcting against the paper's own numbers — the corrected 20°C/90%+ headline figures hold up.</p>
+    <a class="btn" href="https://www.nature.com/articles/s41467-026-69609-4">Read the source →</a>
   </div>
 </section>
 
@@ -146,17 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>An earlier deep-dive into Oura's IPO postponement found it wasn't the subscription-repricing signal it first looked like. The SEC record shows the deal was never withdrawn, only delayed, and every primary source — Oura's own CEO, the underwriters, independent analysts — points to valuation and deal structure (a rich ~11x-sales ask, 73% secondary shares) against a rate-driven market, not scepticism about the membership model. If anything, the one analyst criticism that actually applies to a single-purchase hardware instrument is the opposite of a subscription warning: it faults products with no repeat-purchase cycle. The more useful material buried in the same filings: Oura's free tier draws a bulk-export-free, API-paywalled line, and a competitor's cancellation clause shows precisely the failure mode a product built around a permanent, owned record has to design against.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section>
-  <h2>Needs an answer</h2>
-  <div class="item">
-    <p>One open question: whether to also track artist and designer practices whose process records enter museum collections — an earlier deep-dive found its closest match to a passive-capture-and-archive idea there, not among creator-tool or archive-software makers.</p>
-    <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+    <p>An earlier deep-dive found that a widely-reported six-CVE Electron security batch was substantially mis-stated. The actual April 2026 batch is 18 CVEs, not six, and exactly one — not six — concerns offscreen rendering; its real severity score is 8.1, not the 9.2 first reported, a figure that appears in no primary source at all. More importantly, the underlying concern doesn't apply: Electron's "offscreen rendering" is an unrelated, opt-in bitmap-export feature, not the web-standard canvas API an infinite-canvas rendering approach would actually use, and the advisory itself states plainly that apps which don't use offscreen rendering or deny child windows aren't affected. The one genuinely useful finding the original report missed: a second Electron CVE batch from late September, where the fixes had again shipped 29–44 days before the public disclosure — the real, recurring lesson being that a vulnerability feed on this framework structurally reports holes that were already closed.</p>
   </div>
 </section>
 
