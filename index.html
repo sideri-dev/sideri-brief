@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — October 5, 2026</title>
+<title>Research Brief — October 6, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -103,7 +103,7 @@
 <body>
 
 <header>
-  <div class="date">October 5, 2026</div>
+  <div class="date">October 6, 2026</div>
   <div class="readtime">~6 minute read</div>
 </header>
 
@@ -111,33 +111,33 @@
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Raspberry Pi's own blog just documented a concrete hardware path from "demo" to always-on local vision triggering on the Raspberry Pi 5.</span>
-    <p>A third-party add-on board, Sixfab's AI HAT+, built around DEEPX's DX-M1M chip, adds 25 TOPS of dedicated AI acceleration at roughly 3 watts, while leaving the Pi 5's own CPU completely free for camera handling, application logic, connectivity and device control. The posted benchmarks are concrete: 2,361 frames per second on a lightweight image classifier, 155 fps on a heavier segmentation model, and a small language model answering in under 600 milliseconds. This is Raspberry Pi's own documentation, not a rumor — a real, dated answer for how continuous camera-triggered capture can run entirely on-device, with zero cloud inference, on hardware already shipping today.</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/seeing-understanding-and-responding-low-power-cnn-vlm-and-slm-workloads-on-raspberry-pi-5/">Read the source →</a>
+    <span class="headline">Raspberry Pi's own blog confirms its PC/Mac desktop build now runs on 64-bit Debian Trixie.</span>
+    <p>The release moves from the long-dead 32-bit x86 image to 64-bit Debian, folds in the Raspberry Pi Connect remote-access client, and adds a new Control Centre and dock. Apple Silicon support stays experimental, so this is still a PC/Intel-Mac release rather than a Pi-everywhere one. It settles an open question about exactly which Debian release line this platform now stands on — a detail that matters for anyone building firmware on top of it, including our own prototype's Pi 5 build.</p>
+    <a class="btn" href="https://www.raspberrypi.com/news/raspberry-pi-desktop-now-available-for-pc-and-mac/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A new benchmark puts a hard number on how far even the best AI models are from matching a human watching continuous first-person video.</span>
-    <p>The S-EMBER benchmark built 388 hours of real first-person footage, captured on smart glasses, into 9,448 question-answer pairs, each requiring a model to both answer correctly and pinpoint exactly when in the footage the answer came from. The strongest model tested manages both at once at less than half the rate a human does. It's a sobering, directly measured ceiling on exactly the kind of query that on-device retrieval systems over continuous personal video are being built to answer.</p>
-    <a class="btn" href="https://arxiv.org/abs/2607.02689">Read the source →</a>
+    <span class="headline">A Japanese eyewear chain is about to crowdfund a ¥119,000 pair of AI glasses through its own national retail network.</span>
+    <p>MeganeTop's "Linse Display" glasses carry a 12-megapixel camera and an in-view AI display, weigh about 50 grams, and run a 200mAh battery. Crowdfunding opens October 23 on GREEN FUNDING, after which the product goes to nationwide sale through MeganeTop's own 眼鏡市場 eyewear stores — confirmed independently by two Japanese outlets reporting the price, date and retail sequence the same way. It's a live, dated data point for what a premium camera-equipped wearable can charge in Japan, and for crowdfund-then-retail as a real launch pattern rather than a theory.</p>
+    <a class="btn" href="https://www.watch.impress.co.jp/docs/news/2142934.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Are.na opened its own books, and the number worth sitting with is that a well-known infinite-canvas archive tool runs entirely on its members, with no outside investment since a 2018 crowdfund.</span>
-    <p>Its own live dashboard shows just over 20,500 paying members generating roughly $125,000 a month, against a year-end target of $135,000 — all subscription revenue, nothing else. It's a rare, current, first-party data point for whether a niche creative-archive tool can sustain itself on subscriptions alone without chasing venture-scale growth.</p>
-    <a class="btn" href="https://www.are.na/about">Read the source →</a>
+    <span class="headline">Kanazawa's National Crafts Museum is staging a 100-year retrospective on how craft became design.</span>
+    <p>"Design Chronicle" (October 9, 2026 – January 11, 2027) runs four chapters — Arts & Crafts and Art Nouveau, Art Deco, Modernist Design, and the postwar period — built on the museum's own argument that today's idea of "design" emerged from craftspeople's trial-and-error under industrialization. Enzo Mari, Marianne Brandt, Marcel Breuer and Tom Dixon are on the checklist. It's a strong institutional vote for the view that craft and design were never opposites — craft is where design came from.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/10/722531.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">The Design Museum London just built an entire flagship exhibition around a working creator's raw process archive, not her finished work.</span>
-    <p>Set designer Es Devlin's new show, "Other Worlds," open now through April 2027, centers on a detailed replica of her actual studio — her books, maquettes and objects — plus a dedicated wall installation of thirty years of sketches, diaries and prints going back to her schooldays. It's the sharpest version yet of a pattern worth watching: major design institutions choosing to exhibit a maker's unfiltered process record rather than only the polished output.</p>
-    <a class="btn" href="https://designmuseum.org/exhibitions/es-devlin-other-worlds">Read the source →</a>
+    <span class="headline">A CVPR 2026 paper puts a hard number on "mostly grayscale, color only when it matters" for always-on cameras.</span>
+    <p>ColorTrigger holds 91.6% of a full-color model's performance while actually capturing full-color frames only 8.1% of the time — training-free, aimed squarely at power- and compute-constrained edge devices that need to watch continuously. It's a single preprint, not yet independently replicated, but it gives a concrete power/compute budget for an always-on triggering approach: run a cheap grayscale stream continuously, and reserve full-color capture for the small fraction of frames that actually warrant it.</p>
+    <a class="btn" href="https://arxiv.org/abs/2603.22466">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A materials-science paper puts a real number on how much a self-healing coating can protect electronics from the kind of punishment an always-on device takes over years.</span>
-    <p>A liquid-metal-coordination polymer restores over 90% of its original mechanical properties after damage, and in direct CPU-cooling tests kept a chip running about 20°C cooler than a standard non-healing thermal paste after 500 cycles of extreme thermal shock (−10°C to 100°C, 16 hours accumulated). For any fanless, passively-cooled device meant to run unattended for years, that's a concrete answer to a real degradation risk. One caveat: this is a single academic source, and a submitted cycle-count figure needed correcting against the paper's own numbers — the corrected 20°C/90%+ headline figures hold up.</p>
-    <a class="btn" href="https://www.nature.com/articles/s41467-026-69609-4">Read the source →</a>
+    <span class="headline">San Francisco's Museum of Craft and Design has reopened "OBJECTS: USA," the 1969 show that founded the American studio-craft movement's premium argument.</span>
+    <p>The restaging, running through January 17, 2027, brings back more than 70 works from the original 300-plus-artist show — Wendell Castle, George Nakashima, Kay Sekimachi, Toshiko Takaezu and Art Smith among them — organized in partnership with R & Company. The museum frames craft, in its own words, as "a space for freedom, experimentation, and artistic possibility." Same thread as the Kanazawa show above: a primary institutional source making the case that craft's value sits in process and experimentation, not in finish.</p>
+    <a class="btn" href="https://sfmcd.org/exhibitions/objects-usa/">Read the source →</a>
   </div>
 </section>
 
@@ -146,7 +146,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>An earlier deep-dive found that a widely-reported six-CVE Electron security batch was substantially mis-stated. The actual April 2026 batch is 18 CVEs, not six, and exactly one — not six — concerns offscreen rendering; its real severity score is 8.1, not the 9.2 first reported, a figure that appears in no primary source at all. More importantly, the underlying concern doesn't apply: Electron's "offscreen rendering" is an unrelated, opt-in bitmap-export feature, not the web-standard canvas API an infinite-canvas rendering approach would actually use, and the advisory itself states plainly that apps which don't use offscreen rendering or deny child windows aren't affected. The one genuinely useful finding the original report missed: a second Electron CVE batch from late September, where the fixes had again shipped 29–44 days before the public disclosure — the real, recurring lesson being that a vulnerability feed on this framework structurally reports holes that were already closed.</p>
+    <p>An earlier deep-dive found that a Raspberry Pi blog post on a third-party AI accelerator board was weaker evidence than it first looked: the body of the post was written by the accelerator vendors themselves as a guest contribution, not by Raspberry Pi independently, so its own best-case benchmark numbers turn out to run about 119 times faster than the real-world figure the same vendor publishes elsewhere. The genuinely useful finding survives, though: on the primaries that actually matter for an edge-AI accelerator decision, the heavy compute still runs on the host CPU rather than the dedicated chip, so a compiled model file alone doesn't prove the accelerator is doing the work — nobody has yet published a real-world benchmark for this class of vision-embedding model on this chip. One genuine positive held up: a small image-embedding output fits comfortably inside this chip's efficient operating range, and a competing accelerator vendor's own published accuracy-versus-speed tradeoff is the best real comparison point available anywhere.</p>
   </div>
 </section>
 
