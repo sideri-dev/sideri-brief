@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — October 6, 2026</title>
+<title>Research Brief — October 7, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,12 +98,19 @@
     color: var(--muted);
     font-size: 0.95rem;
   }
+  ul.notes {
+    padding-left: 1.1rem;
+    margin: 0.9rem 0;
+  }
+  ul.notes li {
+    margin-bottom: 0.7rem;
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="date">October 6, 2026</div>
+  <div class="date">October 7, 2026</div>
   <div class="readtime">~6 minute read</div>
 </header>
 
@@ -111,33 +118,33 @@
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">Raspberry Pi's own blog confirms its PC/Mac desktop build now runs on 64-bit Debian Trixie.</span>
-    <p>The release moves from the long-dead 32-bit x86 image to 64-bit Debian, folds in the Raspberry Pi Connect remote-access client, and adds a new Control Centre and dock. Apple Silicon support stays experimental, so this is still a PC/Intel-Mac release rather than a Pi-everywhere one. It settles an open question about exactly which Debian release line this platform now stands on — a detail that matters for anyone building firmware on top of it, including our own prototype's Pi 5 build.</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/raspberry-pi-desktop-now-available-for-pc-and-mac/">Read the source →</a>
+    <span class="headline">A research preprint compresses long workplace video into a structured, provenance-linked "Procedural State Memory."</span>
+    <p>The framework, from researchers Vivek Chavan and Jörg Krüger, segments continuous first-person and third-person video into evidence-linked event cards — actor, time interval, location, action, objects, before/after state, confidence, provenance — running on frozen DINOv2 and V-JEPA-2 vision encoders plus a local language model, explicitly scoped to on-premise privacy constraints. No benchmark numbers are reported yet; this is architecture, not a proven result. It's a close match to the broader idea of turning passive video into a structured, locally retrievable record.</p>
+    <a class="btn" href="https://arxiv.org/abs/2610.00069">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A Japanese eyewear chain is about to crowdfund a ¥119,000 pair of AI glasses through its own national retail network.</span>
-    <p>MeganeTop's "Linse Display" glasses carry a 12-megapixel camera and an in-view AI display, weigh about 50 grams, and run a 200mAh battery. Crowdfunding opens October 23 on GREEN FUNDING, after which the product goes to nationwide sale through MeganeTop's own 眼鏡市場 eyewear stores — confirmed independently by two Japanese outlets reporting the price, date and retail sequence the same way. It's a live, dated data point for what a premium camera-equipped wearable can charge in Japan, and for crowdfund-then-retail as a real launch pattern rather than a theory.</p>
-    <a class="btn" href="https://www.watch.impress.co.jp/docs/news/2142934.html">Read the source →</a>
+    <span class="headline">Infinite-canvas tool tldraw gave away both ends of its product and kept the middle.</span>
+    <p>A free ChatGPT and Codex plugin landed September 29 — one of the first built on OpenAI's new MCP spec — following a free, accountless, local-first desktop app released in July. Monetization lives entirely in a separate paid Commercial SDK license for production use. It's a clean example of a distribution model for infinite-canvas software: give the canvas away, charge for building on it.</p>
+    <a class="btn" href="https://tldraw.dev/blog/introducing-tldraw-for-chatgpt-and-codex">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Kanazawa's National Crafts Museum is staging a 100-year retrospective on how craft became design.</span>
-    <p>"Design Chronicle" (October 9, 2026 – January 11, 2027) runs four chapters — Arts & Crafts and Art Nouveau, Art Deco, Modernist Design, and the postwar period — built on the museum's own argument that today's idea of "design" emerged from craftspeople's trial-and-error under industrialization. Enzo Mari, Marianne Brandt, Marcel Breuer and Tom Dixon are on the checklist. It's a strong institutional vote for the view that craft and design were never opposites — craft is where design came from.</p>
-    <a class="btn" href="https://www.axismag.jp/posts/2026/10/722531.html">Read the source →</a>
+    <span class="headline">A major design museum put 600 objects in a room with no chronology, no geography, and no hierarchy — on purpose.</span>
+    <p>Munich's Die Neue Sammlung opened X-D-E-P-O-T, a new permanent exhibition spanning 30 design themes across 600 objects, organized explicitly against curatorial ranking. The museum's own words: "no chronology, no geographical boundaries and no hierarchy." It's institutional validation, from a design museum rather than a software company, of browsing logic that answers without ranking or suggesting.</p>
+    <a class="btn" href="https://www.core77.com/posts/145531">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A CVPR 2026 paper puts a hard number on "mostly grayscale, color only when it matters" for always-on cameras.</span>
-    <p>ColorTrigger holds 91.6% of a full-color model's performance while actually capturing full-color frames only 8.1% of the time — training-free, aimed squarely at power- and compute-constrained edge devices that need to watch continuously. It's a single preprint, not yet independently replicated, but it gives a concrete power/compute budget for an always-on triggering approach: run a cheap grayscale stream continuously, and reserve full-color capture for the small fraction of frames that actually warrant it.</p>
-    <a class="btn" href="https://arxiv.org/abs/2603.22466">Read the source →</a>
+    <span class="headline">A Tokyo museum turned archaeological excavation scan data into the exhibit itself.</span>
+    <p>Opening October 8, "THE FIRST RAILWAY — Hajimari no Tetsudō" at MoN Takanawa: The Museum of Narratives presents a video work, "A Locomotive Running on the Sea," built directly from point-cloud scan data captured during the archaeological dig at the site of Japan's first railway embankment (1872), narrated by actor Matsushige Yutaka with materials supplied by JR East. Passive capture data gathered years ago, during someone else's working process, became the exhibited artifact — on view in Tokyo now.</p>
+    <a class="btn" href="https://www.axismag.jp/posts/2026/10/725353.html">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">San Francisco's Museum of Craft and Design has reopened "OBJECTS: USA," the 1969 show that founded the American studio-craft movement's premium argument.</span>
-    <p>The restaging, running through January 17, 2027, brings back more than 70 works from the original 300-plus-artist show — Wendell Castle, George Nakashima, Kay Sekimachi, Toshiko Takaezu and Art Smith among them — organized in partnership with R & Company. The museum frames craft, in its own words, as "a space for freedom, experimentation, and artistic possibility." Same thread as the Kanazawa show above: a primary institutional source making the case that craft's value sits in process and experimentation, not in finish.</p>
-    <a class="btn" href="https://sfmcd.org/exhibitions/objects-usa/">Read the source →</a>
+    <span class="headline">The V&A's second "Craft x Tech" pairs six international designers with named Japanese regional artisan workshops, no fixed brief.</span>
+    <p>"Evolving Craft," curated by Maria Cristina Didero with Tangent's Hideki Yoshimoto, sets designers including Bethan Laura Wood and Philippe Malouin loose on open-ended "four hands" collaborations with Tokai-region ateliers — Arimatsu Narumi Shibori, Iga Kumihimo, and Mino Washi among them. It runs through October 18 in the V&A's Daylit Gallery in London, the second edition of a curatorial pipeline connecting outside designers directly to Japanese craft manufacturing.</p>
+    <a class="btn" href="https://www.disegnojournal.com/newsfeed/evolving-craft">Read the source →</a>
   </div>
 </section>
 
@@ -146,8 +153,20 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>An earlier deep-dive found that a Raspberry Pi blog post on a third-party AI accelerator board was weaker evidence than it first looked: the body of the post was written by the accelerator vendors themselves as a guest contribution, not by Raspberry Pi independently, so its own best-case benchmark numbers turn out to run about 119 times faster than the real-world figure the same vendor publishes elsewhere. The genuinely useful finding survives, though: on the primaries that actually matter for an edge-AI accelerator decision, the heavy compute still runs on the host CPU rather than the dedicated chip, so a compiled model file alone doesn't prove the accelerator is doing the work — nobody has yet published a real-world benchmark for this class of vision-embedding model on this chip. One genuine positive held up: a small image-embedding output fits comfortably inside this chip's efficient operating range, and a competing accelerator vendor's own published accuracy-versus-speed tradeoff is the best real comparison point available anywhere.</p>
+    <p>An earlier deep-dive found that the previous day's lead item — a blog post framed as confirming a particular Raspberry Pi OS build's Debian base — was actually about a different product entirely (a PC/Mac desktop image) and never mentioned the architecture in question. The real fact, already on record elsewhere for twelve months, held up cleanly on independent verification. Buried in the same post, unannounced, was a vendor commit note changing a remote-access feature's free-tier terms to organisation-only — arguably the bigger finding, and not the one the original item led with.</p>
   </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <h2>Also this run</h2>
+  <ul class="notes">
+    <li>A corrected date conflict on a touring design-archive exhibition (the organizing institution's own tour page gives different dates than two secondary sources had reported).</li>
+    <li>A camera-sensor supplier change note: a widely used imaging sensor now ships pre-programmed from its assembly supplier, removing a production-line step.</li>
+    <li>Two more single-source research papers, both finding that long-term personal-archive retrieval systems tend to drift toward ranking and prediction rather than neutral recall.</li>
+    <li>Two items killed on review: a duplicate regulatory filing already on record, and a hardware content-bundle update whose relevance didn't hold up to scrutiny.</li>
+  </ul>
 </section>
 
 <hr class="divider">
