@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — October 13, 2026</title>
+<title>Research Brief — October 14, 2026</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -110,7 +110,7 @@
 <body>
 
 <header>
-  <div class="date">October 13, 2026</div>
+  <div class="date">October 14, 2026</div>
   <div class="readtime">~6 minute read</div>
 </header>
 
@@ -118,33 +118,33 @@
   <h2>Today</h2>
 
   <div class="item">
-    <span class="headline">A 19-year-old just raised $11 million from Andreessen Horowitz to sell a $3,499 computer whose entire pitch is that nothing you do on it ever leaves the box.</span>
-    <p>Ghost, founded by Zain Javaid, came out of stealth this week with Core — a desktop personal-AI machine bundling an RTX Pro 4000 GPU, shipping the last week of October with pre-orders open now. Javaid's framing: "the user owns all of it," "once you buy the hardware, everything is stored, run, and processed on the device." It's the first funded, priced, shipping product this sweep has found making on-device data ownership the primary sales pitch rather than a footnote.</p>
-    <a class="btn" href="https://dealroom.co/news/160038-ghost-raises-11m-for-a-3-499-computer-built-for-personal-ai/">Read the source →</a>
+    <span class="headline">Google paid $10 million for a dead airline's internal data — and that's now a pattern, not a one-off.</span>
+    <p>MIT Technology Review reports that wind-down specialist SimpleClosure has started selling failed startups' internal data — emails, chats, documents — and that Google outbid AI data broker Mercor to buy Spirit Airlines' decades of records for $10 million after the carrier collapsed. Bloomberg separately reports SpaceX's AI unit is weighing the same move. Lawyers quoted call the practice "legally radioactive"; one law professor argues workers should have had to consent before their employer sold their data at all. It's the clearest dated, dollar-figure case yet of what happens when a maker's own record becomes a saleable asset the moment the company holding it folds — exactly the scenario a local-only, no-cloud design is meant to make impossible.</p>
+    <a class="btn" href="https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">Raspberry Pi's own camera library shipped a small but real update yesterday — multi-context preview support and a way to enumerate attached displays.</span>
-    <p>picamera2 v0.3.38, released October 12, 2026, adds "multi-context support... for DRM previews, including a list_devices() function to return info about attached DRM display devices." It's a windowed-preview capability rather than something that advances headless capture logic directly, but it's the current state of a library worth tracking on the Raspberry Pi 5 / Camera Module 3 platform.</p>
-    <a class="btn" href="https://github.com/raspberrypi/picamera2/releases/tag/v0.3.38">Read the source →</a>
+    <span class="headline">A former Plaud executive just raised $26 million to build a camera into an always-listening AI assistant.</span>
+    <p>Peter Mo's startup Ambi has raised $26 million across several rounds, led by Luminous Ventures with ODM backing from Huaqin, and is now planning its own hardware: a device with "a screen, a speaker, a camera, and microphones." Ambient capture is off by default and switchable at any time, per the founder. Fresh capital is clearly still flowing into capture-hardware built around always-on ambient AI. One claimed second source for this story didn't hold up under a direct fetch, so treat it as one well-reported account rather than two independently confirmed ones.</p>
+    <a class="btn" href="https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A major European design museum just opened a retrospective built almost entirely from an architect's own sketches, models and personal photographs — and it's already booked to tour Hong Kong.</span>
-    <p>The Vitra Design Museum's "Geoffrey Bawa: Architecture for the Senses" runs through February 2027, showing over 250 pieces — drawings, models, furniture, film and Bawa's own photographs — built in partnership with Hong Kong's M+, which the show travels to from June 2027. It's a clean, independently corroborated case of a museum choosing a practitioner's own process records, not just finished work, as the main exhibit.</p>
-    <a class="btn" href="https://www.axismag.jp/posts/2026/09/723799.html">Read the source →</a>
+    <span class="headline">Google published hard numbers on the embedding model behind MediaPipe's on-device retrieval.</span>
+    <p>The EmbeddingGemma 2 launch post states a 740-million-parameter footprint running on as little as ~191MB of RAM for text-only weights, or ~567MB for the full multimodal model, with a bundled demo storing embeddings in a local SQLite database and matching by cosine similarity in single-digit milliseconds. These are concrete, vendor-published memory figures for anyone building on-device retrieval around this model.</p>
+    <a class="btn" href="https://developers.googleblog.com/en/google-ai-edge-with-embeddinggemma-2/">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">OpenCV 5 quietly closed most of the gap between what it can run and what AI models people actually export — and the GPU work is now underway, not just promised.</span>
-    <p>The new DNN engine, accelerated on Arm chips via KleidiCV, lifts OpenCV's ONNX operator coverage from roughly 22% to over 80%. One correction worth carrying: some coverage of this release framed GPU acceleration as "planned for later releases" — the source's actual words are that GPU work "has started," not merely planned. It's still CPU-only today.</p>
-    <a class="btn" href="https://www.cnx-software.com/2026/06/10/opencv-5-release-new-dnn-engine-with-enhanced-onnx-and-llm-vlm-support-intel-arm-and-risc-v-hardware-optimizations/">Read the source →</a>
+    <span class="headline">A new method stores one version of an image instead of a different one for every possible question asked of it.</span>
+    <p>Most visual-token compression ranks what to keep based on the question being asked — fine for a one-off query, bad for anything written once and read many times later. This arXiv paper keeps every token and only varies the detail, producing a single representation that serves any future query equally well, beating both uniform compression and question-aware pruning on two benchmarks. Single source for now.</p>
+    <a class="btn" href="https://arxiv.org/abs/2610.00204">Read the source →</a>
   </div>
 
   <div class="item">
-    <span class="headline">A CHI 2026 paper puts a hard number on how often hand-tracking cameras simply can't see your fingers — over one frame in five.</span>
-    <p>The paper, presented at the ACM CHI 2026 conference, finds "more than 20% of frames across all evaluated datasets exhibit at least one occluded finger" in egocentric hand-tracking data, and its method cuts tracking error 18% in the worst occlusion cases. It's XR gesture-sensing research rather than a passive-capture study, so its relevance to occlusion-robust capture devices generally is suggestive, not proven. Single source for now.</p>
-    <a class="btn" href="https://arxiv.org/abs/2601.15516">Read the source →</a>
+    <span class="headline">The V&amp;A acquired a reconstructed 2006 YouTube page — specifically because the code behind it is legible to future researchers.</span>
+    <p>The acquisition pairs the original front-end code (as the Internet Archive captured it in December 2006), a Flash emulator to run it, and the very first YouTube video. The museum's own stated reasoning: labelled comments in the code "enable future researchers, conservators and curators to understand the work undertaken and the logic behind it" — a conservation principle it wants applied across its collections, digital included.</p>
+    <a class="btn" href="https://www.vam.ac.uk/articles/acquiring-an-early-youtube-watch-page-and-its-first-ever-video">Read the source →</a>
   </div>
 </section>
 
@@ -153,7 +153,7 @@
 <section>
   <h2>Yesterday's deep-dive</h2>
   <div class="item">
-    <p>An earlier deep-dive found that the previous day's lead story about Singapore's privacy stance was reading from the least applicable part of the law: the "public space" exception the ministry cited doesn't extend to private premises like a studio, and a professional working in the course of business stays inside full consent obligations regardless of setting. The record also runs further than reported — five parliamentary answers exist through October 6, not two — and the real exposure sits in three places nobody had flagged: a security-equipment licensing law whose carve-out for self-installed systems is untested for a non-security creative instrument, breach-of-confidence case law that presumes a violation and shifts the burden of proof, and basic uncertainty over whether Singapore's privacy act reaches a seller domiciled elsewhere in Asia at all. Capture indicators — a light or sound signaling that a device is recording — were asked about twice in parliament and answered neither time. This is not legal advice, and several of the central questions are genuinely unresolved rather than settled either way.</p>
+    <p>An earlier deep-dive pinned down, with two independent sources for the first time, exactly where the Raspberry Pi 5's antenna sits on the board — and found that the official Active Cooler clears it by about a millimetre, a margin smaller than the measurement error itself. A HAT+ accessory board is a cleaner story: the spec sets no fixed board outline and never mentions the antenna, and a legacy-footprint HAT at the standard standoff height sits safely clear. The practical upshot: the sharper enclosure risk turned out to be the default cooling solution, not the stacked accessory board that had drawn more attention until now.</p>
   </div>
 </section>
 
@@ -172,9 +172,8 @@
 <section>
   <h2>Also this run</h2>
   <ul class="notes">
-    <li>Two leads were checked and dropped as duplicates of coverage already logged: a Tokyo museum exhibition built from archaeological excavation scan data, and an underwater camera project built on an older Raspberry Pi board.</li>
-    <li>A price-increase story about a photo-editing subscription tier was checked and dropped — it restates an announcement already covered, and its one new claim (an earlier, identical price rise) isn't corroborated anywhere else.</li>
-    <li>A few source sites returned access errors to automated fetching this run and are flagged for review; none of today's five items depend on them.</li>
+    <li>Three leads cleared checking but didn't make today's top five: an update to a London exhibition's kinetic sculpture centerpiece, a smartphone maker's still-undated promise of a Tokyo flagship store (eight months on), and a new permanent theater installation opening today in Yokohama.</li>
+    <li>Three leads were checked and dropped: a radio-certification record that duplicated coverage already logged in depth elsewhere, a product that could not be located under the name given, and an import-duty claim that duplicated an existing finding.</li>
   </ul>
 </section>
 
