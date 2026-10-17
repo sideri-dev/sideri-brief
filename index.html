@@ -3,26 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — October 16, 2026</title>
+<title>Research Brief — 2026-10-17</title>
 <style>
   :root {
-    color-scheme: light dark;
-    --bg: #fbfaf8;
-    --fg: #1c1a17;
-    --muted: #6b6660;
-    --accent: #8a5a2b;
-    --divider: #e4dfd7;
-    --btn-bg: #1c1a17;
-    --btn-fg: #fbfaf8;
+    --bg: #faf9f6;
+    --fg: #1c1c1a;
+    --muted: #5c5a54;
+    --accent: #7a5c3e;
+    --rule: #e0ddd4;
+    --btn-bg: #1c1c1a;
+    --btn-fg: #faf9f6;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #171614;
-      --fg: #ece8e1;
-      --muted: #9d968c;
-      --accent: #d9a05b;
-      --divider: #322f2a;
-      --btn-bg: #ece8e1;
+      --fg: #ece9e2;
+      --muted: #a9a59c;
+      --accent: #d8b98a;
+      --rule: #333129;
+      --btn-bg: #ece9e2;
       --btn-fg: #171614;
     }
   }
@@ -34,148 +33,131 @@
     color: var(--fg);
   }
   body {
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     max-width: 42rem;
     margin: 0 auto;
     padding: 2.5rem 1.25rem 4rem;
   }
-  header {
+  header.page-header {
     margin-bottom: 2.5rem;
   }
-  header .date {
+  header.page-header .date {
     font-size: 1.1rem;
     font-weight: 600;
+    margin: 0;
   }
-  header .readtime {
+  header.page-header .readtime {
     color: var(--muted);
+    margin: 0.25rem 0 0;
     font-size: 0.95rem;
-    margin-top: 0.25rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: var(--muted);
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin: 2.75rem 0 1.25rem;
   }
   .item {
     margin-bottom: 2.25rem;
   }
-  .item p {
-    margin: 0.9rem 0;
+  .item h3 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 0 0 0.75rem;
   }
-  .item .headline {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 0.6rem;
+  .item p {
+    margin: 0 0 0.9rem;
   }
   .btn {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 0.9rem 1rem;
-    margin-top: 1rem;
     background: var(--btn-bg);
     color: var(--btn-fg);
     text-decoration: none;
+    padding: 0.85rem 1rem;
     border-radius: 0.5rem;
     font-weight: 600;
     font-size: 0.95rem;
+    margin-top: 0.75rem;
   }
-  .btn:visited { color: var(--btn-fg); }
   hr.divider {
     border: none;
-    border-top: 1px solid var(--divider);
+    border-top: 1px solid var(--rule);
     margin: 2.25rem 0;
   }
-  footer {
-    margin-top: 3.5rem;
-  }
-  .muted {
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-  ul.notes {
+  ul.plain {
     padding-left: 1.1rem;
-    margin: 0.9rem 0;
+    margin: 0 0 1rem;
   }
-  ul.notes li {
-    margin-bottom: 0.7rem;
+  ul.plain li {
+    margin-bottom: 0.6rem;
+  }
+  footer.page-footer {
+    margin-top: 3.5rem;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="date">October 16, 2026</div>
-  <div class="readtime">~7 minute read</div>
+<header class="page-header">
+  <p class="date">Saturday, October 17, 2026</p>
+  <p class="readtime">~6 minute read</p>
 </header>
 
-<section>
-  <h2>Today</h2>
+<h2>Today</h2>
 
-  <div class="item">
-    <span class="headline">Raspberry Pi's own UK headquarters now runs its building-management system on Raspberry Pi 4 and 5 hardware, replacing a dead 17-year-old proprietary controller at a fraction of the cost.</span>
-    <p>The old Trend 963 interface failed earlier this year; a like-for-like replacement quote came in at £150,000. Raspberry Pi built its own open BACnet system instead — Pi 4 and 5 boards running Home Assistant, with Emporia clamp sensors — for £7,800, about one-nineteenth of the quote. It's vendor-published and single-source, but it's real-world, continuous-duty evidence of exactly the kind of thing worth watching on this board family: it running unattended as a control system, not a hobby project.</p>
-    <a class="btn" href="https://www.raspberrypi.com/news/net-zero-at-pi-towers-how-were-doing-it/">Read the source →</a>
-  </div>
+<div class="item">
+  <h3>A new benchmark finds that, for on-device personal-memory assistants, the retrieval backend matters far more than the size of the model reading it.</h3>
+  <p>MemArena v2, accepted at NeurIPS 2026, tested 50 simulated agents over 15 days of ego-centric dialogue and found that switching the memory-retrieval backend lifted accuracy by up to 22 percentage points, while scaling the reader model up gained at most 4.4 points — the backend, not the model, is where accuracy in this category actually lives. It also surfaced a sharper problem: an "Oracle" retrieval mode leaks protected information outright, while the permission-aware alternatives swing the other way and fail to surface a fact the agent is actually allowed to see. On a Spark GB10 edge node the search step itself adds only 8–87 milliseconds depending on backend, cheap enough that this is purely an architecture choice, not a speed tradeoff. It bears directly on how we think about retrieval architecture and the resource budget for the edge hardware we're prototyping on — enough that we're digging into it further.</p>
+  <a class="btn" href="https://arxiv.org/abs/2608.02613">Read the source →</a>
+</div>
 
-  <div class="item">
-    <span class="headline">reMarkable launched Paper Pure, a $399 black-and-white e-paper tablet, and simply discontinued the reMarkable 2 to make room for it — color and frontlight stay exclusive to the pricier Pro line.</span>
-    <p>At $399, with a $449 Marker Plus/Sleeve Folio bundle, Paper Pure gets the same writing surface as the Pro model but none of its premium display features, and it replaces the old entry-level device outright rather than sitting beside it. It's a clean precedent for widening a premium instrument's reach without touching the flagship's price or positioning: retire the old entry point instead of discounting the one people actually want.</p>
-    <a class="btn" href="https://news.remarkable.com/introducing-remarkable-paper-pure-the-original-paper-tablet-perfected">Read the source →</a>
-  </div>
+<div class="item">
+  <h3>A Senegalese weaver's forty-year lesson: modernizing the loom is how you keep a hand technique alive, not how you lose it.</h3>
+  <p>Designer Aissa Dione widened Senegal's traditional 15–20cm looms to 90cm to weave at furniture scale, later bought secondhand 1970s–80s mechanical looms from Senegal and Lyon to cut costs, and had to re-source her thread entirely after a supplier secretly swapped to weaker Chinese thread that kept snapping mid-weave. Every one of her looms, however large or however mechanized, is still worked by two people by hand — modernization changed the tools, not the technique. It's a clean real-world case for treating visible, legible craft and a willingness to modernize production as complements rather than opposites — part of how a premium hand-made category survives at all.</p>
+  <a class="btn" href="https://disegnojournal.com/newsfeed/threading-history-aissa-dione">Read the source →</a>
+</div>
 
-  <div class="item">
-    <span class="headline">Industrial design studio Layer, working with Canadian manufacturer Corelam, developed a way to corrugate 3mm plywood under pressure lamination for a real strength-to-weight gain, shown first in a table called "Ripple."</span>
-    <p>It's an internal studio research project, not a commissioned product. The strength-to-weight gain comes from the corrugation geometry itself rather than added material — a lightweight-but-strong fabrication technique worth noting for anyone thinking about how a small enclosure might be built differently. It's the thinnest item on today's list, but it names a real process rather than a vague trend.</p>
-    <a class="btn" href="https://www.core77.com/posts/145637/ID-Firm-Layer-Develops-Corrugated-Plywood-Strong-Lightweight">Read the source →</a>
-  </div>
-</section>
+<div class="item">
+  <h3>Singapore's National Gallery is building a Nanyang artist retrospective on process material, not just finished paintings.</h3>
+  <p>"Crossings," running through October 2027, is the first solo show on painter Lai Foong Moi since the 1960s, and the gallery's own framing leans on photographs and exhibition catalogues alongside the paintings as the route to "new insights into her artistic development." It's a concrete Southeast Asian instance of a pattern worth watching: serious institutions increasingly treat an artist's process record, not just the finished output, as collection-worthy in its own right.</p>
+  <a class="btn" href="https://www.nationalgallery.sg/sg/en/about/media-centre/National-Gallery-Singapore-presents-first-solo-exhibition-in-60-years-dedicated-to-Nanyang-artist-Lai-Foong-Moi.html">Read the source →</a>
+</div>
 
 <hr class="divider">
 
-<section>
-  <h2>Yesterday's deep-dive</h2>
-  <div class="item">
-    <p>An earlier deep-dive tested DESIGNART Tokyo, the city's annual design festival, against the idea of presenting hardware at pop-up events rather than in a retail showroom — and the venue passed as a presentation and press stage while failing as a sales channel: festival-wide sales per exhibitor run roughly ¥118,000–¥197,000, below even the cheapest paid package once space, build and staffing are added, and the organizer's own report says exhibitors lean on their own e-commerce instead. The flagship structure, "AUTOBAHN," a 2,000-square-metre temporary build on a decommissioned stretch of elevated expressway, turns out to be curator-invited only, with no price, no application and no path in for this year, and nothing about next year's edition is published at all. The one close precedent found inside it was a single exhibitor, a former Suzuki industrial designer showing an audio-interface piece, tagged by the organizer as both a product and for sale.</p>
-  </div>
-</section>
+<h2>Yesterday's deep dive</h2>
+
+<div class="item">
+  <p>Yesterday we highlighted a Raspberry Pi blog post about retrofitting its UK headquarters' building-management system onto Raspberry Pi hardware at a fraction of a proprietary quote — read at the time as multi-year unattended-monitoring evidence for the board family our own hardware is built on. A closer look found that framing doesn't survive the source: the post gives the new system no runtime at all (nine months is the outer bound, not "multi-year"), the headline cost ratio compares an unscoped hypothetical against a real nearby UK quote that puts the true ratio closer to 3:1 than 19:1, and the building-management half actually ships on an older Raspberry Pi 3, not a 4 or 5. The more durable finding sits underneath: the vendor behind it has shipped Raspberry-Pi-based building controllers for six-plus years and documents zero watchdog, uptime, or SD-card wear handling — its update path is literally re-flashing the card — meaning the reliability bar we hold our own prototype to is already ahead of this niche's shipped state of the art, not behind it. A couple of factual corrections this surfaced are being weighed before anything is finalized.</p>
+</div>
 
 <hr class="divider">
 
-<section>
-  <h2>Needs an answer</h2>
-  <div class="item">
-    <p>Two open questions. First, whether to start tracking industrial and factory-floor process-capture research — built for an employer's own monitoring, not an individual's own use — as a new comparison area, alongside creator tools, archive software and museum practice. Second, whether cheap ambient-capture wearables like Bee and Natura, which pair inexpensive hardware with a subscription, deserve tracking as a named category, rather than being noted case by case.</p>
-    <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
-  </div>
-</section>
+<h2>Needs an answer</h2>
+
+<div class="item">
+  <p>Two open research-direction questions are waiting on a decision:</p>
+  <ul class="plain">
+    <li>Whether findings from industrial factory-monitoring research (an automation lab's internal process-tracking system) are worth tracking as a point of comparison for what we're building.</li>
+    <li>Whether ambient-capture wearables (Plaud, Bee, Natura) should be tracked as a defined competitor category, or kept as case-by-case comparisons.</li>
+  </ul>
+  <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+</div>
 
 <hr class="divider">
 
-<section>
-  <h2>This week</h2>
+<h2>Gate</h2>
 
-  <div class="item">
-    <p>Four separate investigations this week — into a funding story, a data-sale story, a synth company's exit, and Raspberry Pi's own update service — converged on one finding: the promise that a personal record stays owned by its maker is currently backed up at the file layer only, not at whether a device can still boot, update or decrypt that file once a vendor's key or server is gone. Raspberry Pi's own supported production path burns an irreversible security key into the Pi 5 at manufacture with no recovery route, and its free remote-access service has already had its limits cut twice with no stated floor. Nothing here is settled — it's a hardware-security choice that has to be made at first manufacture, not patched in afterward.</p>
-  </div>
+<div class="item">
+  <p>Five internal design-review items are awaiting a decision this week, covering: the physical enclosure's combined heat, radio, and storage-interface budget; how an exported record is structured layer by layer; how continuously-sensing capture signals what it is recording; and a documentation standard requiring every performance claim to state the conditions it was measured under. No further detail from this internal review process belongs on a public page.</p>
+</div>
 
-  <div class="item">
-    <p>A cluster of ambient-capture launches this week — Ambi, Amazon's Bee, and the smart ring maker Natura — got described as occupying the same space as always-on personal-capture devices generally, but a closer look found no funded company actually building a passive process-archive a maker owns outright; those products are conversation- and meeting-capture tools, cloud-metered or subscription-priced, which is a different category. Research into Singapore's privacy law found the specific case of someone capturing their own working process, sensing continuously but recording only selected moments, addressed by no existing rule; Japan's rules are the closest analogue, and they treat a visibly camera-shaped object as part of compliance. Both threads point at the same open design question: a clear signal that a device is sensing, which nobody building in this space has shipped yet.</p>
-  </div>
-
-  <div class="item">
-    <p>Three companies — the personal-AI hardware startup Ghost, Google (via its MediaPipe toolkit), and Raspberry Pi — each published a headline this week that their own fine print contradicts: Ghost's "no data ever leaves your home" sits beside a managed cloud gateway for several features; MediaPipe's "single-digit millisecond" on-device search holds only up to roughly 2,600 stored records before slowing down; and Raspberry Pi's only published noise figure for its own cooling fan is an unsourced number from a 2023 blog post, never an actual specification. Each claim is one that any maker of similar hardware would want to make honestly — which means stating the real operating point (how many records, how loud under what conditions, which data actually stays local) rather than repeating the headline as written.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<footer>
+<footer class="page-footer">
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
