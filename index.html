@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — 2026-10-17</title>
+<title>Research Brief — 2026-10-18</title>
 <style>
   :root {
     --bg: #faf9f6;
@@ -104,28 +104,28 @@
 <body>
 
 <header class="page-header">
-  <p class="date">Saturday, October 17, 2026</p>
-  <p class="readtime">~6 minute read</p>
+  <p class="date">Sunday, October 18, 2026</p>
+  <p class="readtime">~5 minute read</p>
 </header>
 
 <h2>Today</h2>
 
 <div class="item">
-  <h3>A new benchmark finds that, for on-device personal-memory assistants, the retrieval backend matters far more than the size of the model reading it.</h3>
-  <p>MemArena v2, accepted at NeurIPS 2026, tested 50 simulated agents over 15 days of ego-centric dialogue and found that switching the memory-retrieval backend lifted accuracy by up to 22 percentage points, while scaling the reader model up gained at most 4.4 points — the backend, not the model, is where accuracy in this category actually lives. It also surfaced a sharper problem: an "Oracle" retrieval mode leaks protected information outright, while the permission-aware alternatives swing the other way and fail to surface a fact the agent is actually allowed to see. On a Spark GB10 edge node the search step itself adds only 8–87 milliseconds depending on backend, cheap enough that this is purely an architecture choice, not a speed tradeoff. It bears directly on how we think about retrieval architecture and the resource budget for the edge hardware we're prototyping on — enough that we're digging into it further.</p>
-  <a class="btn" href="https://arxiv.org/abs/2608.02613">Read the source →</a>
+  <h3>Singapore's Lingverse raises $29M for a wearable camera that "recalls," not "discards," what it sees.</h3>
+  <p>iKairos ships with a physical camera shutter, a privacy indicator light and a manual mute button — confirmed by the company and matched independently by two outlets. But the privacy story going around it — that the device takes occasional still photos and discards each one after analysis — doesn't hold up against the company's own words: its release says the device "can recall the visuals and bring that fleeting moment back," which is retention language, not deletion. The real story here is the reversal, not the original claim, and it's a reminder that this category's privacy promises are worth checking against the source every time.</p>
+  <a class="btn" href="https://androidguys.com/news/lingverse-unveils-ikairos-a-modular-ai-wearable-powered-by-lifeos/">Read the source →</a>
 </div>
 
 <div class="item">
-  <h3>A Senegalese weaver's forty-year lesson: modernizing the loom is how you keep a hand technique alive, not how you lose it.</h3>
-  <p>Designer Aissa Dione widened Senegal's traditional 15–20cm looms to 90cm to weave at furniture scale, later bought secondhand 1970s–80s mechanical looms from Senegal and Lyon to cut costs, and had to re-source her thread entirely after a supplier secretly swapped to weaker Chinese thread that kept snapping mid-weave. Every one of her looms, however large or however mechanized, is still worked by two people by hand — modernization changed the tools, not the technique. It's a clean real-world case for treating visible, legible craft and a willingness to modernize production as complements rather than opposites — part of how a premium hand-made category survives at all.</p>
-  <a class="btn" href="https://disegnojournal.com/newsfeed/threading-history-aissa-dione">Read the source →</a>
+  <h3>Telekom is selling Meta's Ray-Ban Display in Germany like a phone — €1 down, then three years of installments.</h3>
+  <p>Customers can pay €899 up front, or €1 followed by 36 monthly installments of €22.10 (€796.60 total) on a mobile plan. This is the highest-volume camera-wearable on the market right now, and it's reaching everyday buyers through carrier financing rather than a straight purchase — a useful data point on how a premium device in this category actually gets into people's hands at scale.</p>
+  <a class="btn" href="https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/10/launch-telekom-offers-meta-ray-ban-display">Read the source →</a>
 </div>
 
 <div class="item">
-  <h3>Singapore's National Gallery is building a Nanyang artist retrospective on process material, not just finished paintings.</h3>
-  <p>"Crossings," running through October 2027, is the first solo show on painter Lai Foong Moi since the 1960s, and the gallery's own framing leans on photographs and exhibition catalogues alongside the paintings as the route to "new insights into her artistic development." It's a concrete Southeast Asian instance of a pattern worth watching: serious institutions increasingly treat an artist's process record, not just the finished output, as collection-worthy in its own right.</p>
-  <a class="btn" href="https://www.nationalgallery.sg/sg/en/about/media-centre/National-Gallery-Singapore-presents-first-solo-exhibition-in-60-years-dedicated-to-Nanyang-artist-Lai-Foong-Moi.html">Read the source →</a>
+  <h3>CMF by Nothing's first speakers ship with removable panels and 3D-printable replacement parts.</h3>
+  <p>Speaker S ($59, a 45mm driver, 10W output) and Speaker M ($109, a 25W woofer plus 10W tweeter, 35W combined) both carry an IP68 rating, Bluetooth 6.0 and up to 18 hours of playback — confirmed across two independent outlets. The 3D-printable-parts claim comes from one source only, but the core move is real: visible modularity and user-repairability at an accessible price point, a concrete precedent for anyone thinking about repairable, user-serviceable hardware.</p>
+  <a class="btn" href="https://www.smartprix.com/bytes/cmf-speaker-m-and-speaker-s-launched-check-price-features-and-specifications/">Read the source →</a>
 </div>
 
 <hr class="divider">
@@ -133,7 +133,7 @@
 <h2>Yesterday's deep dive</h2>
 
 <div class="item">
-  <p>Yesterday we highlighted a Raspberry Pi blog post about retrofitting its UK headquarters' building-management system onto Raspberry Pi hardware at a fraction of a proprietary quote — read at the time as multi-year unattended-monitoring evidence for the board family our own hardware is built on. A closer look found that framing doesn't survive the source: the post gives the new system no runtime at all (nine months is the outer bound, not "multi-year"), the headline cost ratio compares an unscoped hypothetical against a real nearby UK quote that puts the true ratio closer to 3:1 than 19:1, and the building-management half actually ships on an older Raspberry Pi 3, not a 4 or 5. The more durable finding sits underneath: the vendor behind it has shipped Raspberry-Pi-based building controllers for six-plus years and documents zero watchdog, uptime, or SD-card wear handling — its update path is literally re-flashing the card — meaning the reliability bar we hold our own prototype to is already ahead of this niche's shipped state of the art, not behind it. A couple of factual corrections this surfaced are being weighed before anything is finalized.</p>
+  <p>Yesterday we highlighted a new benchmark finding that, for on-device personal-memory assistants, the choice of retrieval backend matters far more than the size of the model reading it. A closer look mostly holds that up but adds real caveats: the figures we cited came from the paper's revised version, while the version actually peer-reviewed used a smaller model and somewhat different numbers; the fast retrieval speed depends on a GPU-resident component, and on CPU alone the same step balloons from milliseconds to over two minutes; and the whole accuracy test ran on data-center hardware, not anything resembling a small edge device. One finding sharpened rather than weakened: the system's "privacy-aware" mode essentially never gates information correctly either way, which is less a privacy/utility tradeoff than evidence that a retrieval system should answer questions, not make judgment calls on its own. The architecture that won the benchmark — no AI summarization layer standing between the raw record and the query, just structured search over it directly — is structurally the same shape favored by the approach we're already taking.</p>
 </div>
 
 <hr class="divider">
@@ -143,18 +143,10 @@
 <div class="item">
   <p>Two open research-direction questions are waiting on a decision:</p>
   <ul class="plain">
-    <li>Whether findings from industrial factory-monitoring research (an automation lab's internal process-tracking system) are worth tracking as a point of comparison for what we're building.</li>
-    <li>Whether ambient-capture wearables (Plaud, Bee, Natura) should be tracked as a defined competitor category, or kept as case-by-case comparisons.</li>
+    <li>Whether to track an industrial-automation lab's factory-floor process-monitoring research as a point of comparison for what we're building.</li>
+    <li>Whether ambient-capture wearables like Plaud, Bee and Natura should be tracked as a defined competitor category, or kept as case-by-case comparisons.</li>
   </ul>
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
-</div>
-
-<hr class="divider">
-
-<h2>Gate</h2>
-
-<div class="item">
-  <p>Five internal design-review items are awaiting a decision this week, covering: the physical enclosure's combined heat, radio, and storage-interface budget; how an exported record is structured layer by layer; how continuously-sensing capture signals what it is recording; and a documentation standard requiring every performance claim to state the conditions it was measured under. No further detail from this internal review process belongs on a public page.</p>
 </div>
 
 <footer class="page-footer">
