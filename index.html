@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — 2026-10-18</title>
+<title>Research Brief — 2026-10-19</title>
 <style>
   :root {
     --bg: #faf9f6;
@@ -104,28 +104,34 @@
 <body>
 
 <header class="page-header">
-  <p class="date">Sunday, October 18, 2026</p>
+  <p class="date">Monday, October 19, 2026</p>
   <p class="readtime">~5 minute read</p>
 </header>
 
 <h2>Today</h2>
 
 <div class="item">
-  <h3>Singapore's Lingverse raises $29M for a wearable camera that "recalls," not "discards," what it sees.</h3>
-  <p>iKairos ships with a physical camera shutter, a privacy indicator light and a manual mute button — confirmed by the company and matched independently by two outlets. But the privacy story going around it — that the device takes occasional still photos and discards each one after analysis — doesn't hold up against the company's own words: its release says the device "can recall the visuals and bring that fleeting moment back," which is retention language, not deletion. The real story here is the reversal, not the original claim, and it's a reminder that this category's privacy promises are worth checking against the source every time.</p>
-  <a class="btn" href="https://androidguys.com/news/lingverse-unveils-ikairos-a-modular-ai-wearable-powered-by-lifeos/">Read the source →</a>
+  <h3>Teenage Engineering opens its first permanent store — a 6,000 sq ft SoHo flagship built for community events, not transactions.</h3>
+  <p>Teenage Engineering designed and built the space itself at 216 Lafayette Street in Manhattan, describing it as a venue for "launches, previews and get-togethers with the community" rather than a straightforward retail floor — the EP-133 K.O. II build line stays on the upper level for weeks after the launch, and the soft-opening featured a live Lykke Li performance cut straight to vinyl. It lands one week after founder Jesper Kouthoofd told press that hardware "isn't the business," which makes the choice of a permanent physical space for community and launch moments, rather than for sales volume, worth watching. Single-source so far — no second outlet has covered the opening itself.</p>
+  <a class="btn" href="https://sonicstate.com/news/2026/10/08/teenage-engineering-opens-first-store-in-new-york/">Read the source →</a>
 </div>
 
 <div class="item">
-  <h3>Telekom is selling Meta's Ray-Ban Display in Germany like a phone — €1 down, then three years of installments.</h3>
-  <p>Customers can pay €899 up front, or €1 followed by 36 monthly installments of €22.10 (€796.60 total) on a mobile plan. This is the highest-volume camera-wearable on the market right now, and it's reaching everyday buyers through carrier financing rather than a straight purchase — a useful data point on how a premium device in this category actually gets into people's hands at scale.</p>
-  <a class="btn" href="https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/10/launch-telekom-offers-meta-ray-ban-display">Read the source →</a>
+  <h3>Tokyo's Nojima robot showroom runs a hands-on trial corner for three camera/AI-glasses crowdfunding projects through October 31.</h3>
+  <p>MIRAI ROBO SQUARE in Shinagawa lets shoppers handle Solos V2, Rokid's smart AI glasses and SABERA side by side, on the stated logic that "you can't tell if it suits you without actually trying it" and that buyers want to feel the build quality before paying. A widely-circulated "16-megapixel camera" spec for one of these products doesn't actually appear anywhere on the retailer's own page, so it isn't carried here. It's a live example of hands-on retail built specifically around the camera-wearable category this space keeps producing.</p>
+  <a class="btn" href="https://netshop.impress.co.jp/r/prtimes/items/000000344.000036381">Read the source →</a>
 </div>
 
 <div class="item">
-  <h3>CMF by Nothing's first speakers ship with removable panels and 3D-printable replacement parts.</h3>
-  <p>Speaker S ($59, a 45mm driver, 10W output) and Speaker M ($109, a 25W woofer plus 10W tweeter, 35W combined) both carry an IP68 rating, Bluetooth 6.0 and up to 18 hours of playback — confirmed across two independent outlets. The 3D-printable-parts claim comes from one source only, but the core move is real: visible modularity and user-repairability at an accessible price point, a concrete precedent for anyone thinking about repairable, user-serviceable hardware.</p>
-  <a class="btn" href="https://www.smartprix.com/bytes/cmf-speaker-m-and-speaker-s-launched-check-price-features-and-specifications/">Read the source →</a>
+  <h3>Fashion designer Zandra Rhodes' complete 57-year design-process archive is on exhibit at De Montfort University through January 16.</h3>
+  <p>The "Archive Unfolded" show draws on a 1964–2021 collection of mock-ups, finished garments, sketches, fabric samples and costing documents that Rhodes donated specifically "to be used for teaching the next generation of fashion designers." It's a concrete, dated instance of process records — not just finished work — entering an institutional collection, a pattern that keeps surfacing well outside hardware or software design circles. The exhibition's specific dates are single-sourced so far.</p>
+  <a class="btn" href="https://cyprus-mail.com/2026/10/10/adapting-the-rhodes-signature-style">Read the source →</a>
+</div>
+
+<div class="item">
+  <h3>A TU Delft thesis called FilaLoom modifies an FDM 3D printer to lay yarn between printed layers, fusing machine fabrication with hand-weaving.</h3>
+  <p>Amsterdam designer Joram de Haas built the hybrid printer for his Master's thesis in Integrated Product Design and has just published a paper on it with TU Delft staff. It's a working precedent for blending machine process with hand-craft at the component level, rather than treating the two as separate stages. Single-source; no second outlet has picked it up yet.</p>
+  <a class="btn" href="https://www.core77.com/posts/145676/Combining-3D-Printing-with-Weaving">Read the source →</a>
 </div>
 
 <hr class="divider">
@@ -133,7 +139,7 @@
 <h2>Yesterday's deep dive</h2>
 
 <div class="item">
-  <p>Yesterday we highlighted a new benchmark finding that, for on-device personal-memory assistants, the choice of retrieval backend matters far more than the size of the model reading it. A closer look mostly holds that up but adds real caveats: the figures we cited came from the paper's revised version, while the version actually peer-reviewed used a smaller model and somewhat different numbers; the fast retrieval speed depends on a GPU-resident component, and on CPU alone the same step balloons from milliseconds to over two minutes; and the whole accuracy test ran on data-center hardware, not anything resembling a small edge device. One finding sharpened rather than weakened: the system's "privacy-aware" mode essentially never gates information correctly either way, which is less a privacy/utility tradeoff than evidence that a retrieval system should answer questions, not make judgment calls on its own. The architecture that won the benchmark — no AI summarization layer standing between the raw record and the query, just structured search over it directly — is structurally the same shape favored by the approach we're already taking.</p>
+  <p>A closer look at Singapore-based Lingverse found its "Singapore" identity is a seven-month-old shell over a decade-old Beijing operating business, and the reported "$29M" raise is actually an RMB 200M round closed in China in November 2025, backed by investors named only in Chinese press. The confusion over what happens to a captured photo resolves into four separate steps: the device captures a still, deletes the raw image, and keeps only an AI-generated reinterpretation of it — closer to generating a memory than preserving one. Looking at the wider ambient-capture-wearable category: the "cheap hardware plus subscription" framing doesn't hold for most of it, hardly anyone in the category sells the original record as the product, and three of the four companies that shipped a device like this in volume before 2025 were gone within 22 months. No capture-indicator standard or legal mandate exists anywhere for this class of device — California's SB 1130 was vetoed on September 30 — and indicator hardware and data-retention commitments turn out to be anti-correlated across the whole category.</p>
 </div>
 
 <hr class="divider">
@@ -143,7 +149,7 @@
 <div class="item">
   <p>Two open research-direction questions are waiting on a decision:</p>
   <ul class="plain">
-    <li>Whether to track an industrial-automation lab's factory-floor process-monitoring research as a point of comparison for what we're building.</li>
+    <li>Whether to open a standing watch on industrial and factory-floor process-monitoring research as a point of comparison for what's being built here.</li>
     <li>Whether ambient-capture wearables like Plaud, Bee and Natura should be tracked as a defined competitor category, or kept as case-by-case comparisons.</li>
   </ul>
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
