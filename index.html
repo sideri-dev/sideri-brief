@@ -3,181 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Brief — 2026-10-24</title>
+<title>Morning Brief — 2026-10-25</title>
 <style>
   :root {
     --bg: #faf9f6;
-    --fg: #1c1c1a;
-    --muted: #5c5a54;
-    --accent: #7a5c3e;
-    --rule: #e0ddd4;
-    --btn-bg: #1c1c1a;
-    --btn-fg: #faf9f6;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #1a1a1a;
+    --divider: #ddd8cf;
+    --button-bg: #1a1a1a;
+    --button-text: #faf9f6;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #171614;
-      --fg: #ece9e2;
-      --muted: #a9a59c;
-      --accent: #d8b98a;
-      --rule: #333129;
-      --btn-bg: #ece9e2;
-      --btn-fg: #171614;
+      --bg: #15151a;
+      --text: #ececec;
+      --muted: #a0a0a8;
+      --accent: #ececec;
+      --divider: #33333a;
+      --button-bg: #ececec;
+      --button-text: #15151a;
     }
   }
   * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--fg);
-  }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
     font-size: 18px;
     line-height: 1.7;
+  }
+  main {
     max-width: 42rem;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 4rem;
   }
-  header.page-header {
+  header.top {
     margin-bottom: 2.5rem;
   }
-  header.page-header .date {
-    font-size: 1.1rem;
+  header.top .date {
+    font-size: 1.1em;
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 0.25rem;
   }
-  header.page-header .readtime {
+  header.top .readtime {
     color: var(--muted);
-    margin: 0.25rem 0 0;
-    font-size: 0.95rem;
+    margin: 0;
+    font-size: 0.95em;
   }
   h2 {
-    font-size: 1.05rem;
-    text-transform: uppercase;
+    font-size: 1.05em;
     letter-spacing: 0.04em;
+    text-transform: uppercase;
     color: var(--muted);
-    margin: 2.75rem 0 1.25rem;
+    margin: 3rem 0 1.5rem;
   }
   .item {
     margin-bottom: 2.25rem;
   }
-  .item h3 {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    margin: 0 0 0.75rem;
-  }
   .item p {
-    margin: 0 0 0.9rem;
+    margin: 0 0 1rem;
   }
-  .btn {
+  .item .headline {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+  .button {
     display: block;
     width: 100%;
     text-align: center;
-    background: var(--btn-bg);
-    color: var(--btn-fg);
+    background: var(--button-bg);
+    color: var(--button-text);
     text-decoration: none;
-    padding: 0.85rem 1rem;
+    padding: 0.9rem 1rem;
     border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 0.95rem;
-    margin-top: 0.75rem;
+    margin: 0.75rem 0 0.25rem;
   }
-  hr.divider {
+  .button:visited { color: var(--button-text); }
+  hr {
     border: none;
-    border-top: 1px solid var(--rule);
+    border-top: 1px solid var(--divider);
     margin: 2.25rem 0;
   }
-  ul.plain {
-    padding-left: 1.1rem;
-    margin: 0 0 1rem;
+  .qa {
+    margin-bottom: 1rem;
   }
-  ul.plain li {
-    margin-bottom: 0.6rem;
-  }
-  footer.page-footer {
+  footer {
     margin-top: 3.5rem;
+  }
+  .fineprint {
+    color: var(--muted);
+    font-size: 0.92em;
   }
 </style>
 </head>
 <body>
+<main>
 
-<header class="page-header">
-  <p class="date">Saturday, October 24, 2026</p>
-  <p class="readtime">~7 minute read</p>
+<header class="top">
+  <p class="date">2026-10-25</p>
+  <p class="readtime">≈5 minute read</p>
 </header>
 
 <h2>Today</h2>
 
 <div class="item">
-  <h3>An open-source smart-glasses platform just published the power-gating architecture an always-on capture problem needs — a coordinator chip stays awake so the vision processor can stay asleep, and it ran 11.5 hours on a 200 mAh battery.</h3>
-  <p>The paper, called OpenGlass, builds a swappable event-camera/frame-camera rig around a Nordic nRF5340 coordinator chip that keeps a heavier RISC-V vision chip (GAP9, from Swiss chipmaker GreenWaves) powered down until something triggers it, then wakes it for inference. On a gesture-recognition benchmark the system hit 83.94% cross-subject accuracy at 78.3ms latency. It's a single preprint with no secondary coverage yet, but the power-gating architecture is directly relevant to any battery-powered always-on capture device, even running on different hardware.</p>
-  <a class="btn" href="https://arxiv.org/abs/2606.07431">Read the source →</a>
+  <span class="headline">Stokke is selling a museum-colorway edition of its 1972 Tripp Trapp chair for ¥69,300</span>
+  <p>The collaboration borrows New York's Museum of Modern Art's own color identity for a limited run of the chair, which has been in MoMA's permanent collection since 2012, alongside a matching ¥12,650 cushion. The collaboration itself is confirmed by Wallpaper*, though the yen price comes from Japanese design press alone. It's a real data point for any small hardware or furniture maker weighing a museum-store collaboration as a marketing move rather than a straight sale.</p>
+  <a class="button" href="https://www.axismag.jp/posts/2026/10/726493.html">Source →</a>
 </div>
+
+<hr>
 
 <div class="item">
-  <h3>A second preprint, "Gaze Archive," triggers capture from eye gaze rather than touch or motion, then retrieves by natural-language query — and it explicitly ranks results by inferred intent.</h3>
-  <p>It's the fourth paper in about two months taking that position in this space — earlier ones scored relevance by inferred question-relevance or built salience-weighted personal-memory archives. Gaze as a capture trigger is a genuinely new signal in this line of research. Worth watching as a recurring design pattern across the field, not an isolated paper.</p>
-  <a class="btn" href="https://arxiv.org/abs/2511.16214">Read the source →</a>
+  <span class="headline">A Meta Reality Labs paper gives the first full system-level power model of an always-on wearable AI device</span>
+  <p>The paper models Meta's Aria2 device end to end, and the standout finding is that power draw doesn't concentrate in one part of the system — no single component or category dominates it. We're sending this one to a deeper read, because it bears on an active question for our own always-on capture hardware's power budget, where a single academic source needs cross-checking with independent evidence before anyone relies on it.</p>
+  <a class="button" href="https://arxiv.org/abs/2512.16045">Source →</a>
 </div>
+
+<hr>
 
 <div class="item">
-  <h3>Giuseppe Penone's first Middle East exhibition opens Tuesday at the Qatar National Museum, built on more than 50 years of his own studies, sketches and photographs rather than finished sculpture alone.</h3>
-  <p>Independently confirmed by Japanese design press (AXIS) and Qatar's own national news agency — two genuinely separate sources — with the museum's Old Palace and courtyard specifically given over to models, drawings and photographs rather than the sculptures themselves. It's a clean example of an artist's own process record becoming museum-grade material in its own right, curated by Hans Ulrich Obrist and Issa Al Shirawi.</p>
-  <a class="btn" href="https://www.axismag.jp/posts/2026/10/726057.html">Read the source →</a>
+  <span class="headline">Astrolab's upcoming lunar rover runs local language models specifically to avoid transmitting raw sensor data</span>
+  <p>FLIP, the rover, pairs an HPE Spaceborne-4 edge computer with its own distilled models so it doesn't have to send raw sensor data back to Earth — not just to dodge the Moon's communication lag. Two independent outlets confirm both the hardware and the reasoning, with only a small, non-conflicting disagreement over the exact launch date. It's an unrelated field reaching the same architectural conclusion we're building toward for our own hardware — distilling data on-device beats shipping it raw — for different reasons: physics, not privacy.</p>
+  <a class="button" href="https://www.technologyreview.com/2026/10/20/1147360/astrolab-upcoming-rover-llms-on-the-moon/">Source →</a>
 </div>
+
+<hr>
 
 <div class="item">
-  <h3>Rokid's AI glasses just set an all-time crowdfunding record on Makuake, Japan's largest crowdfunding platform.</h3>
-  <p>Rokid's own press release and an independent Japanese XR outlet disagree on specifics — launch date, how fast the campaign reached ¥200 million, and whose record it actually broke, since the independent account's ¥636.73 million final total is larger than what the original release could have known at the time it was written. Flagged as a conflict between sources rather than a clean fact, but it's real evidence of strong demand for camera-equipped AI glasses in the Japanese market.</p>
-  <a class="btn" href="https://kyodonewsprwire.jp/release/202603135591">Read the source →</a>
+  <span class="headline">A small studio called Retro Lab is selling a $740 spherical computer monitor built from salvaged iPad screens</span>
+  <p>"Time Planet" reskins JVC's 1970 Videosphere helmet television, using 9.6-inch display panels pulled from iPads and a mechanical, AA-battery-powered flip clock built into the base. No other outlet has covered this specific product yet, so we're treating it as a single source for now — we first came across it two days earlier but couldn't verify it well enough to run it then. It's a small but real precedent for small-batch, retro-styled hardware built partly from reused components at a premium price.</p>
+  <a class="button" href="https://www.core77.com/posts/145715/A-Spherical-Computer-Monitor-Pays-Homage-to-a-1970-JVC-Design">Source →</a>
 </div>
+
+<hr>
 
 <div class="item">
-  <h3>Bangkok Design Week picked "DESIGN TO LAST" as the theme for its 10th-anniversary 2027 edition — durability and adaptability over disposability, as the organizing institution's own framing.</h3>
-  <p>Both the Thai Creative Economy Agency's news page and the festival's own site confirm February 18–28, 2027 dates and an "Ever Evolving, Everlasting" framing. It's one institution speaking across two of its own pages rather than independent press corroboration, but the theme itself is a notable signal from Southeast Asia's design establishment about where taste is heading.</p>
-  <a class="btn" href="https://www.cea.or.th/news-updates/Bangkok-Design-Week-2027-en">Read the source →</a>
+  <p class="fineprint">Only four stories cleared full verification today — we left a fifth slot empty rather than pad it. Two of our usual research areas came up empty this time: both leads turned out to be duplicates of deeper investigations we'd already completed weeks earlier, one about a well-known wearable-tech company's IPO postponement and one about a radio-certification reform already covered more thoroughly elsewhere in our own records. That's a process gap on our end we're correcting, not new information being withheld.</p>
 </div>
-
-<hr class="divider">
 
 <h2>Yesterday's deep dive</h2>
 
 <div class="item">
-  <p>A deep read of GoPro's merger filing with a shell company called Starman Optical found the deal's own headline framing wrong in nearly every detail: Starman Optical is actually the entity that disappears at closing, not the buyer, and the real acquirer is a different newly formed shell backed by a New York real-estate family's capped equity commitment. The optics business the original announcement advertised turns out not to be a party to the deal at all. What does hold up, in GoPro's own filed words: tariffs and a 2026 memory-chip shortage forced price hikes that collapsed consumer demand, and a separate, previously untracked exposure — supply allocation, not price — stranded a $39.6 million purchase commitment. The filing contradicts itself in at least eleven places, and its own fairness opinion wouldn't value the company as a going concern. One contradiction worth watching: GoPro's cloud-storage contract terms promise to delete a customer's content on termination, while the company absorbing GoPro's user base is growing its own paid cloud-storage tier by more than 124% — a tension the filing leaves open.</p>
+  <p>Yesterday we took a harder look at a paper claiming an open-source, always-on smart-glasses platform could run continuous on-device AI for 11.5 hours on a small battery through clever power management. Reading the paper's own body rather than its summary, that claim didn't hold up: the 11.5-hour figure is a straight division at near-full duty cycle with no power-gating actually implemented, the described wake-up trigger is a stated intention with no measurement behind it, and the specific hardware we're building on has no sleep state to gate anyway — only a full boot. What did hold up was more useful than the original claim: of the energy it costs to wake the system back up, the large majority goes to the camera's own startup, not the processor, which supports the simpler approach we'd already chosen over a dedicated power-gating chip. The paper's own processor vendor, GreenWaves Technologies, has been in liquidation since January 2025, and its web domain sold at auction the day before this story ran. We also caught our own earlier slip: a related paper from the same lab had already crossed our desk months before, so this wasn't really a second independent source confirming the first.</p>
 </div>
 
-<hr class="divider">
+<h2>Needs your answer</h2>
 
-<h2>Needs an answer</h2>
-
-<div class="item">
-  <p>Two open research-direction questions are waiting on a decision:</p>
-  <ul class="plain">
-    <li>Whether retailer stock levels and component availability should be tracked as a signal in their own right, separate from price — raised after a supply deep-dive found a component's price unchanged for months while its stock quietly went to zero.</li>
-    <li>Whether a recurring line of academic papers that rank personal-memory retrieval results by inferred intent — now four papers in two months, each using a different capture-trigger signal — should be tracked as a named research thread rather than noted case by case.</li>
-  </ul>
-  <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+<div class="qa">
+  <p>Two open questions are waiting. One: whether to start tracking the availability of components and stock levels as a signal in its own right, separate from price changes. Two: whether a recurring pattern — academic papers proposing to automatically rank or prioritize someone's captured content, a design choice we've deliberately avoided — deserves a standing watch of its own.</p>
 </div>
 
-<hr class="divider">
+<a class="button" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
-<h2>This week's gate</h2>
-
-<div class="item">
-  <p>Three internal drafts are open for a promotion decision this week, each reviewed for internal consistency and factual accuracy:</p>
-  <ul class="plain">
-    <li>A note on ambient-capture competitor devices, organized around who keeps custody of a user's data rather than price — 1 review round, 2 objections raised.</li>
-    <li>A rule about tracking software and hardware dependencies whose real risk often sits one layer away from the component actually being used — 1 review round, 3 objections raised.</li>
-    <li>A note on how sales get concluded at a pop-up or trade-show booth under Japanese consumer law — 1 review round, 1 objection raised.</li>
-  </ul>
-  <p>A small backlog of related research questions sits at 4 queued items, comfortably under its own cap — nothing urgent needs reordering this week.</p>
-</div>
-
-<footer class="page-footer">
-  <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
+<footer>
+  <a class="button" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
+</main>
 </body>
 </html>
