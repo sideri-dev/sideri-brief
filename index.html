@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — 2026-10-28</title>
+<title>Morning Brief — 2026-10-29</title>
 <style>
   :root {
     --bg: #faf9f6;
@@ -105,60 +105,60 @@
 <main>
 
 <header class="top">
-  <p class="date">2026-10-28</p>
+  <p class="date">2026-10-29</p>
   <p class="readtime">≈6 minute read</p>
 </header>
 
 <h2>Today</h2>
 
 <div class="item">
-  <span class="headline">Plaud's Tokyo press event reveals a second product, and its newest premium model explicitly leaves Japan out</span>
-  <p>Plaud held a press event in Tokyo on October 21 unveiling "Plaud One," an eSIM-equipped always-connected AI wearable planned for release within 2026. The same event also showed a second, previously unreported product: "Plaud Note Pro Flow Edition," a card-type AI voice recorder with a higher-precision microphone than the existing Plaud Note Pro. Separately, an independent outlet reports that Plaud's Explorer Edition — limited to 2,000 units worldwide at $249.99 — explicitly excludes Japan from its sales regions. Taken together, that's a company in this ambient-capture-wearable category making its first real Tokyo move while deliberately holding a premium model back from the same market — a live data point on how a well-resourced competitor is sequencing a Japan launch, which is exactly the kind of question worth digging into further.</p>
-  <a class="button" href="https://voix.jp/biz/?p=180254">Source →</a>
+  <span class="headline">A security researcher shows a C2PA "valid" signature can cover zero bytes of the file it supposedly certifies</span>
+  <p>David Buchanan published a proof-of-concept that excludes an entire file from the Coalition for Content Provenance and Authenticity (C2PA) signed hash — his manifest's exclusion field spans the whole file, leaving the signature covering an empty string instead of any actual content. He demonstrated it on a doctored lottery-ticket photo backdated to before its own draw, and neither the Content Authenticity Initiative's own hosted verifier nor the reference tool c2patool catches it. No fix has shipped as of this writing. The underlying mechanism first surfaced publicly on October 12, and Buchanan's own live demonstration followed on October 19; today's coverage, drawn from WorkOS's engineering blog and independently corroborated by PhotoWorkout and Zeli.app, confirms the flaw remains unpatched a month after Buchanan's original post.</p>
+  <a class="button" href="https://workos.com/blog/c2pa-exclusion-range-signature-verification">Source →</a>
 </div>
 
 <hr>
 
 <div class="item">
-  <span class="headline">A new research paper cuts always-on smart-glasses perception cost by 27.5x in memory and 24.3x in energy</span>
-  <p>A preprint called EPIC describes an algorithm-and-hardware co-design for egocentric vision — the kind of constant, first-person perception a camera-equipped wearable runs — that filters what it looks at before processing it, instead of running every single frame through a full pipeline. Against a full-video-processing baseline, the authors report the approach "reduces memory footprint by 27.5× and energy consumption by 24.3× on average." It's a concrete architectural answer to one of the hardest problems in this category: keeping an always-on camera device inside a workable power and memory budget without constant full-pipeline processing. It's a single preprint with no outside press coverage yet, so treat the figures as the authors' own claim rather than independently confirmed.</p>
-  <a class="button" href="https://arxiv.org/abs/2606.15859">Source →</a>
+  <span class="headline">A premium Japanese kitchen-appliance brand opens a hands-on "co-creation lab" in Tokyo</span>
+  <p>ARIAFINA LABORATORY — a joint venture between Fujioh and Italian range-hood maker Elica — opened a "co-creation lab" in Tokyo's Roppongi on October 14, where visitors touch, operate and cook with the equipment rather than just view it, framed around the whole kitchen space rather than any single product. Two independent Japanese publications, AXIS and digitalpr.jp, confirm the opening date, address and partnership. It's a notable bet by a premium hardware brand on hands-on experiential retail as a format in its own right.</p>
+  <a class="button" href="https://www.axismag.jp/posts/2026/10/726244.html">Source →</a>
 </div>
 
 <hr>
 
 <div class="item">
-  <span class="headline">A Tokyo material-research house opens a public lab that treats the making process as the exhibit, not just the material</span>
-  <p>DAIKEI MILLS is opening "MM (Material Matters)" on October 31 as part of SKAC EXTENSION 2026, running through the end of January 2027. It's described as a material-research institution that visualizes not just the material itself but the production process behind it, working alongside architects, designers, artists and manufacturers to explore new possibilities. It's a funded, physical bet that a maker's process — not just the finished object — is worth putting on public display, though it's worth noting this is a material library staging a process rather than one individual maker's own personal archive.</p>
-  <a class="button" href="https://www.axismag.jp/posts/2026/10/727503.html">Source →</a>
+  <span class="headline">Nothing's Phone (4b) picks up two more major Japanese carriers at launch week, same price, with one notable exclusion</span>
+  <p>SoftBank and Y!mobile both started selling the Phone (4b) in Japan on October 27 at ¥59,808, the same price already confirmed through Rakuten Mobile. SoftBank is also offering a 48-month installment plan for its own subscribers. The one dated wrinkle: SoftBank's own direct-to-satellite service, Starlink Direct, isn't supported on this model. Three major Japanese carriers are now carrying the device within a week of its domestic launch.</p>
+  <a class="button" href="https://www.softbank.jp/mobile/info/personal/news/product/20261027a/">Source →</a>
 </div>
 
 <hr>
 
 <div class="item">
-  <span class="headline">A grandson 3D-scanned his late grandfather's sculptures into a new line of lamps</span>
-  <p>Vincenzo Carmenati's sculptures became the raw material for a new lamp line designed by his grandson, Nicolau Carmenati, after being 3D-scanned — "a parallel edition that could have been made by him in another life," in Nicolau's words. The lamps, named "Oblò" (Italian for "windows"), were first shown at Feria Hábitat Valencia's "Nude" section in September. It's a striking, human-scale example of a maker's physical work being captured into a durable record that outlives the original act and becomes the starting material for something new, rather than simply disappearing once the act is over.</p>
-  <a class="button" href="https://disegnojournal.com/newsfeed/vincenzo-carmenati">Source →</a>
+  <span class="headline">Electron 45 ships with GPU-stability fixes for Chromium-based desktop apps</span>
+  <p>The new stable release of the Electron desktop-app framework bundles Chromium 156 and fixes a bug where the GPU process was being killed outright when WebGPU fell back to software rendering (SwiftShader) on Windows, plus a fix so GPU shaders compiled by Skia are cached between launches instead of recompiled every time. These are exactly the failure modes that matter for any GPU-heavy desktop app rendering large volumes of images, and the release had been expected since early October — this is the first look at what actually shipped in it.</p>
+  <a class="button" href="https://releases.electronjs.org/release/v45.0.0">Source →</a>
 </div>
 
 <hr>
 
 <div class="item">
-  <span class="headline">A premium Swiss furniture brand makes repairability the design thesis itself, not an afterthought</span>
-  <p>Embru's new "Patio Chair," designed by Moritz Schmid, is built on a modular construction explicitly following a "Design for Repair" approach, with individual components meant to be replaced or repaired as needed rather than the whole piece discarded. This is the manufacturer's own framing, without an independent teardown to confirm it, and repairability-as-design-thesis is not a new idea — but it's a useful real-world precedent for premium hardware that leads with serviceability as a selling point rather than hiding it.</p>
-  <a class="button" href="https://www.core77.com/posts/145752/Industrial-Designer-Moritz-Schmids-Patio-Chair-for-Embru">Source →</a>
+  <span class="headline">A fresh $2M pre-seed prices the current market for "co-founding" software with individual creators</span>
+  <p>Affinity Labs raised $2M in pre-seed funding — led by Fuel Ventures and Antler, with a roughly £500,000 non-dilutive UK Innovate UK grant covering about a third of the round — to co-found software products directly with individual creators, pitched as putting "an AI factory behind a creator's name." Its flagship app so far, Archives, is an education tool with more than 75,000 users, not a process-archive product — so the comparable here is the funding structure and category framing rather than the product itself — but it's a live, dated price point for how this category of company is currently being capitalized.</p>
+  <a class="button" href="https://tech.eu/2026/10/14/affinity-labs-raises-2m-to-build-ai-powered-software-brands-with-creators/">Source →</a>
 </div>
 
 <hr>
 
 <div class="item">
-  <p class="fineprint">Four other leads died on duplicate grounds today — a hardware reliability figure, a photo-retrieval research paper, and two competitor pricing restatements — none carrying anything genuinely new. All four research threads turned up at least one usable item.</p>
+  <p class="fineprint">One more lead cleared verification but missed the cutoff: Nothing reopened its unpaid, NDA-bound community beta-test program ahead of an undisclosed new product, a repeatable model for pre-launch testing without a subscription structure (source: Android Authority, androidauthority.com/nothing-community-review-program-3718169). Five other leads died on duplicate or unsupported-claim grounds today — two software releases and one EU product launch already covered previously, a screwdriver whose on-device-AI claim is contradicted by independent reporting, and a ceramics-archive book announcement that turned out to be the same story already covered nine days earlier. That volume of repeat submissions in one day is worth a closer look at how these leads get surfaced.</p>
 </div>
 
 <h2>Yesterday's deep dive</h2>
 
 <div class="item">
-  <p>An earlier deep-dive took apart a Raspberry Pi manufacturing change notice and found it doesn't actually describe a change that reaches a buyer of the finished camera module — it only relieves manufacturers who buy the bare image sensor and build their own camera board around it. The investigation did settle something real along the way: the standard software stack for this camera never reads the memory chip in question at all, so a blank version of it only narrows the macro-focus range slightly, not focus overall. It also surfaced something unrelated but more consequential: a newer notice moves the committed Raspberry Pi 5 board to a new hardware revision with a different Ethernet networking chip, under a firmware-version requirement.</p>
+  <p>An earlier deep-dive into a wearable AI company's Japan launch found the original framing didn't hold up: Japan is not excluded from that company's flagship product, as initially reported — the Japanese arm published its own version of the device the same evening, priced at ¥44,000 and waitlisted for release within the year, and several earlier reports needed correcting (a price that had been dropped as unsupported turned out to be accurate; one cited outlet was a press-release wire rather than original reporting). The real finding was narrower and more interesting: the product holds a genuine Japanese radio certification, but it covers only the Bluetooth earbuds, not the eSIM/cellular radio that the product's core function depends on — no telecom-level certification for that exists in the public record, and the Japan listing itself still reads "in preparation." On how fast this company is moving into Japan versus Southeast Asia, the investigation reports rather than concludes: it entered Japan with a full local company, tax registration and a thousand-plus retail-store footprint well before this specific product's own launch event, making it an outlier against two competitors in the same ambient-capture-wearable category, which have no comparable Japan presence at all.</p>
 </div>
 
 <h2>Needs your answer</h2>
