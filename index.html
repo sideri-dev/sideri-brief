@@ -2,183 +2,178 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning Brief — 2026-10-30</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief — 2026-10-31</title>
 <style>
   :root {
     --bg: #faf9f6;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #1a1a1a;
-    --divider: #ddd8cf;
-    --button-bg: #1a1a1a;
-    --button-text: #faf9f6;
+    --fg: #1a1a1a;
+    --muted: #5a5a58;
+    --rule: #ddd8cf;
+    --btn-bg: #1a1a1a;
+    --btn-fg: #faf9f6;
+    --accent: #6b5e4a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #15151a;
-      --text: #ececec;
-      --muted: #a0a0a8;
-      --accent: #ececec;
-      --divider: #33333a;
-      --button-bg: #ececec;
-      --button-text: #15151a;
+      --bg: #15140f;
+      --fg: #ece8de;
+      --muted: #a39d8e;
+      --rule: #332f26;
+      --btn-bg: #ece8de;
+      --btn-fg: #15140f;
+      --accent: #c7b89a;
     }
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
+  html, body {
     margin: 0;
-    padding: 2.5rem 1.25rem 4rem;
+    padding: 0;
     background: var(--bg);
-    color: var(--text);
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    color: var(--fg);
+  }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Roboto, sans-serif;
     font-size: 18px;
     line-height: 1.7;
-  }
-  main {
     max-width: 42rem;
     margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
   }
-  header.top {
-    margin-bottom: 2.5rem;
-  }
-  header.top .date {
-    font-size: 1.1em;
-    font-weight: 600;
+  header { margin-bottom: 2.5rem; }
+  header .date {
+    font-size: 1.4rem;
+    font-weight: 700;
     margin: 0 0 0.25rem;
   }
-  header.top .readtime {
+  header .readtime {
     color: var(--muted);
+    font-size: 0.95rem;
     margin: 0;
-    font-size: 0.95em;
   }
   h2 {
-    font-size: 1.05em;
-    letter-spacing: 0.04em;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    color: var(--muted);
-    margin: 3rem 0 1.5rem;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin: 2.75rem 0 1.25rem;
   }
-  .item {
-    margin-bottom: 2.25rem;
+  article { margin-bottom: 2.25rem; }
+  article h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
   }
-  .item p {
+  article p {
     margin: 0 0 1rem;
   }
-  .item .headline {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 0.6rem;
-  }
-  .button {
+  .btn {
     display: block;
     width: 100%;
     text-align: center;
-    background: var(--button-bg);
-    color: var(--button-text);
+    background: var(--btn-bg);
+    color: var(--btn-fg) !important;
     text-decoration: none;
-    padding: 0.9rem 1rem;
+    padding: 0.85rem 1rem;
     border-radius: 0.5rem;
     font-weight: 600;
-    margin: 0.75rem 0 0.25rem;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
   }
-  .button:visited { color: var(--button-text); }
   hr {
     border: none;
-    border-top: 1px solid var(--divider);
+    border-top: 1px solid var(--rule);
     margin: 2.25rem 0;
   }
-  .qa {
-    margin-bottom: 1rem;
+  .runnotes, .dossier, .gate-note {
+    font-size: 0.97rem;
+    color: var(--muted);
+  }
+  .question-line {
+    margin: 0 0 1rem;
+  }
+  .gate-list {
+    margin: 0 0 1.25rem;
+  }
+  .gate-item {
+    margin: 0 0 0.6rem;
   }
   footer {
-    margin-top: 3.5rem;
-  }
-  .fineprint {
-    color: var(--muted);
-    font-size: 0.92em;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
   }
 </style>
 </head>
 <body>
-<main>
 
-<header class="top">
-  <p class="date">2026-10-30</p>
-  <p class="readtime">≈8 minute read</p>
+<header>
+  <p class="date">Morning Brief — October 31, 2026</p>
+  <p class="readtime">~7 min read</p>
 </header>
 
 <h2>Today</h2>
 
-<div class="item">
-  <span class="headline">Nothing's denied "12-market exit" rumor turns out to be a DRAM story, the same week Phone (4b) hits Japan retail</span>
-  <p>A foreign outlet reported in July that Nothing would exit a dozen-plus markets, Japan included; co-founder Akis Evangelidis denied it immediately. A Nikkei xTECH column published today reframes the scare as fallout from the broader DRAM/NAND price spike squeezing smaller Android makers generally, not a Nothing-specific retreat — landing the same week the Phone (4b) went on sale across three Japanese carriers (Rakuten Mobile, SoftBank and Y!mobile) at ¥59,808.</p>
-  <a class="button" href="https://xtech.nikkei.com/atcl/nxt/column/18/00745/102600278/">Source →</a>
-</div>
+<article>
+  <h3>DJI just opened Japan's first DJI｜Hasselblad flagship, in Tokyo's Omotesando district today — and the two outlets covering it can't agree on who runs it.</h3>
+  <p>The store (one floor of DJI hardware, one floor of Hasselblad gear, doubling as a showroom) opened this morning at La Porte Aoyama; DJI cites the street's foot traffic and an atmosphere that "matches a high-end brand like Hasselblad." But one outlet's headline calls this Japan's first DJI-directly-operated store, while a second says the opposite — "Authorized" in the name means an appointed dealer runs it, not DJI itself. Neither retracts the other. Which framing is right changes the signal: a capture-hardware brand investing directly in flagship retail, or a dealer investing in one for the brand pairing.</p>
+  <a class="btn" href="https://dc.watch.impress.co.jp/docs/news/2152464.html">Read the source →</a>
+</article>
+
+<article>
+  <h3>Rakuten Mobile is opening hands-on demo corners for a device it doesn't sell.</h3>
+  <p>From November 4, two carrier stores in Tokyo (Futako-Tamagawa, Shibuya) get try-before-you-buy corners for the ¥92,400 smart glasses "SABERA" — not a Rakuten-sold product — growing to five stores nationwide by December. A second, differently-shaped version of the same day's theme above: a major retail channel giving floor space to hardware it has no stake in selling.</p>
+  <a class="btn" href="https://k-tai.watch.impress.co.jp/docs/news/2152289.html">Read the source →</a>
+</article>
+
+<article>
+  <h3>GoPro's own SEC filing just explained exactly how its books broke.</h3>
+  <p>The restatement — already known to span four straight quarters of ineffective internal controls — traces to a warrant-valuation error: Black-Scholes models used too short an option term and a wrong illiquidity discount, overstating long-term debt by $8.1 million, plus a second miss on a convertible-debenture derivative. An independent trade outlet confirms the restated figure: $72.7 million as originally reported, $81.6 million restated.</p>
+  <a class="btn" href="https://www.sec.gov/Archives/edgar/data/0001500435/000150043526000064/gpro-20261009.htm">Read the source →</a>
+</article>
+
+<article>
+  <h3>HAY's co-founder is on record saying the point of a new lamp is that you can see how it was made.</h3>
+  <p>The "Posto" table lamp, designed by Claire Lavabre, is three raw aluminium parts held together by two screws and a bulb fitting, its shot-blasted surface deliberately left showing the casting process. Co-founder Rolf Hay's own words: "I really like that you feel the material, you feel the industrial production of the cast aluminium. It's got a lot of grit to it." A named premium brand's own co-founder stating plainly that visible evidence of manufacture is the sell.</p>
+  <a class="btn" href="https://www.core77.com/posts/145737/Claire-Lavabres-Industrial-Minimalist-Lamp-for-Hay">Read the source →</a>
+</article>
+
+<article>
+  <h3>Hitachi's newest cooktop is designed, in its own words, to disappear.</h3>
+  <p>The grill-less induction "MUTRAL" (launching early November) runs one minimal surface from top plate to controls; Hitachi's own Good Design Award submission states the goal plainly: suppress the appliance's own presence so it blends naturally into the kitchen. The second major Japanese maker to say this out loud this week.</p>
+  <a class="btn" href="https://www.axismag.jp/posts/2026/10/722613.html">Read the source →</a>
+</article>
 
 <hr>
 
-<div class="item">
-  <span class="headline">HAY debuts two chairs naming disassembly and repair as the explicit design premise, at DESIGNART TOKYO 2026</span>
-  <p>The Pack Chair (recycled-plastic seat on oak legs, designed by Jasper Morrison) and the Backflip Chair (a folding wood chair hiding its hinge in the backrest, designed by Guðmundur Ludvík) both launch today at DESIGNART TOKYO, selling same-day through HAY's own Tokyo, Osaka and online stores. HAY's own copy names disassembly, upgrade and repair as the design brief itself, not an afterthought. Backflip Chair runs ¥44,000 plus an ¥11,000 wall bracket; Pack Chair starts at ¥39,600.</p>
-  <a class="button" href="https://www.axismag.jp/posts/2026/10/723291.html">Source →</a>
-</div>
+<h2>Run notes</h2>
+<p class="runnotes">Five leads missed today's cut: two research papers on compact memory systems for wearable cameras (one answers spatial questions from first-person video without keeping the source footage; the other turns continuous video into an auditable event log under strict privacy limits); a cardboard-inspired wooden stacking box made by craftspeople in Fukui, Japan, sold through a single curated retailer; an update on Pine64 halting production of its Linux single-board computers and phones through at least mid-2027 over the memory-chip shortage; and an update on Framework's laptop refresh adding standalone, board-only upgrade pricing for existing owners. One item was dropped as a third resubmission of an already-debunked claim about a Raspberry Pi OS release.</p>
 
 <hr>
 
-<div class="item">
-  <span class="headline">EcoSmart Fire launches a ¥560,000 bioethanol fireplace co-designed with Fumie Shibata</span>
-  <p>EcoSmart Fire (Australia) launches "Halo," co-developed with industrial designer Fumie Shibata, known for long-running work at Muji and Olympus. The fireplace runs roughly 41×71cm, comes in three colors (Wasabi green, Snow white, Stainless Steel), and burns for about eight hours per 2.5-liter fill, priced at ¥560,000 before tax.</p>
-  <a class="button" href="https://www.axismag.jp/posts/2026/10/727522.html">Source →</a>
-</div>
+<h2>Yesterday's deep-dive</h2>
+<p class="dossier">A deep-dive into a widely-read Japanese tech column on Nothing and the memory-chip shortage found it holding less new ground than it looked, and found its own central claim — how bad the shortage really is — understated, not overstated. Major memory makers' own public filings push the supply recovery later than the column assumed. One hardware maker's own books show its memory cost rising from $3.60 to $13.30 per gigabyte in six months — a sharp move, though smaller buyers' actual markup over the broader market price index turns out to be a modest 11–14%, far below the roughly 2x the original piece implied. The "exodus" framing of the column itself rests on zero actually-announced market exits.</p>
 
 <hr>
 
-<div class="item">
-  <span class="headline">Whoop's $359-a-year fitness band goes dead the moment membership lapses</span>
-  <p>Whoop's top membership tier runs about $359 a year with no separate device charge; the hardware itself only collects raw signal, while every score and coaching feature runs on Whoop's own servers, and canceling the subscription turns the band into, in one reporter's words, "an inert rubber bracelet overnight." That sits at one end of a spectrum running from Apple Watch and Garmin (pay once for the device, owe nothing after) through Oura (a $349 ring plus roughly $69.99 a year) to Whoop, where the subscription is effectively the whole product.</p>
-  <a class="button" href="https://gcn.com/?p=22802">Source →</a>
-</div>
+<h2>Open questions</h2>
+
+<p class="question-line">Two questions are open, each answerable in one sentence:</p>
+<p class="question-line">— Whether retail stock availability deserves tracking as its own signal, separate from price, after a key supplier's shelf quietly emptied with no price move at all.</p>
+<p class="question-line">— Whether a recurring pattern in AI research papers that keeps challenging one of our architectural assumptions deserves a standing watch, rather than case-by-case review.</p>
+
+<a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
 <hr>
 
-<div class="item">
-  <span class="headline">Insta360 repositions its Go Ultra action camera as a Gemini-based AI pendant device, "Kira"</span>
-  <p>Insta360's Go Ultra — a roughly 4.5cm action camera worn via magnet or clip, always facing forward — now ships with "Kira," a built-in AI assistant based on Google's Gemini, activated by a shutter long-press or the wake phrase "Hey Kira." The reviewer's verdict was lukewarm on current execution but struck by the direction: it "genuinely feels like a glimpse of the future."</p>
-  <a class="button" href="https://dc.watch.impress.co.jp/docs/column/photo_ai/2149312.html">Source →</a>
-</div>
-
-<hr>
-
-<div class="item">
-  <p class="fineprint">Three more leads cleared verification but missed the cutoff: an arXiv preprint (EgoXperience) doing joint single-pass reconstruction of camera pose, hands, objects and depth from ordinary first-person video; a French design student's 12-terabyte personal-server enclosure, machined from a single block of aluminium with fins that physically slide outward as it fills up (profiled by Core77); and Singapore's 20th-anniversary President*s Design Award exhibition, which puts designers' sketches and prototypes on public display and invites award recipients to donate their process archives to the National Library Board — running through November 1. Two leads died as repeat duplicates of month-old material already covered: an arXiv paper on local-only search, and a pendant-lamp design story.</p>
-</div>
-
-<h2>This week</h2>
-
-<div class="item">
-  <p>Three independent measurements converged this week on the same finding for always-on capture devices: the energy cost is almost entirely in physically waking the camera sensor, not in running whatever model processes the image afterward — OpenGlass's own open-source power logs, a Raspberry Pi 5 benchmark, and one of Meta's own power models for its Aria smart glasses all point the same way, and the chip maker behind OpenGlass's own coordinator chip has since gone bankrupt. Separately, GoPro's own securities filing showed that a parts-allocation cut — not a price increase — is what actually stranded $39.6 million of inventory it couldn't cancel, a reminder that on a tight hardware supply chain, getting cut off from parts is the live risk, not paying more for them; the same week, Raspberry Pi's own documentation disclosed a running board revision that quietly swapped an onboard Ethernet chip. And a widely-discussed "any file can fake a valid signature" finding against the C2PA content-provenance standard turned out to have already been patched in the reference library before the researcher who found it even published — though a modified version of the same trick still works today.</p>
-</div>
-
-<h2>Yesterday's deep dive</h2>
-
-<div class="item">
-  <p>An earlier deep-dive into that provenance-forgery claim found the original headline wrong in an interesting way: "no fix has shipped" wasn't true — a real fix had shipped eleven days before the researcher's own post, and the standard verification tool now rejects his exact proof-of-concept unmodified. But the underlying attack class survives in modified form: a tiled version of the same trick still produces a technically "valid" signature covering zero actual file content, because the fix checks where a signed section sits rather than how much of the file it actually covers. The publicly hosted verification tool the researcher pointed readers toward is itself frozen on an old, unpatched version of the library, which is why his claim read true to anyone checking it in the field. The finding splits an underlying design choice cleanly: keeping a signature in a file separate from the photo itself comes out vindicated as solid; signing a hash that covers the whole file is the half still exposed to this class of attack.</p>
-</div>
-
-<h2>Needs your answer</h2>
-
-<div class="qa">
-  <p>Two open questions are waiting. One: whether a part going out of stock should count as its own warning sign, tracked separately from a price change — raised after a retail shelf hadn't repriced in months while the parts it depended on had quietly sold out. Two: whether a recurring class of research proposing to rank or prioritize someone's own recorded content — a design choice deliberately avoided here — deserves standing attention of its own, now that a fourth instance has appeared in about two months.</p>
-</div>
-
-<a class="button" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+<h2>Pending decisions</h2>
+<p class="gate-note">Seven research memos are sitting in front of an internal decision this week, each already reviewed and stress-tested by a devil's-advocate pass. Between them they cover: how to track ambient-capture wearables by who controls your data rather than by price; software and hardware dependencies whose key property is actually held by someone else; the legal form of a product demo at a trade-show booth; what really drains the battery on an always-listening capture device; supply allocation risk versus price risk on committed hardware; who truly holds proof of authenticity versus who merely grants it; and a closer look at custody chains across three competing camera brands.</p>
+<p class="gate-note">Separately, four research questions are already queued for follow-up investigation, within the usual limit. The newest asks who legally owns a contested smartphone-brand trademark, following a reported majority stake sale to another company.</p>
 
 <footer>
-  <a class="button" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
+  <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
 </footer>
 
-</main>
 </body>
 </html>
