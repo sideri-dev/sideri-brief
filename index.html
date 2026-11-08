@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morning Brief — 2026-11-07</title>
+<title>Morning Brief — 2026-11-08</title>
 <style>
   :root {
     --bg: #faf9f6;
@@ -103,61 +103,55 @@
 <body>
 
 <header>
-  <p class="date">Morning Brief — November 7, 2026</p>
+  <p class="date">Morning Brief — November 8, 2026</p>
   <p class="readtime">~6 min read</p>
 </header>
 
 <h2>Today</h2>
 
 <article>
-  <h3>Milwaukee just put a real price on capturing a building before it's torn down — and it's cheap.</h3>
-  <p>Milwaukee's mayor signed an ordinance making it the first US city to require laser scanning before a historic building can be demolished. The city's own figures: around $800 for a small building and a few thousand dollars for a large one, with one scan — a historic office building — taking just 25 minutes. Neither the city nor local reporting says who actually pays. It's the first concrete price found anywhere for exactly the kind of capture-before-loss work this research is trying to understand the economics of.</p>
-  <a class="btn" href="https://www.milwaukeemag.com/preserving-milwaukee-history-one-laser-scan-at-a-time/">Read the source →</a>
+  <h3>Pinterest just put ad auctions inside visual search itself, run entirely on "taste and intent" — the opposite of the no-ranking approach we're building toward.</h3>
+  <p>Pinterest's new Visual Search Ads put advertisers directly into search results and pin closeups, powered by what the company calls "Pinterest Intelligence — our AI-enabled visual understanding of images, products, taste and intent," across more than 80 billion searches a month, most of them visual. The business is working: Q3 2026 revenue hit $1.174 billion, up 12% year over year, on a record 661 million monthly active users. We're building a visual-search system that works the other way around — matching images purely by measured visual similarity, never by popularity, taste, or inferred intent — and Pinterest's numbers are the clearest real-world test yet of what that trade-off costs against a fully monetized, ranked alternative.</p>
+  <a class="btn" href="https://newsroom.pinterest.com/news/new-pinterest-visual-search-performance-ads/">Read the source →</a>
 </article>
 
 <article>
-  <h3>Japan added Osaka Castle's keep and a three-times-relocated Meiji guesthouse to its national cultural-property list.</h3>
-  <p>Japan's Cultural Affairs Agency designated eight buildings as newly Important Cultural Properties and upgraded one more — including Osaka Castle's 1931 reconstructed keep, funded by citizen donations, and 蔵春閣, a Meiji-era guesthouse that has physically moved three times and now sits in Niigata prefecture, independently confirmed by the prefecture's own page. Japan's national count of Important Cultural Properties is now 2,619, across 5,624 buildings. Routine government business, but exactly the volume and kind of provenance record this research is tracking.</p>
-  <a class="btn" href="https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94449801.html">Read the source →</a>
+  <h3>The British Library signed a £2.4 million, six-year contract with Preservica to rebuild what its 2023 cyber-attack destroyed.</h3>
+  <p>UK government procurement records confirm the deal directly: £2,398,500 excluding VAT, running from early 2026 to early 2032 with a possible extension to 2037, to "re-enable essential strategic collecting capabilities that suffered deep and extensive disruption after a cyber-attack on the Library in 2023." It's a clean, publicly disclosed institutional budget for exactly the kind of digital-preservation capability we track — a subscription-software sale, worth sitting next to any one-time-hardware approach to the same problem.</p>
+  <a class="btn" href="https://www.find-tender.service.gov.uk/Notice/085746-2025">Read the source →</a>
 </article>
 
 <article>
-  <h3>A new paper finds duplicate objects in a real heritage archive from one reference photo per object and nothing else.</h3>
-  <p>The arXiv preprint spots duplicate artefacts in an actual cultural-heritage repository using a single anchor image per object and no labeled negative examples, reaching an F1 score of 90.79. One unreproduced preprint, not an established result — but the closest academic proof yet that connecting images by visual similarity alone, with no labels or tags, works on a real archive rather than a clean lab benchmark.</p>
-  <a class="btn" href="https://arxiv.org/abs/2604.04071">Read the source →</a>
+  <h3>Japan's Cultural Affairs Agency is paying up to ¥15 million to document and curate the archive of architect Takahashi Teiichi for a 2027 exhibition.</h3>
+  <p>The agency's own national archive of modern architecture is tendering out the exhibition planning and preparation work for Takahashi Teiichi and his firm Dai-ichi Kobo, covering drawings, photographs and footage already in its custody, with the budget cap and scope confirmed directly from the tender document. It's a government archive publicly paying, at a disclosed price, to turn a creator's working papers into a public record — exactly the kind of service we're trying to understand the economics of.</p>
+  <a class="btn" href="https://www.bunka.go.jp/shinsei_boshu/kobo/94460202.html">Read the source →</a>
 </article>
 
 <article>
-  <h3>Google quietly built image-based search over 65,000+ pathology slides that never looks at a diagnosis.</h3>
-  <p>Google Research's own write-up describes nearest-neighbour search across more than 65,000 whole-slide pathology images, each reduced to a single 384-number embedding, with no diagnostic label used anywhere in the similarity calculation. The full archive — roughly 33 million embeddings — searches in about 30 seconds. Vendor-authored and single-source, but a real production system at real scale, with concrete numbers for how fast and how compact a no-label image-search system can run.</p>
-  <a class="btn" href="https://developers.google.com/health-ai-developer-foundations/blogs/idc-image-search">Read the source →</a>
+  <h3>A new paper shows two vision models can score identically on standard tests and still behave completely differently once you actually search with them.</h3>
+  <p>The paper finds that some self-supervised encoders produce embeddings that are badly shaped for approximate-nearest-neighbor search — "degrade the performance of partition-based and hashing-based search" — even when their accuracy on usual benchmarks looks fine; what decides search performance is the geometry of the embedding space, not the headline accuracy number. That's a real design trap for any on-device, label-free similarity search system: picking an encoder by the usual leaderboard could quietly produce an index that searches badly, despite scoring well on a test set.</p>
+  <a class="btn" href="https://arxiv.org/abs/2604.24469">Read the source →</a>
 </article>
 
 <article>
-  <h3>The Rijksmuseum confirms its no-label image search is live across its entire 800,000-artwork collection, not just a pilot.</h3>
-  <p>The museum's own press release says the visual-search feature launched in December, letting visitors browse "by similarity in shape, colour, style and object type with just a click" across the whole collection. An earlier technical post from the museum's build partner described an 18,000-piece prototype built on the DINOv2 model that informed this launch — the production system isn't explicitly confirmed to be identical. Still, a major museum now runs no-label visual-similarity search live at full collection scale, not as a demo.</p>
-  <a class="btn" href="https://www.rijksmuseum.nl/en/press/press-releases/the-rijksmuseum-in-2025">Read the source →</a>
+  <h3>Japan's Cultural Affairs Agency is studying what to do with the one surviving building of the old Osaka Army Arsenal — a building that probably isn't even formally protected.</h3>
+  <p>Everything else at the site was destroyed in the final day of WWII bombing or demolished afterward; this one chemical-analysis building survived, passed through government and university use, and held a Self-Defense Force office until 1994. The new tender is for a feasibility study, not a protection order, and the building appears to carry no formal heritage designation at all — a real piece of heritage sitting in a pre-decision gap where nothing requires a record to be made before its fate is decided.</p>
+  <a class="btn" href="https://www.bunka.go.jp/shinsei_boshu/kobo/94461401.html">Read the source →</a>
 </article>
 
 <hr>
 
 <h2>Yesterday's deep-dive</h2>
-<p class="dossier">A closer look this week asked where Japan's demolition risk for architecturally significant buildings actually sits. On the one registry tracking both status and fate, 40 of 312 nationally selected modern buildings are gone — 39 of those 40 carried no legal protection at all, and none of the 19 buildings with the country's highest protected status has been lost. Nobody holds the drawings by enforceable duty: an architect's office keeps them only 15 years from the date each sheet was drawn, a builder's as-built copy lasts 10 years from handover, and the one municipal register outliving both is erased by law the moment the building itself is demolished. No statute anywhere requires a record before loss, and the only budget line found with that purpose is paid, case by case, by the owner at the moment of demolition. The gap is one of remit, not money: a building's image is demanded everywhere as proof of a transaction, never as a record of the thing itself.</p>
+<p class="dossier">A closer look this week tested a Milwaukee ordinance requiring laser scanning before a historic building's demolition, against the primary legal record — and most of the public story doesn't hold up. The enacted law never says "laser" or "scan" and defers every technical standard to commission guidelines that, seven months on, don't exist anywhere in the public record, so the permit condition it's supposed to enforce can't currently be applied as written. The widely quoted $800 price and "who pays" answer trace to one person — a sitting preservation commissioner who also operates the scanner and chairs the committee writing the missing standards — not to any city document. The US National Park Service's own documentation standards explicitly state that a scan "does not meet the Secretary of the Interior's Standards" and "is not considered formal documentation," directly contradicting the ordinance's claim that a scan counts as "a permanent digital twin or equivalent archival digital representation." It was also built to apply to fewer than one building a year, and nothing has triggered it yet.</p>
 
 <hr>
 
 <h2>Open questions</h2>
 
-<p class="question-line">Two questions are open, each answerable in one sentence:</p>
-<p class="question-line">— Whether a recurring pattern of academic papers that keep challenging one architectural assumption about ranking and personalization in image search deserves a standing watch, rather than case-by-case review.</p>
-<p class="question-line">— Whether a recurring style of Japanese materials-company commissioned design exhibition deserves its own place among the brand and venue types tracked for comparison.</p>
+<p class="question-line">One question is open, answerable in one sentence:</p>
+<p class="question-line">— Whether to start tracking Japanese materials-company commissioned design exhibitions (companies like Toray) as their own category for comparison, alongside the creator-tool, archive-software and museum-practice comparisons already tracked.</p>
 
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
-
-<hr>
-
-<h2>Gate</h2>
-<p class="gate-note">Nine research write-ups from this project are currently awaiting an internal review decision before any of them is folded into the permanent knowledge base. Detail on each is in the full version below.</p>
 
 <footer>
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
