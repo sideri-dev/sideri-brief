@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morning Brief — 2026-11-14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Brief — 2026-11-15</title>
 <style>
   :root {
     --bg: #faf9f6;
     --fg: #1a1a1a;
-    --muted: #5a5a58;
-    --rule: #ddd8cf;
-    --btn-bg: #1a1a1a;
-    --btn-fg: #faf9f6;
-    --accent: #6b5e4a;
+    --muted: #5a5a5a;
+    --accent: #0a5c36;
+    --card: #ffffff;
+    --border: #e3e0d8;
+    --button-fg: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #15140f;
-      --fg: #ece8de;
-      --muted: #a39d8e;
-      --rule: #332f26;
-      --btn-bg: #ece8de;
-      --btn-fg: #15140f;
-      --accent: #c7b89a;
+      --bg: #15171a;
+      --fg: #eceae4;
+      --muted: #a3a3a3;
+      --accent: #5bd99b;
+      --card: #1d2023;
+      --border: #30343a;
+      --button-fg: #0f1110;
     }
   }
   * { box-sizing: border-box; }
@@ -33,134 +33,151 @@
     color: var(--fg);
   }
   body {
-    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Roboto, sans-serif;
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     max-width: 42rem;
     margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
+    padding: 2.5rem 1.25rem 4rem;
   }
-  header { margin-bottom: 2.5rem; }
+  header {
+    margin-bottom: 2.5rem;
+  }
   header .date {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--fg);
   }
   header .readtime {
     color: var(--muted);
     font-size: 0.95rem;
-    margin: 0;
+    margin-top: 0.25rem;
   }
-  h2 {
-    font-size: 1.1rem;
+  h2.section-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--accent);
-    margin: 2.75rem 0 1.25rem;
+    color: var(--muted);
+    margin: 3rem 0 1.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.75rem;
   }
-  article { margin-bottom: 2.25rem; }
-  article h3 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    line-height: 1.4;
+  h2.section-title:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .item {
+    margin-bottom: 2.25rem;
+  }
+  .item h3 {
+    font-size: 1.08rem;
+    line-height: 1.5;
     margin: 0 0 0.75rem;
   }
-  article p {
-    margin: 0 0 1rem;
+  .item p {
+    margin: 0.75rem 0;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.25rem 0;
   }
   .btn {
     display: block;
     width: 100%;
     text-align: center;
-    background: var(--btn-bg);
-    color: var(--btn-fg) !important;
+    background: var(--accent);
+    color: var(--button-fg);
     text-decoration: none;
-    padding: 0.85rem 1rem;
-    border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 0.95rem;
-    margin-top: 0.5rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+    font-size: 0.98rem;
   }
-  hr {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 2.25rem 0;
+  .btn:active {
+    opacity: 0.85;
   }
-  .runnotes, .dossier, .gate-note {
-    font-size: 0.97rem;
+  .question {
+    margin: 0 0 1.1rem;
+    padding-left: 0.1rem;
+  }
+  .question .count {
     color: var(--muted);
-  }
-  .question-line {
-    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
   }
   footer {
     margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+  }
+  .summary-block p {
+    margin: 0.9rem 0;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <p class="date">Morning Brief — November 14, 2026</p>
-  <p class="readtime">~6 min read</p>
+  <div class="date">15 November 2026</div>
+  <div class="readtime">About 6 minutes</div>
 </header>
 
-<h2>Today</h2>
+<h2 class="section-title">Today</h2>
 
-<article>
-  <h3>Japan's cultural agency just put a budget figure, in writing, behind archiving the process rather than the finished work.</h3>
-  <p>The Agency for Cultural Affairs' FY2027 budget request earmarks ¥1.042 billion for a national network collecting and preserving materials generated while manga, anime, tokusatsu and games are made — drawings, storyboards, the stuff a creator throws away — not just the finished release, toward a planned "national media arts center." Its own primary budget document calls those in-between materials "an important treasure of our country... at risk of being scattered or deteriorating." The most direct, dated evidence yet of a government funding exactly this kind of in-between-state archiving.</p>
-  <a class="btn" href="https://bijutsutecho.com/magazine/news/headline/32983">Read the source →</a>
-</article>
+<div class="item">
+  <h3>A national heritage body just put a price on custody-as-a-subscription — £1.16 million, and it's software, not hardware.</h3>
+  <p>Historic England has tendered a full SaaS digital preservation system, compliant with the OAIS reference model (ISO 14721), to look after its existing digital archive — £1,160,000, confirmed against the UK government's own structured tender data after the notice's web page blocked automated access. There's a small, genuine data error inside the record itself: a lot-level value field carries the identical number tagged to the wrong currency, a slip inside the agency's own system rather than anything introduced in reporting it. The figure matters less on its own than as a frame — it's a clean contrast between the subscription-custody model public institutions are funding for their archives and a one-time-owned-record approach to the same problem.</p>
+  <a class="btn" href="https://www.find-tender.service.gov.uk/procurement/ocds-h6vhtk-06d47e">Read the source →</a>
+</div>
 
-<article>
-  <h3>The Getty Foundation just handed out its third round of archive-digitisation grants, naming the going rate.</h3>
-  <p>Eight institutions split $1.8 million to process, digitise and open up their archives, bringing Getty's total under this initiative to $4.5 million across 20 awards since 2022 — from a historic Black-owned newspaper archive with 3 million photographs to a university home-movie collection. The per-institution average, roughly $225,000, is a real, recurring number for who actually pays to keep this kind of material usable.</p>
-  <a class="btn" href="https://www.theartnewspaper.com/2026/05/13/gettys-black-visual-arts-archives-receives-additional-19m-in-funding">Read the source →</a>
-</article>
+<hr class="divider">
 
-<article>
-  <h3>An open-source toolkit claims the best memory-for-speed trade-off yet for searching huge collections of images by similarity.</h3>
-  <p>Two new Rust libraries — Vectorium for storing and compressing each image's numerical fingerprint, kANNolo for searching them fast — report the best memory/throughput balance on 9 of 12 tested combinations, matching or beating established tools like Faiss. A direct hit on the resource constraint any on-device, no-label image search has to live inside — though the code's own licence field on GitHub is blank, so it isn't usable commercially until that's resolved.</p>
-  <a class="btn" href="https://arxiv.org/abs/2611.03927">Read the source →</a>
-</article>
+<div class="item">
+  <h3>A label-free retrieval system just organised 770,000 unlabeled engineering drawings and beat a vision-language model doing it.</h3>
+  <p>A new research paper describes "BLUEPRINT," a multimodal retrieval system deployed across roughly 770,000 unlabeled engineering drawings and technical records sitting in legacy archives with missing or inconsistent metadata. It automatically produces structured metadata good enough for cross-facility search, posting a 10.1-point absolute gain in one retrieval benchmark and an 18.9% relative gain in another over the strongest vision-language baseline it was tested against. It's one of the more direct precedents yet for organising architectural and engineering drawings without anyone hand-tagging them first — relevant to anyone trying to preserve drawings of culturally important buildings before they're demolished.</p>
+  <a class="btn" href="https://arxiv.org/abs/2602.13345">Read the source →</a>
+</div>
 
-<article>
-  <h3>Researchers spent seven nights laser-scanning and photographing a cathedral in Malta, end to end.</h3>
-  <p>99,000 images from DSLRs, a drone and LIDAR, shot at night to avoid crowds, built into a 25–30 billion-triangle reconstruction that had to cope with reflective metal, dark materials and restricted access — a real-world ceiling for what capturing an entire heritage building costs in time and volume, useful scale against any lighter-weight capture approach.</p>
-  <a class="btn" href="https://arxiv.org/abs/2604.24316">Read the source →</a>
-</article>
+<hr class="divider">
 
-<article>
-  <h3>SoftBank just showed how cheaply a handheld scanner and a drone can assess earthquake damage from a distance.</h3>
-  <p>Working with a small town in Wakayama under a national smart-city program, SoftBank built 3D digital twins of damaged buildings from a handheld 3D scanner and an autonomous drone, then had engineers judge structural risk remotely — catching cracks as fine as 2mm and tilts of about one degree. Government-funded, run three times, and a genuine cost/hardware comparison point for anything built on cheaper, camera-based capture.</p>
-  <a class="btn" href="https://xtech.nikkei.com/atcl/nxt/news/24/03466/">Read the source →</a>
-</article>
+<div class="item">
+  <h3>A retrieval encoder with under 4 million parameters just beat retrievers eight to sixteen times its size.</h3>
+  <p>"RS-JEPA," a self-supervised image-retrieval system built for matching scenes across different sensor types with no manual labels, posted the best accuracy among twelve competing methods it was benchmarked against — using a network of only 3.88 million parameters, versus prior comparable retrievers running 118 to 398 million. The application here is satellite and remote-sensing imagery rather than everyday photography, but the core result — that a compact, label-free similarity encoder can match or beat much larger ones — matters for how small an on-device image-search model can plausibly get.</p>
+  <a class="btn" href="https://arxiv.org/abs/2611.14496">Read the source →</a>
+</div>
 
-<hr>
+<hr class="divider">
 
-<h2>Yesterday, revisited</h2>
+<div class="item">
+  <h3>A Scottish digitisation-standard pilot flagged two days ago actually went to Oxford's tech-transfer arm, not a heritage vendor, for £265,275.</h3>
+  <p>An earlier brief logged Historic Environment Scotland's open tender to define a scalable digitisation standard for smaller cultural institutions, valued at £225,000. The actual award, found on a separate government contract notice, went to Oxford University Innovation Limited at £265,275, signed in May 2026. It's a small but telling detail — the money went to a university technology-transfer operation rather than one of the established heritage-sector vendors that keep appearing elsewhere in this kind of procurement.</p>
+  <a class="btn" href="https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/050619-2026">Read the source →</a>
+</div>
 
-<article>
-  <p>An earlier deep-dive re-tested a widely-shared preprint claiming a frozen vision transformer can separate objects in a photo with no labels at all, and the claim turns out narrower than first reported. The method still needs ground-truth labels to pick which attention head and clustering setting to use — only the moment-to-moment grouping itself is label-free. Scored on the full standard benchmark rather than a filtered subset, the headline score drops from .615 to .410, level with a 2023 model and behind a 2024 one on every other metric. It's an unreviewed single-lab submission with no published code, and nothing shipped anywhere — including the one real museum deployment found in production — yet separates objects within a photo without either a labelled-box detector or a scale too small to reach a full collection.</p>
-</article>
+<hr class="divider">
 
-<hr>
+<div class="item">
+  <h3>Singapore's planning minister just announced a review that could loosen paperwork on 7,200+ conserved buildings — but only one outlet has it so far.</h3>
+  <p>At Singapore's 10 November Architectural Heritage Awards, Minister for National Development Chee Hong Tat described a two-part review aimed at making conservation rules "more practical and less onerous" — studying exemptions from applications for low-impact works, and common code-compliant solutions for conserved shophouses and bungalows, across a stock of more than 7,200 conserved buildings and structures nationwide. No exemption list, start date or formal consultation exists yet, and the Urban Redevelopment Authority's own press release on the same ceremony, checked directly, doesn't mention the review at all — so this is one outlet's reporting, not yet an official confirmation. If it proceeds, it would ease the documentation burden private owners face before altering a heritage building.</p>
+  <a class="btn" href="https://littlebigreddot.com/ura-review-conserved-building-upkeep-rules-november-2026/">Read the source →</a>
+</div>
 
-<h2>Open questions</h2>
+<h2 class="section-title">Yesterday's deep-dive</h2>
 
-<p class="question-line">Two questions are open, each answerable in one sentence:</p>
-<p class="question-line">— Whether to start tracking Japanese materials companies' commissioned design exhibitions as their own comparison category, alongside the practices already watched.</p>
-<p class="question-line">— Whether to extend a label-free image-search approach to finding several distinct objects within one photograph, rather than matching whole photographs only.</p>
+<div class="summary-block">
+  <p>A closer look at Japan's cultural agency's FY2027 budget request found the headline ¥1,042 million figure is mostly money already committed elsewhere: 92% is commissioned-work funding, including a four-year repeat network contract and a process-material preservation contract whose price rose sharply once a national museum authority took it over from a private firm. A separate archive-grant pot has been requested flat for the fourth year running, and the apparent growth in the overall figure is substantially relabelling inside a newly created, still-undecided budget category rather than new money. None of it funds capture equipment directly — the grant's own rules and budget template book storage media and work computers as costs the applicant must cover itself, and the government's own data-schema requirements for the archive are thin, calling for little more than an identifier and two fixed fields. Every open-tender contract reviewed across four years of records drew exactly one applicant.</p>
+</div>
 
+<h2 class="section-title">Needs your answer</h2>
+
+<div class="question">
+  <div class="count">2 open questions</div>
+  <p>One asks whether a label-free image-search approach should learn to find individual objects within a single photograph — several works laid out on a desk, each one findable on its own — rather than only matching whole photographs against each other.</p>
+  <p>The other asks whether to keep following Japan's state-funded preservation programme for manga and anime production materials as the closest funded precedent for creative-process archiving, or to broaden attention to how the same legal provision could apply to fine art and photography as well.</p>
+</div>
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
-
-<hr>
-
-<h2>Gate</h2>
-<p class="gate-note">Ten research write-ups from this project are currently awaiting an internal review decision before any of them is folded into the permanent knowledge base. Detail on each is in the full version below.</p>
 
 <footer>
   <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
