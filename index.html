@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research Brief — 2026-11-19</title>
+<title>Research Brief — 2026-11-20</title>
 <style>
   :root {
     --bg: #fdfdfb;
@@ -68,54 +68,63 @@
 </head>
 <body>
 
-<p class="meta">2026-11-19 · ~6 minute read</p>
+<p class="meta">2026-11-20 · ~7 minute read</p>
 
 <h2>Today</h2>
 
-<p class="headline"><strong>1. A new paper shows how to keep an image-search index working when the user types a sentence instead of showing a picture.</strong></p>
-<p>FactEmbed separates a multimodal model's reasoning from the embedding it actually searches with, using a set of factorized latents that simulate the visual change a modification phrase describes, then beats prior methods across composed-image-retrieval benchmarks. It's a working architecture for exactly the text-plus-image hybrid that any image-search platform choosing between "search by picture" and "search by description" eventually has to decide between.</p>
-<a class="btn" href="https://arxiv.org/abs/2611.05193">Read the source →</a>
+<p class="headline"><strong>1. Japan's Cultural Affairs Agency just recommended 121 more buildings for the national Registered Tangible Cultural Property list — one of them was already partly demolished the year before its own registration.</strong></p>
+<p>The recommendation brings the national total to 15,160 registered buildings. One case, a 1968 house in Setagaya, Tokyo, underwent a partial demolition in 2025 — a single year before this registration — and carries a documented design lineage (architect Hiroyasu Higuchi, working in Takamasa Yoshizaka's studio). Formal heritage protection locks in a building's state, but this is a live case of it arriving only after a round of physical change had already happened — exactly the gap that makes passive, continuous documentation valuable rather than documentation that only starts once paperwork catches up.</p>
+<a class="btn" href="https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94467801.html">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>2. A label-free image search tool already running in production just published hard cost numbers.</strong></p>
-<p>Digital Collections Explorer — an open-source, metadata-agnostic "find more like this" tool built on OpenAI's CLIP model — has cleared peer review with real figures attached: a 562,842-image Library of Congress map collection, a 129,386-photo collection processed in an hour and a half on a single MacBook Pro, and a named cloud deployment cost of eight cents an hour. A usable cost and throughput anchor for what running something like this on a consumer device's own index would actually take.</p>
-<a class="btn" href="https://www.cambridge.org/core/product/D43D8DEC5B011B6E65F787323C3FFBF5/core-reader">Read the source →</a>
+<p class="headline"><strong>2. Pinterest's CEO put hard numbers on the exact mechanic behind "search by image": most of its 80 billion monthly searches are visual, and about 70% of search sessions start before the user types anything.</strong></p>
+<p>On the company's Q3 earnings call, CEO Bill Ready said the "vast majority" of Pinterest's searches are visual and "more than half" are commercial intent, and that roughly 70% of search journeys begin with a proactive AI recommendation rather than a typed query. The headline scale figures were already public; what's new here is the visual/text split and the pre-query mechanic, confirmed directly off the call transcript — a concrete demonstration, from a company that runs this at huge scale, of taste-driven visual surfacing that starts before any search box is touched.</p>
+<a class="btn" href="https://s204.q4cdn.com/369458543/files/doc_earnings/2026/q3/transcript/Q3-2026-Transcript.pdf">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>3. A researcher trained a working segmentation model on just 19 hand-labeled architectural drawings.</strong></p>
-<p>Working from Rome's own archive of architectural drawings, a single researcher built a U-Net pipeline with a ResNet-34 backbone that generalises acceptably to drawings it never saw, starting from only 19 manually annotated examples. Real precedent for pulling usable structure out of a historical drawing collection too small to annotate by hand at scale — directly relevant to anyone trying to preserve architectural records for heritage buildings.</p>
-<a class="btn" href="https://isprs-archives.copernicus.org/articles/XLVIII-2-W12-2026/487/2026/">Read the source →</a>
+<p class="headline"><strong>3. A four-author study finds 3D Gaussian Splatting beats photogrammetry on rendering quality for heritage sites, but loses geometric accuracy — worst exactly at small scale.</strong></p>
+<p>The paper, published in the ISPRS Archives, is blunt about the trade-off: Gaussian Splatting "significantly outperforms" traditional photogrammetry on how the result looks, but its geometric accuracy is "generally slightly lower," a gap "particularly pronounced" in small-scale or low-resolution datasets. For documenting a structure's actual geometry before it's altered or lost — rather than just making a pretty render of it — that is the regime that matters most, and the newer, cheaper method isn't there yet.</p>
+<a class="btn" href="https://isprs-archives.copernicus.org/articles/XLIX-B2-2026/451/2026/">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>4. An archaeological survey alone just pushed a major Tokyo rail project back seven years.</strong></p>
-<p>Keikyu's grade-separation project through Shinagawa Station has slipped from a 2029 to a 2036 completion. The dominant reason named is how long the mandated archaeological survey of the Takanawa Embankment — the site of Japan's first railway, a nationally designated historic site — took to finish, compounded by other major projects (a Tokyo Metro line extension, the Chuo Shinkansen maglev) converging on the same ground. A real, dated figure for what thorough on-site documentation of a heritage site demands before redevelopment can proceed.</p>
-<a class="btn" href="https://xtech.nikkei.com/atcl/nxt/mag/ncr/18/00005/111101061/">Read the source →</a>
+<p class="headline"><strong>4. Harvard Library's Institutional Books project open-sourced a full pipeline for finding, classifying, deduplicating and captioning 22.6 million images pulled from nearly a million scanned books.</strong></p>
+<p>It's a real precedent, at real scale, from a named institution, for a problem that sits underneath any large collection of unlabeled images: telling a true near-duplicate apart from a genuinely distinct image. A usable technical anchor rather than a lab demo.</p>
+<a class="btn" href="https://arxiv.org/abs/2608.18957">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>5. A Kumamoto earthquake report has an academic naming, almost word for word, why undesignated heritage buildings keep disappearing.</strong></p>
-<p>Hokkaido University's Shigeyasu Ikegami says undesignated buildings "quickly disappear" in Japan whenever disaster strikes, despite carrying real cultural value — illustrated in the same report by a one-of-a-kind 1864 military record that nearly vanished at an undesignated temple, found only because surveyors happened to look before it was gone. A disaster, not just redevelopment, can be the trigger that erases a building nobody got around to formally designating.</p>
-<a class="btn" href="https://www.kab.co.jp/news/article/16872493">Read the source →</a>
+<p class="headline"><strong>5. A benchmark found a frozen, off-the-shelf SigLIP 2 vision-language encoder beating a fine-tuned self-supervised DINO encoder by roughly 30 points on one-shot image retrieval.</strong></p>
+<p>The test domain is narrow (wine-bottle labels), but the task is close to the general problem of label-free visual search: give the system one reference image, find matches later, with no labels anywhere. Frozen SigLIP 2 hit 94.7% top-1 accuracy against DINO's low-60s even with heavy data augmentation, and fine-tuning on a fixed compute budget actually made things worse. A concrete data point for which family of image encoder a label-free system should be built on.</p>
+<a class="btn" href="https://arxiv.org/abs/2609.33359">Read the source →</a>
 
 <hr>
 
 <h2>Yesterday's deep dive</h2>
 
-<p>Dug into StreamEmbed, a new paper for indexing a growing stream of screenshots in real time with no labels, and found the headline claim doesn't transfer as cleanly as it reads: every query in the paper is a written sentence, not an image, so it isn't actually an instance of image-to-image search, and its speed advantage comes from screen content barely changing between frames — a redundancy the authors themselves measured as nearly absent in ordinary camera footage (5.7% on kitchen footage versus 63–77% on screen recordings). Three things do carry over regardless: a stateless pruning step is separable from a lossy cross-frame cache that needs training; the shipped tool gates out near-duplicate frames before any pruning happens, work a change-detection layer already does elsewhere; and a 64-byte binary code searched real indexes of 55,900–63,500 vectors in 15.5ms on a laptop CPU, a smaller and more specific result than the paper's own table implies. Nobody has yet published the one number that actually decides whether any of this saves anything for a camera pointed at a mostly still scene.</p>
+<p>Dug into what Japan's state-funded preservation programme for manga and anime source materials — original art, cels, backgrounds, the works made and then normally discarded on the way to a finished book or show — has actually written down about how that material should be captured and archived. Four independent lines of evidence point the same way: there isn't a settled specification. The programme's own FY2024 and FY2025 final reports were never published, the database built for manga original art has no field for any capture parameter at all, the national guideline sets no numeric resolution floor, and the one published manual for the sector explicitly declines to prescribe a uniform method. What can be pieced together from practitioners shows capture resolution hasn't moved since 2019, nobody states bit depth or colour space, and a colour reference chart comes up only twice across one roundtable discussion — in a sector where neighbouring archival fields (national library and literature-archive digitisation) do name colour standards explicitly. Against that backdrop, a fixed 12-megapixel capture head samples a full sheet of paper at roughly 256 pixels per inch — above the "a smartphone will do" tier some guidance allows, below the professional print tier — with no compliance case either for or against it, because nothing in the programme mandates any specification at all.</p>
 
 <hr>
 
-<h2>Open questions</h2>
+<h2>Needs your answer</h2>
 
-<p>Three open questions right now, all about research direction, plus a fourth awaiting a response:</p>
-<p class="q">— whether an image-similarity system should separate multiple objects inside one photograph, or treat each whole photograph as the unit of comparison.</p>
-<p class="q">— whether to keep following Japan's state-funded manga and anime archiving programme as the nearest comparison for process-material preservation, or focus only on artists, designers and architectural drawings.</p>
-<p class="q">— whether rights and permissions — who may publish a captured record — should become a standing research thread alongside capture, preservation and buyers, or be treated as settled background.</p>
-<p class="q">— (a fourth, newly opened: whether disaster-driven loss of undesignated heritage buildings should become a standing research angle alongside redevelopment-driven loss.)</p>
+<p>Three open questions right now, all about research direction:</p>
+<p class="q">— whether to keep following a government-funded preservation programme for manga and anime source materials as the nearest comparison for creative-process archiving, or focus only on artists, designers and architectural drawings.</p>
+<p class="q">— whether rights and permissions — who gets to publish a captured record — should become a standing research thread alongside capture, preservation and who pays, or be treated as settled background.</p>
+<p class="q">— whether disaster-driven loss of undesignated heritage buildings (earthquakes, fires) should become a standing research angle alongside redevelopment-driven loss.</p>
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
+
+<hr>
+
+<h2>This week</h2>
+
+<p>Capture itself turned out to be legally free everywhere the research read this week — what costs real money, and what every free-platform heritage deal leaves unstated, is the right to publish and who keeps the files. A German state government paid €3.25 million just to unlock publication rights on a Joseph Beuys collection its own museum has physically held for decades; India handed national heritage digitisation to Google Arts & Culture with no disclosed budget and no stated answer on who keeps the original files.</p>
+
+<p>Three technology items leading the research in successive days on label-free image search each got corrected downward by their own follow-up investigation — every one turned out to be calibrated against labels somewhere, or actually queried by a typed sentence rather than an image. Meanwhile the one system that actually ships the plain "give it a picture, get similar pictures, no labels" mechanic in production runs on a five-year-old, off-the-shelf CLIP encoder at a published cost of eight cents an hour. The differentiator for anyone building in this space isn't retrieval quality anymore — that's being commoditized — it's everything built around it.</p>
+
+<p>The money that funds heritage archiving worldwide is written, clause by clause, so that a piece of hardware can never be the thing actually purchased — grant programmes exclude equipment costs and for-profit applicants by name, and government procurement buys a per-image digitisation service from incumbent vendors who set their own reference price. No buyer anywhere publishes a capture specification a device could be sold against, which cuts both ways: nothing disqualifies a well-built capture device from this market, but nothing in it creates a sales argument either.</p>
 
 <footer>
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/blob/main/BRIEF.md">Read the full version →</a>
