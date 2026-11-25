@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research Brief — 2026-11-24</title>
+<title>Research Brief — 2026-11-25</title>
 <style>
   :root {
     --bg: #fdfdfb;
@@ -68,52 +68,52 @@
 </head>
 <body>
 
-<p class="meta">2026-11-24 · ~6 minute read</p>
+<p class="meta">2026-11-25 · ~5 minute read</p>
 
 <h2>Today</h2>
 
-<p class="headline"><strong>1. The UK government has opened a marketplace that sells AI companies licensed access to museum and archive collections.</strong></p>
-<p>UK Research and Innovation, working with the Natural History Museum, has launched a pilot marketplace — built by Harbr Group Limited under a roughly £600,000 contract — meant to give archive owners "a secure, trusted way to connect with buyers at scale," including AI companies, on standardised licensing terms. Twelve institutions are already in, from Historic England and the Imperial War Museum to Kew Gardens, the Science Museum Group and the Victoria and Albert Museum. The pilot runs to February 2027 with a stated goal of full commercial self-sufficiency by 2030 — a state-run clearinghouse for selling institutional archive access, the first concrete model of its kind seen so far for who actually buys this material and how.</p>
-<a class="btn" href="https://www.ukri.org/what-we-do/research-and-development-missions-accelerator-programme/kickstart-economic-growth/creative-content-exchange/">Read the source →</a>
+<p class="headline"><strong>1. A new method lets a visual-search system adopt a better image encoder without re-encoding its entire existing archive.</strong></p>
+<p>RELAY trains a new query encoder against the frozen original image gallery, then trains the new document encoder against both, so one query vector can score old and new encodings alike. Across three text-to-image benchmarks it recovers 8.66–10.23 points of Recall@1 versus the original systems and, with an optional refinement step, lands within a point of rebuilding the archive from scratch. It's a practical answer to a real constraint on any growing visual-search archive: when a stronger image-recognition model ships, the stored collection doesn't have to be recomputed wholesale to benefit from it. The paper tests text-to-image retrieval rather than pure image-to-image, so whether the same trick holds for a pure image-similarity archive is still open.</p>
+<a class="btn" href="https://arxiv.org/abs/2611.31882">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>2. The Royal Institute of British Architects is digitising a 4.6-million-item archive on commercial royalties, not government money.</strong></p>
-<p>Only about 150,000 of RIBA's drawings and photographs have been digitised so far; the institute says it's self-funding a push toward a million images by autumn 2027, timed to its 200th birthday, entirely through commercial royalty partnerships rather than any state grant. It's a concrete example, in architectural drawings specifically, of how slow and expensive institutional digitisation is without public funding — and a working business-model alternative to a subsidy.</p>
-<a class="btn" href="https://www.riba.org/explore/house-of-architecture/collections-digital-gateway/">Read the source →</a>
+<p class="headline"><strong>2. A pathology-archive retrieval method shows how to keep a growing, unlabeled image index current without rebuilding it.</strong></p>
+<p>CLEAR-WSI refines its candidate matches using a predicted or confirmed diagnostic label, then simply appends newly processed cases to an expanding memory bank rather than recomputing the whole index — beating the strongest baselines on four separate retrieval tasks by 2–3.75 points of precision. The domain is histopathology slides, not studio photography, but the structural problem it solves is a general one: a largely unlabeled archive that keeps growing, where every new item has to slot in without reindexing everything that came before it.</p>
+<a class="btn" href="https://arxiv.org/abs/2611.07935">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>3. A new paper finds the newest image-recognition models are worse than older ones at telling objects apart.</strong></p>
-<p>A same-day research paper identifies a "pareidolic" noise-pattern subspace inside the DINOv2 and DINOv3 vision models that eats up most of their feature variance and actively suppresses their ability to pick out individual objects in a scene — a problem the earlier DINO model doesn't share. Scaling that subspace down restores the newer models' ability to find objects, so the defect is a fixable property of how they were trained rather than a hard ceiling. This bears directly on which model a system doing visual search without labels should run on — telling one object apart from clutter around it is exactly the capability at stake.</p>
-<a class="btn" href="https://arxiv.org/abs/2611.31238">Read the source →</a>
+<p class="headline"><strong>3. An architect's own kept drawings, not any institutional archive, are what let Okinawa rebuild Shuri Castle's main hall after its 2019 fire.</strong></p>
+<p>The reconstruction began by digitizing hand-drawn plans and notes that the original design-and-supervision lead had personally preserved — described in the source headline as a serial note-taker whose private notebooks and photographs enabled an early, faithful restoration of the Registered National Treasure. It's a clean, named example of process material surviving entirely outside any institution's own record, and of what that survival turned out to be worth once the building itself was lost. The exact date the rebuilt hall opened to the public isn't independently confirmed in this source (a sister article from the same publisher states only "seven years since the fire"), so that detail should be treated as unconfirmed.</p>
+<a class="btn" href="https://xtech.nikkei.com/atcl/nxt/mag/na/18/00333/111800002/">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>4. Cooper Hewitt is building a 2027 exhibition entirely from a late designer's prototypes and working files.</strong></p>
-<p>The Smithsonian's design museum has acquired more than 50 objects from the estate of designer Tobias Wong — finished products, prototypes, digital design files and ephemera, given by his family, friends and collaborators — for a monographic exhibition planned for late 2027. It's a clean example of a named design museum treating unfinished, in-process material as worth collecting in its own right, not just the shipped product — and a useful timing marker: two years between the 2025 acquisition and the public show.</p>
-<a class="btn" href="https://www.cooperhewitt.org/2025/05/08/cooper-hewitt-acquires-major-collection-of-work-by-groundbreaking-designer-tobias-wong/">Read the source →</a>
+<p class="headline"><strong>4. The Cleveland Museum of Art's relaunched gallery includes a tool that finds similar pots purely by appearance, no captions involved.</strong></p>
+<p>Among 21 new interactive experiences spanning 10,000 square feet, a "Pottery Explorer" reveals collection pieces "based on visual similarity" as visitors work, and a separate 24-foot wall generates real-time AI transitions between artworks — with all models running locally inside the museum. It's a named, dated, shipped example of visual objects connecting to each other purely by how they look, with no keyword search involved, arrived at independently by a major museum.</p>
+<a class="btn" href="https://www.clevelandart.org/about/press/cleveland-museum-art-announces-artlens-reimagined-opening-july-23-2026">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>5. The Rijksmuseum confirms its "find similar artwork" search actually shipped.</strong></p>
-<p>The museum's own year-end release states plainly that it launched visual-similarity search across its entire Collection Online in early December — every artwork browsable by shape, colour, style and object type, no captions involved. Earlier coverage only had a vendor's technical account describing this as research still planned for 2025–2026; this is the museum itself confirming the feature is live, collection-wide — strong validation for search-by-visual-similarity as an alternative to labels and keywords.</p>
-<a class="btn" href="https://www.rijksmuseum.nl/en/press/press-releases/the-rijksmuseum-in-2025">Read the source →</a>
+<p class="headline"><strong>5. A forensics researcher argues that proving an image is real has to start at the camera, not after the fact.</strong></p>
+<p>Writing in IEEE Spectrum, Hany Farid makes the case for content credentials embedded at the moment of capture: C2PA tools attach a cryptographically signed manifest to a photo the instant it's taken, Google's SynthID embeds an imperceptible signal directly into pixels, and on newer iPhones the camera sensor itself can cryptographically sign raw pixel data as it's captured. It's a broader, independent case for the same architectural move Apple has already shipped in its own hardware — evidence for whether a capture device should sign what it records right at the sensor, rather than only storing it afterward.</p>
+<a class="btn" href="https://spectrum.ieee.org/fighting-back-against-deep-fakes">Read the source →</a>
 
 <hr>
 
 <h2>Yesterday's deep dive</h2>
 
-<p>A deep-dive into who actually owns, may publish, and may delete digitisation capture files found that an earlier assumption — that no authority requires a capture vendor to delete its files — doesn't hold up. Both UK government model contracts and two of Japan's national digitisation tenders open this month require the vendor to eventually lose the files, usually after a cost-bearing retention period. In UK public contracts, ownership of what a supplier creates is a numbered option the buyer ticks before the tender even goes out, and the one heritage tender pack actually read takes everything by outright assignment. In Japan, the rights clause is published at every contract tier in three different forms, while the digitisation specification itself is gated behind bidder qualification at the national library, the national archives and the cultural-heritage research institute — and in both of this month's Agency for Cultural Affairs procurements, the specification says the agency holds the rights while the attached contract lets the contractor keep them instead. In every instrument read, the files go to whoever commissioned the work, never to the person whose material was captured. One vendor in this space, StudioNXT, publishes maker-owns terms and explicitly names unfinished work as worth keeping — the closest comparable found yet to the kind of ownership promise we're trying to build.</p>
+<p>A deep-dive into the UK government's new Creative Content Exchange — a marketplace meant to sell AI companies licensed access to museum and archive collections — found the picture is far less mature than the announcement suggested. The Natural History Museum's roughly £500,000 purchase bought a white-label contracting-and-billing platform from a vendor with no named heritage customers, not a search or imaging system; money flows backward from a marketplace, with the funder paying institutions up to £125,000 each just to list their collections. The live catalogue publishes no prices, most listed collections are "available on enquiry," and roughly three-quarters of the headline asset count arrived only the day before from a newspaper publisher's genealogy databases. No museum anywhere discloses a price for AI-training use, no participating institution reports AI licensing income, and every comparable precedent found — Europeana, Art UK, Norway's state agreement, Japan's national library — runs on subsidy or gives the material away for free. It's evidence against a tidy answer to who actually buys heritage-archive access: here it's grant bodies and one cost-absorbing commercial licensee, not licensing revenue.</p>
 
 <hr>
 
 <h2>Needs your answer</h2>
 
-<p>Three open questions right now, all about research direction:</p>
-<p class="q">— whether to start tracking individual objects within a single photograph (several works on a desk, each findable on its own), or stay with whole-photograph similarity only.</p>
-<p class="q">— whether to keep following a government-funded preservation programme for manga, anime and games source material as the nearest comparison for creative-process archiving, or focus only on artists, designers and architectural drawings.</p>
-<p class="q">— whether who-gets-to-publish a captured record should become a standing research thread alongside capture, preservation and who pays.</p>
+<p>Three open questions right now, each about research direction:</p>
+<p class="q">— whether to start tracking individual objects within a single photograph, each findable on its own, rather than whole-photograph similarity alone.</p>
+<p class="q">— whether to keep following a government-funded preservation programme for manga and anime source material as the nearest comparison point for creative-process archiving, or focus only on artists, designers and architectural drawings.</p>
+<p class="q">— whether who-may-publish-a-captured-record should become a standing research thread alongside capture, preservation and who pays.</p>
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
 <footer>
