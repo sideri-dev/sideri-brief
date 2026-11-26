@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research Brief — 2026-11-25</title>
+<title>Research Brief — 2026-11-26</title>
 <style>
   :root {
     --bg: #fdfdfb;
@@ -68,52 +68,54 @@
 </head>
 <body>
 
-<p class="meta">2026-11-25 · ~5 minute read</p>
+<p class="meta">2026-11-26 · ~6 minute read</p>
 
 <h2>Today</h2>
 
-<p class="headline"><strong>1. A new method lets a visual-search system adopt a better image encoder without re-encoding its entire existing archive.</strong></p>
-<p>RELAY trains a new query encoder against the frozen original image gallery, then trains the new document encoder against both, so one query vector can score old and new encodings alike. Across three text-to-image benchmarks it recovers 8.66–10.23 points of Recall@1 versus the original systems and, with an optional refinement step, lands within a point of rebuilding the archive from scratch. It's a practical answer to a real constraint on any growing visual-search archive: when a stronger image-recognition model ships, the stored collection doesn't have to be recomputed wholesale to benefit from it. The paper tests text-to-image retrieval rather than pure image-to-image, so whether the same trick holds for a pure image-similarity archive is still open.</p>
-<a class="btn" href="https://arxiv.org/abs/2611.31882">Read the source →</a>
+<p class="headline"><strong>1. A Japanese national cultural-heritage platform already connects collection images by pure visual similarity, no labels, in production since 2024.</strong></p>
+<p>Japan Search's "lab" feature places thumbnails from almost every item in the national registry near others that look visually similar, built on a modified version of the open-source "deepscatter" visualization engine, live since March 2024. One nuance: the text labels shown on each cluster are auto-extracted from item titles, even though the placement itself runs purely on visual similarity. It's a rare example of this kind of image-clustering shipping at national-archive scale rather than staying a research prototype.</p>
+<a class="btn" href="https://jpsearch.go.jp/static/jps-lab/deepscatter/">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>2. A pathology-archive retrieval method shows how to keep a growing, unlabeled image index current without rebuilding it.</strong></p>
-<p>CLEAR-WSI refines its candidate matches using a predicted or confirmed diagnostic label, then simply appends newly processed cases to an expanding memory bank rather than recomputing the whole index — beating the strongest baselines on four separate retrieval tasks by 2–3.75 points of precision. The domain is histopathology slides, not studio photography, but the structural problem it solves is a general one: a largely unlabeled archive that keeps growing, where every new item has to slot in without reindexing everything that came before it.</p>
-<a class="btn" href="https://arxiv.org/abs/2611.07935">Read the source →</a>
+<p class="headline"><strong>2. A Japanese prefecture's architectural-archive exhibition turns out to rest on two separate finds, not one — including blueprints discovered by accident in its own basement.</strong></p>
+<p>Shimane Prefecture's exhibition pairs the 2025 donation of architect Kiyonori Kikutake's design materials by his family with a second, previously unreported find: the prefecture's own headquarters blueprints, discovered by staff in a basement storeroom back in 2023. Both sets are now headed for a planned public architecture archive. It's a reminder that process material — drawings, sketches, working papers — often survives by accident, long before anyone decides to formally preserve it.</p>
+<a class="btn" href="https://www.pref.shimane.lg.jp/press_release/2026/luymoczbjlyj.html">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>3. An architect's own kept drawings, not any institutional archive, are what let Okinawa rebuild Shuri Castle's main hall after its 2019 fire.</strong></p>
-<p>The reconstruction began by digitizing hand-drawn plans and notes that the original design-and-supervision lead had personally preserved — described in the source headline as a serial note-taker whose private notebooks and photographs enabled an early, faithful restoration of the Registered National Treasure. It's a clean, named example of process material surviving entirely outside any institution's own record, and of what that survival turned out to be worth once the building itself was lost. The exact date the rebuilt hall opened to the public isn't independently confirmed in this source (a sister article from the same publisher states only "seven years since the fire"), so that detail should be treated as unconfirmed.</p>
-<a class="btn" href="https://xtech.nikkei.com/atcl/nxt/mag/na/18/00333/111800002/">Read the source →</a>
+<p class="headline"><strong>3. The Salvador Dalí Foundation has put a concrete number on what digitising an artist's full legacy costs: about €9 per item.</strong></p>
+<p>The foundation committed €1.2 million over three years to digitise roughly 133,000 items — 118,000 documents plus nearly 15,000 heritage objects — generating more than 600,000 individual image captures. Named institutional digitisation budgets at this level of detail are rare, and this one is a real benchmark for what archiving a creative legacy actually costs at scale. It's reported by one outlet only; no second source carrying the same figures has turned up.</p>
+<a class="btn" href="https://artdaily.com/news/195510/Salvador-Dal--s-legacy-to-become--intelligent-archive--through-advanced-AI-tools">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>4. The Cleveland Museum of Art's relaunched gallery includes a tool that finds similar pots purely by appearance, no captions involved.</strong></p>
-<p>Among 21 new interactive experiences spanning 10,000 square feet, a "Pottery Explorer" reveals collection pieces "based on visual similarity" as visitors work, and a separate 24-foot wall generates real-time AI transitions between artworks — with all models running locally inside the museum. It's a named, dated, shipped example of visual objects connecting to each other purely by how they look, with no keyword search involved, arrived at independently by a major museum.</p>
-<a class="btn" href="https://www.clevelandart.org/about/press/cleveland-museum-art-announces-artlens-reimagined-opening-july-23-2026">Read the source →</a>
+<p class="headline"><strong>4. Rhizome is shutting down its hosted web-archiving tool Conifer — "not a sunset, it's twilight."</strong></p>
+<p>In June 2026, a permanent, read-only "tombstone" application replaces Conifer: existing collections stay accessible, but nobody can add to or edit them again. A follow-up post in May confirmed the shutdown stayed on schedule. It's a clean illustration of the risk built into archiving on someone else's hosted platform — when the vendor exits, growing that archive further stops being possible, whatever happens to the material already stored there.</p>
+<a class="btn" href="https://blog.conifer.rhizome.org/2025/12/15/twilight-announcement.html">Read the source →</a>
 
 <hr>
 
-<p class="headline"><strong>5. A forensics researcher argues that proving an image is real has to start at the camera, not after the fact.</strong></p>
-<p>Writing in IEEE Spectrum, Hany Farid makes the case for content credentials embedded at the moment of capture: C2PA tools attach a cryptographically signed manifest to a photo the instant it's taken, Google's SynthID embeds an imperceptible signal directly into pixels, and on newer iPhones the camera sensor itself can cryptographically sign raw pixel data as it's captured. It's a broader, independent case for the same architectural move Apple has already shipped in its own hardware — evidence for whether a capture device should sign what it records right at the sensor, rather than only storing it afterward.</p>
-<a class="btn" href="https://spectrum.ieee.org/fighting-back-against-deep-fakes">Read the source →</a>
+<p class="headline"><strong>5. The architect Paul R. Williams's archive is debuting across three Los Angeles institutions at once, not one, six years after it was acquired.</strong></p>
+<p>The Getty Research Institute and USC's Fisher Museum of Art each run their own separate exhibition of the Williams archive, on their own dates, alongside the previously known Los Angeles County Museum of Art show — all drawn from an archive the Getty and USC jointly acquired in 2020. A minor date discrepancy, over whether the run ends May 23 or May 31, 2027, remains unresolved, though this source sides with the earlier date. Six years between acquisition and public debut says something on its own about how long archival material can sit in institutional custody before it reaches the public.</p>
+<a class="btn" href="https://today.usc.edu/usc-museum-among-three-major-l-a-art-institutions-to-celebrate-architect-paul-r-williams/">Read the source →</a>
 
 <hr>
 
 <h2>Yesterday's deep dive</h2>
 
-<p>A deep-dive into the UK government's new Creative Content Exchange — a marketplace meant to sell AI companies licensed access to museum and archive collections — found the picture is far less mature than the announcement suggested. The Natural History Museum's roughly £500,000 purchase bought a white-label contracting-and-billing platform from a vendor with no named heritage customers, not a search or imaging system; money flows backward from a marketplace, with the funder paying institutions up to £125,000 each just to list their collections. The live catalogue publishes no prices, most listed collections are "available on enquiry," and roughly three-quarters of the headline asset count arrived only the day before from a newspaper publisher's genealogy databases. No museum anywhere discloses a price for AI-training use, no participating institution reports AI licensing income, and every comparable precedent found — Europeana, Art UK, Norway's state agreement, Japan's national library — runs on subsidy or gives the material away for free. It's evidence against a tidy answer to who actually buys heritage-archive access: here it's grant bodies and one cost-absorbing commercial licensee, not licensing revenue.</p>
+<p>A deep-dive into the RELAY paper (arXiv:2611.31882), which claims to let a visual-search system swap in a better image encoder without re-encoding its whole existing gallery, found the claim overstated: RELAY's method still re-encodes every document once — what it avoids is re-encoding before an interim accuracy gain arrives. The technique also doesn't transfer well beyond its own setup: it works by modifying language-model layers, it needs text captions rather than pure images, and it was only tested on a gallery of 5,000 images. Its one genuinely useful finding is a warning: a partially migrated similarity index, scored on a mix of old and new vectors, can rank worse than the untouched original system — meaning any such index upgrade needs every stored vector tagged by which model produced it, with the old index kept serving until a migration fully completes rather than blended partway through.</p>
 
 <hr>
 
 <h2>Needs your answer</h2>
 
-<p>Three open questions right now, each about research direction:</p>
+<p>Five open questions right now, each about research direction:</p>
 <p class="q">— whether to start tracking individual objects within a single photograph, each findable on its own, rather than whole-photograph similarity alone.</p>
-<p class="q">— whether to keep following a government-funded preservation programme for manga and anime source material as the nearest comparison point for creative-process archiving, or focus only on artists, designers and architectural drawings.</p>
-<p class="q">— whether who-may-publish-a-captured-record should become a standing research thread alongside capture, preservation and who pays.</p>
+<p class="q">— whether to keep following a government-funded preservation programme for manga and anime source material as a comparison point for creative-process archiving.</p>
+<p class="q">— whether who-may-publish-a-captured-record (rights and permissions) should become a standing research thread alongside capture, preservation and who pays.</p>
+<p class="q">— whether disaster-driven loss of undesignated heritage buildings should become a standing research angle alongside redevelopment-driven loss.</p>
+<p class="q">— whether cryptographic signing of images at the moment of capture should become a standing research thread.</p>
 <a class="btn" href="https://github.com/sideri-dev/sideri-research/edit/main/QUESTIONS.md">Answer on GitHub →</a>
 
 <footer>
